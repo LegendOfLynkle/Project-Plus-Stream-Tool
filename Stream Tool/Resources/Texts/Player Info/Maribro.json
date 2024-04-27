@@ -1,0 +1,41 @@
+{
+  "name": "Maribro",
+  "tag": "Maribro",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "@lhc_maribro",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Mr Game & Watch",
+      "skin": "Mr Game & Watch (2)"
+    },
+    {
+      "character": "Rob",
+      "skin": "Rob (4)"
+    },
+    {
+      "character": "Fox",
+      "skin": "Fox (9)"
+    },
+    {
+      "character": "Pit",
+      "skin": "Pit (6)"
+    },
+    {
+      "character": "Zero Suit Samus",
+      "skin": "Zero Suit Samus (2)"
+    },
+    {
+      "character": "King Dedede",
+      "skin": "King Dedede (10)"
+    },
+    {
+      "character": "Wario",
+      "skin": "Wario (7)"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Turn Up",
+  "tag": "Turn Up",
+  "pronouns": "",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "@turnupssb",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Roy",
+      "skin": "Roy (18)"
+    },
+    {
+      "character": "Sheik",
+      "skin": "Sheik (5)"
+    }
+  ]
+}

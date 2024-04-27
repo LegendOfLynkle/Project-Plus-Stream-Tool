@@ -1,0 +1,25 @@
+{
+  "name": "Lynkle",
+  "tag": "Lynkle",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "@gblynkle",
+    "twitch": "GBlynkle",
+    "yt": "@gblynkle"
+  },
+  "characters": [
+    {
+      "character": "Mario",
+      "skin": "Mario (20)"
+    },
+    {
+      "character": "Ness",
+      "skin": "Ness (10)"
+    },
+    {
+      "character": "Ike",
+      "skin": "Ike (14)"
+    }
+  ]
+}

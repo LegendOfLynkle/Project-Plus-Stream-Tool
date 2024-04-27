@@ -1,0 +1,29 @@
+{
+  "name": "Clyde",
+  "tag": "Triclyde",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Marth",
+      "skin": "Marth (19)"
+    },
+    {
+      "character": "Meta Knight",
+      "skin": "Meta Knight (19)"
+    },
+    {
+      "character": "Charizard",
+      "skin": "Charizard (12)"
+    },
+    {
+      "character": "Sheik",
+      "skin": "Sheik (3)"
+    }
+  ]
+}

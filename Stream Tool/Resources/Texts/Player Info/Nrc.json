@@ -1,0 +1,21 @@
+{
+  "name": "Nrc",
+  "tag": "Nrc196",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Lucario",
+      "skin": "Lucario (1)"
+    },
+    {
+      "character": "Charizard",
+      "skin": "Charizard (1)"
+    }
+  ]
+}

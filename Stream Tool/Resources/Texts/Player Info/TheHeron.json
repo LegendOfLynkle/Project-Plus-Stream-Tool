@@ -1,0 +1,21 @@
+{
+  "name": "TheHeron",
+  "tag": "TheHeron",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "@TheStillHeron",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Marth",
+      "skin": "Marth (1)"
+    },
+    {
+      "character": "Mario",
+      "skin": "Mario (2)"
+    }
+  ]
+}

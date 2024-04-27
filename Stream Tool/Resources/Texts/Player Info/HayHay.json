@@ -1,0 +1,21 @@
+{
+  "name": "HayHay",
+  "tag": "HayHay",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Ness",
+      "skin": "Ness (1)"
+    },
+    {
+      "character": "King Dedede",
+      "skin": "King Dedede (1)"
+    }
+  ]
+}

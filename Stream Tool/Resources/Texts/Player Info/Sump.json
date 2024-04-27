@@ -1,0 +1,21 @@
+{
+  "name": "Sump",
+  "tag": "Sump",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Fox",
+      "skin": "Fox (16)"
+    },
+    {
+      "character": "Falco",
+      "skin": "Falco (13)"
+    }
+  ]
+}

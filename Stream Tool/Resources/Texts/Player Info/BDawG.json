@@ -1,0 +1,25 @@
+{
+  "name": "BDawG",
+  "tag": "BDawG",
+  "pronouns": "He/Him",
+  "state": "Western Australia",
+  "socials": {
+    "twitter": "@bdawgdoesthings",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Luigi",
+      "skin": "Luigi (11)"
+    },
+    {
+      "character": "Meta Knight",
+      "skin": "Meta Knight (6)"
+    },
+    {
+      "character": "Zelda",
+      "skin": "Zelda (4)"
+    }
+  ]
+}
