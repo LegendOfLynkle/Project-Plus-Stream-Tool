@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project+ 4.3 Game Overlay</title>
-    <script src="Resources/Scripts/4.3 Scoreboard.js" type="module"></script>
-    <link rel="stylesheet" href="Resources/CSS/4.3 Scoreboard.css">
-    <link rel="stylesheet" href="Resources/CSS/4.3 Scoreboard Custom.css">
+    <title>Between Games</title>
+    <script src="Resources/Scripts/BetweenGames.js" type="module"></script>
+    <link rel="stylesheet" href="Resources/CSS/BetweenGames.css">
 </head>
 
 <body>
@@ -15,12 +14,12 @@
             <!--<video autoplay loop class="absol" src="Resources/Characters/BG.webm"></video>-->
         </div>
 
-        <img class="absol" src="Resources/Overlay/Scoreboard/4.3/Borders.png"></img>
+        <!--<img class="absol" src="Resources/Overlay/Scoreboard/4.3/Borders.png"></img>-->
 
         <div id="scoreboardL" class="scoreboard absol">
 
             <div class="topBarMask absol">
-                <div class="absol">
+                <div class="absol flipBack">
                     <div class="topBarTexts">
                         <span id="p3Pronouns" class="topBarProns topBarText dubEL"></span>
                         <span id="wlTextL" class="wlText topBarText"></span>
@@ -47,27 +46,35 @@
                 </div>
             </div>
     
-            <img id="tagLogoP1" class="absol tLogos" alt=""/>
+            <div class="flipBack absol">
+                <img id="tagLogoP1" class="absol tLogos" alt=""/>
+            </div>
     
             <img id="p1Score" class="absol scoreImgs" alt=""/>
             <img id="borderP1" class="absol border" alt=""/>
-            <span id="scoreNumL" class="scoreNum absol"></span>
+            <span id="scoreNumL" class="scoreNum absol flipBack"></span>
 
             <div class="scoreAnimGrad scoreAnimGrad1" id="scoreAnimGradL"></div>
     
-            <span id="p1Wrapper" class="wrappers wrappersSingles">
-                <img id="p1State" class="states" alt=""/>
-                <span id="p1Tag" class="tags"></span>
-                <span id="p1Name" class="names"></span>
-            </span>
+            <div class="flipBack absol">
+                <span id="p1Wrapper" class="wrappers wrappersSingles">
+                    <img id="p1State" class="states" alt=""/>
+                    <span id="p1Tag" class="tags"></span>
+                    <span id="p1Name" class="names"></span>
+                </span>
+            </div>
     
-            <span id="p3Wrapper" class="wrappers wrappersDubs dubEL">
-                <img id="p3State" class="states" alt=""/>
-                <span id="p3Tag" class="tags"></span>
-                <span id="p3Name" class="names"></span>
-            </span>
+            <div class="flipBack absol">
+                <span id="p3Wrapper" class="wrappers wrappersDubs dubEL">
+                    <img id="p3State" class="states" alt=""/>
+                    <span id="p3Tag" class="tags"></span>
+                    <span id="p3Name" class="names"></span>
+                </span>
+            </div>
     
-            <span id="teamNameL" class="teamName dubEL"></span>
+            <div class="flipBack absol">
+                <span id="teamNameL" class="teamName dubEL"></span>
+            </div>
     
             <div class="scoreAnimMask">
                 <div class="scoreAnimDiv">
@@ -157,6 +164,9 @@
     </div>
 
     <div id="playerCam">
+    </div>
+
+    <div id="gameCam">
     </div>
 
     <div id="casterInfo" class="casterInfoSingles">

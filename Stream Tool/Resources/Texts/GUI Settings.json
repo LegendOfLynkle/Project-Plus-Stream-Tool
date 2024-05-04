@@ -8,7 +8,7 @@
   "scoreAutoUpdate": false,
   "simpleTexts": false,
   "alwaysOnTop": false,
-  "resizable": false,
+  "resizable": true,
   "zoom": 100,
   "remoteUpdatePort": 1111,
   "webSocketPort": 8080

@@ -1,12 +1,102 @@
 [
   {
-    "name": "Test",
-    "tag": "Tag",
-    "pronouns": "Pronouns",
+    "name": "BDawG",
+    "pronouns": "He/Him",
     "socials": {
-      "twitter": "Twitter",
-      "twitch": "Twitch",
-      "yt": "Youtube"
-    }
+      "twitch": "",
+      "twitter": "@bdawgdoesthings",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "Clyde",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "",
+      "twitter": "",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "HayHay",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "",
+      "twitter": "",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "Lynkle",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "GBlynkle",
+      "twitter": "@gblynkle",
+      "yt": "@gblynkle"
+    },
+    "tag": ""
+  },
+  {
+    "name": "Maribro",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "",
+      "twitter": "@lhc_maribro",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "Nrc196",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "",
+      "twitter": "",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "Seb",
+    "pronouns": "They/Them",
+    "socials": {
+      "twitch": "",
+      "twitter": "",
+      "yt": ""
+    },
+    "tag": "Zeraoraboyfriend"
+  },
+  {
+    "name": "Sump",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "",
+      "twitter": "",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "TheStillHeron",
+    "pronouns": "He/Him",
+    "socials": {
+      "twitch": "",
+      "twitter": "@TheStillHeron",
+      "yt": ""
+    },
+    "tag": ""
+  },
+  {
+    "name": "Turn Up",
+    "pronouns": "",
+    "socials": {
+      "twitch": "",
+      "twitter": "@turnupssb",
+      "yt": ""
+    },
+    "tag": ""
   }
 ]

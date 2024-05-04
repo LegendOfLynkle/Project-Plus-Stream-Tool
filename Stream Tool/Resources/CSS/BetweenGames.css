@@ -48,13 +48,13 @@ body {
     -webkit-mask-image: url("../Overlay/Scoreboard/4.3/Mask.png");
 }
 
-.scoreboard {
-    top: var(--scoreboardY);
-}
 #scoreboardL {
-    left: var(--scoreboardX);
+    top: 75px;
+    left: calc(var(--scoreboardX) * 2.35);
+    transform: scaleX(-1);
 }
 #scoreboardR {
+    top: 200px;
     left: calc(var(--scoreboardX) * 2.35);
     transform: scaleX(-1);
 }
@@ -111,7 +111,8 @@ body {
     transform: scaleX(-1);
 }
 #p1Wrapper {
-    left: 38px;
+    /* left: 38px; */
+    left: -275px;
 }
 #p2Wrapper {
     right: 79px;
@@ -243,10 +244,21 @@ body {
 
 #playerCam{
     position: absolute;
-    height: 255px;
-    width: 450px;
+    height: 765px;
+    width: 1350px;
     top: 70px;
-    left: 20px;
+    left: 2%;
+    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#gameCam{
+    position: absolute;
+    height: 357px;
+    width: 630px;
+    top: 62%;
+    left: 65%;
     background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
     background-repeat: no-repeat;
     background-size: contain;

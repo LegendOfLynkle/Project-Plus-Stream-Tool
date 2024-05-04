@@ -16,7 +16,7 @@
 :root {
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
-    --scoreboardXSingles: 600px;
+    --scoreboardXSingles: 400px;
     --scoreboardXDoubles: 300px;
     --scoreboardYSingles: 25px;
     --scoreboardYDoubles: 13px;
@@ -39,6 +39,23 @@ body {
     position: absolute;
 }
 
+#intermission {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+#intermissionText {
+    width: 900px;
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 8rem;
+}
+
 #theBackground {
     position: absolute;
     width: 1920px;
@@ -55,7 +72,7 @@ body {
     left: var(--scoreboardX);
 }
 #scoreboardR {
-    left: calc(var(--scoreboardX) * 2.35);
+    right: var(--scoreboardX);
     transform: scaleX(-1);
 }
 
@@ -213,12 +230,11 @@ body {
 }
 
 #roundDiv {
-    top: 450px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 490px;
+    width: 100%;
     transform: translateY(2px);
 }
 #roundBorder {
@@ -240,18 +256,6 @@ body {
     font-weight: bolder;
 }
 
-
-#playerCam{
-    position: absolute;
-    height: 255px;
-    width: 450px;
-    top: 70px;
-    left: 20px;
-    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 #casterInfo {
     display: flex;
     align-items: flex-start;
@@ -261,8 +265,8 @@ body {
 }
 
 #casters {
-    bottom: 5%;
-    left: 8%;
+    top: 90%;
+    width: 1920px;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
@@ -270,9 +274,9 @@ body {
     white-space: nowrap;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .casterDiv {
