@@ -32,7 +32,8 @@ body {
     margin: 0px;
     text-transform: uppercase;
     color: white;
-    font-family: "Deansgate";
+    font-family: "Darker grotesque", sans-serif;
+    background: linear-gradient(#93032d,#d3222f);
 }
 
 .absol {
@@ -181,6 +182,14 @@ body {
     transform: translateX(-26px);
 }
 
+.nameBg {
+    left: -1;
+    margin-top: 25px;
+    background-color: black;
+    height: 39px;
+    width: 340px;
+    border: 5px solid white;
+}
 
 .topBarMask {
     overflow: hidden;
@@ -200,9 +209,10 @@ body {
 
 .topBarTexts {
     display: flex;
-    border-image: url('../Overlay/Scoreboard/WL\ BG.png') 0 7 fill / 0 7px;
-    border-right: 10px solid;
-    border-left: 10px solid;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+    border-top-left-radius: 0;
     gap: 8px;
     margin-top: 5px;
 }
@@ -226,18 +236,20 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 14px;
-    border: solid;
-    border-width: 19px 43px;
-    border-image: url('../Overlay/Scoreboard/Round\ BG.png') 19 43 fill;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+    border-top-left-radius: 0;
+    /* border-image: url('../Overlay/Scoreboard/Round\ BG.png') 19 43 fill; */
     transition: width .5s;
     height: 36px;
     min-width: 170px;
     opacity: 0;
 }
 #roundText {
-    font-family: "Roboto";
+    /*font-family: "Roboto";
     white-space: nowrap;
-    font-weight: bolder;
+    font-weight: bolder;*/
 }
 
 
@@ -247,9 +259,10 @@ body {
     width: 450px;
     top: 70px;
     left: 20px;
-    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+    border-top-left-radius: 0;
 }
 
 #casterInfo {
