@@ -194,9 +194,9 @@ body {
     overflow: hidden;
     display: flex;
     width: 380px;
-    height: 35px;
+    height: 22px;
     transform: translateX(-1px);
-    top: -20px;
+    top: -8px;
     left: 5px;
 }
 .topBarDoubles {
@@ -211,22 +211,20 @@ body {
 .topBarTexts {
     display: flex;
     justify-content: center;
-    background-color: black;
-    border: 5px solid white;
+    background-color: white;
     border-top-right-radius: 12px;
     gap: 8px;
-    margin-top: 5px;
     height: 22px;
     width: 100px;
 }
 
 .topBarProns {
     display: none;
-    color: white;
+    color: black;
 }
 
 #roundDiv {
-    top: 450px;
+    top: 510px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -262,10 +260,10 @@ body {
     height: 255px;
     width: 450px;
     top: 70px;
-    left: 20px;
+    left: 14px;
     background-color: black;
     border: 5px solid white;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 50px;
     border-top-left-radius: 0;
 }
 
@@ -283,7 +281,8 @@ body {
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-    font-family: "Deansgate";
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
     white-space: nowrap;
     display: flex;
     align-items: center;
