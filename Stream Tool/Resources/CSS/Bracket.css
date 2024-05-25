@@ -17,11 +17,13 @@ body {
     width: 1920px;
     height: 1080px;
     overflow: hidden;
-    background: transparent;
     padding: 0px;
     margin: 0px;
     text-transform: uppercase;
-    font-family: "RegularText";
+    color: white;
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
+    background: linear-gradient(#93032d,#d3222f);
 }
 
 #content {

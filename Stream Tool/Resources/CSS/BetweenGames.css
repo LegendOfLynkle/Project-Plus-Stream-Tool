@@ -30,9 +30,11 @@ body {
     overflow: hidden;
     padding: 0px;
     margin: 0px;
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     color: white;
-    font-family: "Deansgate";
+    background: linear-gradient(#93032d,#d3222f);
 }
 
 .absol {
@@ -50,12 +52,12 @@ body {
 
 #scoreboardL {
     top: 75px;
-    left: calc(var(--scoreboardX) * 2.35);
+    left: calc(var(--scoreboardX) * 2.48);
     transform: scaleX(-1);
 }
 #scoreboardR {
     top: 200px;
-    left: calc(var(--scoreboardX) * 2.35);
+    left: calc(var(--scoreboardX) * 2.48);
     transform: scaleX(-1);
 }
 
@@ -187,8 +189,10 @@ body {
     overflow: hidden;
     display: flex;
     width: 380px;
-    height: 25px;
+    height: 22px;
     transform: translateX(-1px);
+    top: -8px;
+    left: 5px;
 }
 .topBarDoubles {
     width: 285px;
@@ -201,11 +205,12 @@ body {
 
 .topBarTexts {
     display: flex;
-    border-image: url('../Overlay/Scoreboard/WL\ BG.png') 0 7 fill / 0 7px;
-    border-right: 10px solid;
-    border-left: 10px solid;
+    justify-content: center;
+    background-color: white;
+    border-top-right-radius: 12px;
+    height: 22px;
+    width: 100px;
     gap: 8px;
-    margin-top: 5px;
 }
 
 .topBarProns {
@@ -244,24 +249,26 @@ body {
 
 #playerCam{
     position: absolute;
-    height: 765px;
-    width: 1350px;
-    top: 70px;
+    height: 803px;
+    width: 1418px;
+    top: 44px;
     left: 2%;
-    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
 }
 
 #gameCam{
     position: absolute;
     height: 357px;
-    width: 630px;
+    width: 476px;
     top: 62%;
-    left: 65%;
-    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    left: 72%;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
 }
 
 #casterInfo {
@@ -273,12 +280,11 @@ body {
 }
 
 #casters {
-    bottom: 5%;
+    bottom: 3%;
     left: 8%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-    font-family: "Deansgate";
     white-space: nowrap;
     display: flex;
     align-items: center;
