@@ -36,7 +36,23 @@ body {
     color: white;
     font-family: "Darker grotesque", sans-serif;
     font-weight: 600;
+}
+
+.layoutBackground {
     background: linear-gradient(#93032d,#d3222f);
+    position: absolute;
+    top: 0;
+    width: 244px;
+    height: 1080px;
+    z-index: -1;
+}
+
+#leftBackground {
+    left: 0
+}
+
+#rightBackground {
+    right: 0
 }
 
 .absol {
@@ -74,7 +90,7 @@ body {
 
 .charTop {
     top: -8px;
-    left: 95px;
+    left: 92px;
 }
 
 .charBot {
@@ -261,12 +277,12 @@ body {
 }
 
 #roundDiv {
-    top: 10px;
+    top: 1000px;
+    right: 18px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
     transform: translateY(2px);
 }
 #roundBorder {
