@@ -17,7 +17,7 @@
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
     --scoreboardXSingles: 600px;
-    --scoreboardXDoubles: 300px;
+    --scoreboardXDoubles: 540px;
     --scoreboardYSingles: 25px;
     --scoreboardYDoubles: 13px;
     --colorL: #14bb89;
@@ -70,13 +70,14 @@ body {
 }
 
 .charTop {
-    top: 0px;
+    top: -8px;
     left: 95px;
 }
 
 .charBot {
     top: 25px;
-    left: -285px;
+    left: 7px;
+    transform: scale(-1.04, 1.04) !important;
 }
 
 .pCharacter {
@@ -103,10 +104,10 @@ body {
 }
 
 .wrappersDubs {
-    width: 123px;
+    width: 141px;
     height: 30px;
     line-height: 30px;
-    top: 32px;
+    top: 29px;
 }
 
 .flipBack {
@@ -119,14 +120,35 @@ body {
     right: 30px;
 }
 #p3Wrapper {
-    left: 106px;
+    left: 93px;
 }
 #p4Wrapper {
-    right: 106px;
+    right: 93px;
 }
 
 .tags {
     color: lightgray;
+}
+
+.wrappersDubs > .tags {
+    display: none;
+}
+
+#p1Wrapper.wrappersDubs{
+    left: 262px !important;
+}
+
+#p2Wrapper.wrappersDubs{
+    right: 262px !important;
+}
+
+.wrappersDubs > .names {
+    font-size: 1.2rem !important;
+}
+
+.wrappersDubs > .states {
+    max-height: 20px;
+    top: 10px;
 }
 
 .states {
@@ -145,19 +167,19 @@ body {
 
 .teamName {
     position: absolute;
-    width: 275px;
+    width: 309px;
     height: 32px;
     line-height: 32px;
     text-align: center;
-    top: 67px;
+    top: 60px;
     opacity: 0;
     white-space: nowrap;
 }
 #teamNameL {
-    left: 115px;
+    left: 93px;
 }
 #teamNameR {
-    right: 115px;
+    right: 93px;
 }
 
 
@@ -203,6 +225,7 @@ body {
     width: 285px;
     transform: translateX(95px);
     justify-content: center;
+    top: 16px;
 }
 .topBarSinglesNum {
     transform: translateX(-26px);
@@ -216,6 +239,17 @@ body {
     gap: 8px;
     height: 22px;
     width: 100px;
+}
+
+#scoreboardR > .topBarMask > .absol > .topBarTexts {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+}
+
+.topBarDoubles > .absol > .topBarTexts {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px !important;
+    width: 180px;
 }
 
 .topBarProns {

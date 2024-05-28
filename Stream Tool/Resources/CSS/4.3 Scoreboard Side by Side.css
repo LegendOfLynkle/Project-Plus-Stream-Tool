@@ -16,12 +16,14 @@
 :root {
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
-    --scoreboardXSingles: 555px;
-    --scoreboardXDoubles: 555px;
+    --scoreboardXSingles: 400px;
+    --scoreboardXDoubles: 300px;
     --scoreboardYSingles: 25px;
-    --scoreboardYDoubles: 80px;
+    --scoreboardYDoubles: 13px;
     --colorL: #14bb89;
     --colorR: #14bb89;
+    --scoreboardRModifierSingles: 2.8;
+    --scoreboardRModifierDoubles: 3.75;
 }
 
 body {
@@ -30,10 +32,10 @@ body {
     overflow: hidden;
     padding: 0px;
     margin: 0px;
-    font-family: "Darker grotesque", sans-serif;
-    font-weight: 600;
     text-transform: uppercase;
     color: white;
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
     background: linear-gradient(#93032d,#d3222f);
 }
 
@@ -50,14 +52,15 @@ body {
     -webkit-mask-image: url("../Overlay/Scoreboard/4.3/Mask.png");
 }
 
+.scoreboard {
+    top: var(--scoreboardY);
+}
 #scoreboardL {
-    top: 155px;
-    left: calc(var(--scoreboardX) * 2.48);
-    transform: scaleX(-1);
+    left: var(--scoreboardX);
 }
 #scoreboardR {
-    top: 300px;
-    left: calc(var(--scoreboardX) * 2.48);
+    /* left: calc(var(--scoreboardX) * 2.8); */
+    right: var(--scoreboardX);
     transform: scaleX(-1);
 }
 
@@ -71,14 +74,13 @@ body {
 
 .charTop {
     top: -8px;
-    left: 86px;
-    transform: scale(1.04, 1.04) !important;
+    left: 95px;
 }
 
 .charBot {
     top: 25px;
-    left: -310px;
-    transform: scale(1.04, 1.04) !important;
+    left: 7px;
+    transform: scale(-1.04, 1.04) !important;
 }
 
 .pCharacter {
@@ -87,7 +89,7 @@ body {
     object-fit: scale-down;
     position: absolute;
     left: 270px;
-    top: 22px;
+    top: 20px;
 }
 
 
@@ -98,9 +100,9 @@ body {
     white-space: nowrap;
 }
 .wrappersSingles {
-    width: 205px;
-    height: 36px;   
-    top: 34px;
+    width: 280px;
+    height: 55px;   
+    top: 20px;
     line-height: 32px;
 }
 
@@ -115,17 +117,16 @@ body {
     transform: scaleX(-1);
 }
 #p1Wrapper {
-    /* left: 38px; */
-    left: -275px;
+    left: 30px;
 }
 #p2Wrapper {
-    right: 79px;
+    right: 30px;
 }
 #p3Wrapper {
-    left: -233px;
+    left: 93px;
 }
 #p4Wrapper {
-    right: 106px;
+    right: 93px;
 }
 
 .tags {
@@ -137,7 +138,7 @@ body {
 }
 
 #p1Wrapper.wrappersDubs{
-    left: -406px !important;
+    left: 262px !important;
 }
 
 #p2Wrapper.wrappersDubs{
@@ -155,7 +156,7 @@ body {
 
 .states {
     position: relative;
-    top: -2px;
+    top: 12px;
     max-width: 30px;
     max-height: 30px;
     object-fit: scale-down;
@@ -164,25 +165,21 @@ body {
 .names {
     font-size: 1.8rem !important;
     position: relative;
-    top: -8px;
-}
-
-.wrappersDubs > .names {
     top: 6px;
 }
 
 .teamName {
     position: absolute;
     width: 309px;
-    height: 21px;
+    height: 32px;
     line-height: 32px;
     text-align: center;
-    top: 59px;
+    top: 60px;
     opacity: 0;
     white-space: nowrap;
 }
 #teamNameL {
-    left: -402px;
+    left: 93px;
 }
 #teamNameR {
     right: 93px;
@@ -230,8 +227,8 @@ body {
 .topBarDoubles {
     width: 285px;
     transform: translateX(95px);
-    top: 16px;
     justify-content: center;
+    top: 16px;
 }
 .topBarSinglesNum {
     transform: translateX(-26px);
@@ -242,9 +239,14 @@ body {
     justify-content: center;
     background-color: white;
     border-top-right-radius: 12px;
+    gap: 8px;
     height: 22px;
     width: 100px;
-    gap: 8px;
+}
+
+#scoreboardR > .topBarMask > .absol > .topBarTexts {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
 }
 
 .topBarDoubles > .absol > .topBarTexts {
@@ -259,12 +261,12 @@ body {
 }
 
 #roundDiv {
-    top: 450px;
+    top: 10px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 490px;
+    width: 1920px;
     transform: translateY(2px);
 }
 #roundBorder {
@@ -272,43 +274,41 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 14px;
-    border: solid;
-    border-width: 19px 43px;
-    border-image: url('../Overlay/Scoreboard/Round\ BG.png') 19 43 fill;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+    border-top-left-radius: 0;
+    /* border-image: url('../Overlay/Scoreboard/Round\ BG.png') 19 43 fill; */
     transition: width .5s;
     height: 36px;
     min-width: 170px;
     opacity: 0;
 }
 #roundText {
-    font-family: "Roboto";
+    font-size: 20px !important;
+    /*font-family: "Roboto";
     white-space: nowrap;
-    font-weight: bolder;
+    font-weight: bolder;*/
 }
 
-
-#playerCam{
+.playerCam {
     position: absolute;
-    height: 727px;
-    width: 1282px;
-    top: 44px;
-    left: 2%;
+    height: 480px;
+    width: 216px;
+    top: 220px;
     background-color: black;
     border: 5px solid white;
-    border-radius: 50px;
-    border-top-left-radius: 0px;
+    border-radius: 24px;
 }
 
-#gameCam{
-    position: absolute;
-    height: 499.8px;
-    width: 666.4px;
-    top: 49%;
-    left: 62.5%;
-    background-color: black;
-    border: 5px solid white;
-    border-radius: 50px;
-    border-top-left-radius: 0px;
+#playerCamL{
+    left: 7px;
+    border-top-left-radius: 0;
+}
+
+#playerCamR{
+    right: 7px;
+    border-top-right-radius: 0;
 }
 
 #casterInfo {
@@ -320,11 +320,13 @@ body {
 }
 
 #casters {
-    bottom: 7%;
-    left: 8%;
+    bottom: 5%;
+    left: 1.5%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -492,6 +494,8 @@ man i hate chromium
 #overlayIntro {
     opacity: 0;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -565,6 +569,8 @@ man i hate chromium
 
 #midTextIntro {
     position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,6 +583,8 @@ man i hate chromium
 
 #rtIntro {
     position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
