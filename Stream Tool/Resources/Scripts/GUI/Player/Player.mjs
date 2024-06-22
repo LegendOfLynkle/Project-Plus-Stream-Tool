@@ -238,7 +238,7 @@ export class Player {
     /** Returns a valid src for browser sources */
     async getBrowserSrc(char, skin, extraPath, failPath) {
 
-        let browserCharPath = "Resources/Characters";
+        let browserCharPath = "Resources/Characters" + "/" + settings.selectedGame();
         /* if (settings.isWsChecked()) {
             browserCharPath = "Resources/Characters/_Workshop";
         } */

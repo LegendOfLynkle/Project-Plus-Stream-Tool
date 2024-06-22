@@ -30,7 +30,7 @@ window.onscroll = () => { window.scroll(0, 0) };
 
 init();
 /** It all starts here */
-async function init() {
+export async function init() {
 
     // this will allow us to load functions asynchronously
     const promises = [];
@@ -38,7 +38,7 @@ async function init() {
     
     // we need to set the current char path
     await settings.load();
-    stPath.char = stPath.charBase;
+    stPath.char = stPath.charBase + "/" + settings.selectedGame();
 
     // colors need to be up and running before players
     await initColors();

@@ -8,6 +8,7 @@ import { gamemode } from "./Gamemode Change.mjs";
 import { tournament } from "./Tournament.mjs";
 import { round } from "./Round.mjs";
 import { teams } from "./Team/Teams.mjs";
+import { init } from "../GUI";
 
 
 class GuiSettings {
@@ -32,6 +33,7 @@ class GuiSettings {
     #zoomTextValue = document.getElementById("zoomTextValue");
     #zoomValue = 100;
     #restoreWindowButt = document.getElementById("restoreWindowButt");
+    #selectedGame = document.getElementById("gameSelector");
 
     constructor() {
 
@@ -88,6 +90,14 @@ class GuiSettings {
             viewport.toSettings();
         });
 
+        // Changing the selected Game does something
+        document.getElementById('gameSelector').addEventListener("change", (x) => {
+            this.#selectedGame = x.target.value;
+            this.save("selectedGame", x.target.value);
+            // Re-initialise everything please
+            init();
+        });
+
     }
 
     /** Loads all settings from the "GUI Settings.json" file */
@@ -111,6 +121,7 @@ class GuiSettings {
         this.#scoreAutoCheck.checked = guiSettings.scoreAutoUpdate;
         this.#invertScoreCheck.checked = guiSettings.invertScore;
         this.#simpleTextsCheck.checked = guiSettings.simpleTexts;
+        this.#selectedGame.value = guiSettings.selectedGame;
 
         if (inside.electron) {
             this.#alwaysOnTopCheck.checked = guiSettings.alwaysOnTop;
@@ -383,6 +394,10 @@ class GuiSettings {
         this.#changeZoom();
         const ipc = await import("./IPC.mjs");
         ipc.defaultWindowDimensions();
+    }
+
+    selectedGame() {
+        return this.#selectedGame.value;
     }
 
 }

@@ -20,6 +20,12 @@ const updateRegion = document.getElementById('updateRegion');
 updateDiv.addEventListener("click", writeScoreboard);
 
 
+const scoreBox1Div = document.getElementById('scoreBox1');
+const scoreBox2Div = document.getElementById('scoreBox2');
+
+scoreBox1Div.addEventListener("click", writeScoreboard);
+scoreBox2Div.addEventListener("click", writeScoreboard);
+
 /**
  * Warns the user that a player is not ready to update yet
  * @param {Boolean} state - True if ready, false if not

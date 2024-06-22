@@ -5,11 +5,12 @@
   "forceWL": false,
   "customRound": false,
   "invertScore": false,
-  "scoreAutoUpdate": false,
+  "scoreAutoUpdate": true,
   "simpleTexts": false,
   "alwaysOnTop": false,
   "resizable": true,
   "zoom": 100,
   "remoteUpdatePort": 1111,
-  "webSocketPort": 8080
+  "webSocketPort": 8080,
+  "selectedGame": "Melee"
 }
