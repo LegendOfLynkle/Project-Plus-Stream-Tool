@@ -19,7 +19,7 @@
     "scoreboard": {
         "neutral": {
             "x": 35,
-            "y": 15,
+            "y": 30,
             "scale": 1.5
         }
     },
@@ -27,7 +27,7 @@
         "neutral": {
             "x": -485,
             "y": 190,
-            "scale": 2.5
+            "scale": 1.5
         }
     },
     "gui": {

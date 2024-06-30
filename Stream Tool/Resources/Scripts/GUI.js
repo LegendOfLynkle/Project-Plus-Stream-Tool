@@ -32,6 +32,7 @@ init();
 /** It all starts here */
 export async function init() {
 
+    console.log("Calling init");
     // this will allow us to load functions asynchronously
     const promises = [];
 

@@ -16,14 +16,14 @@
     "scoreboard": {
         "neutral": {
             "x": 40,
-            "y": 52,
-            "scale": 2.0
+            "y": 22,
+            "scale": 1.5
         }
     },
     "vsScreen": {
         "neutral": {
             "x": -485,
-            "y": 190,
+            "y": 115,
             "scale": 1.3
         }
     },

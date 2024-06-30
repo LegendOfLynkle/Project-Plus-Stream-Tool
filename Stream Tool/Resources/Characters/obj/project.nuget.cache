@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "79V3H4GvBmg=",
+  "success": true,
+  "projectFilePath": "/Users/lynkle/Documents/Repos/Project-Plus-Stream-Tool/Stream Tool/Resources/Characters/Characters.csproj",
+  "expectedPackageFiles": [
+    "/Users/lynkle/.nuget/packages/sixlabors.imagesharp/3.1.4/sixlabors.imagesharp.3.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}

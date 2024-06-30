@@ -18,16 +18,16 @@
     ],
     "scoreboard": {
         "neutral": {
-            "x": 40,
+            "x": 48,
             "y": 20,
-            "scale": 1.5
+            "scale": "-1.5, 1.5"
         }
     },
     "vsScreen": {
         "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
+            "x": -514,
+            "y": 120,
+            "scale": 1.5
         }
     },
     "gui": {

@@ -8,7 +8,7 @@ import { gamemode } from "./Gamemode Change.mjs";
 import { tournament } from "./Tournament.mjs";
 import { round } from "./Round.mjs";
 import { teams } from "./Team/Teams.mjs";
-import { init } from "../GUI";
+import { init } from "../GUI.js";
 
 
 class GuiSettings {
@@ -92,10 +92,10 @@ class GuiSettings {
 
         // Changing the selected Game does something
         document.getElementById('gameSelector').addEventListener("change", (x) => {
-            this.#selectedGame = x.target.value;
+            // this.#selectedGame = x.target.value;
             this.save("selectedGame", x.target.value);
-            // Re-initialise everything please
-            init();
+            // Re-initialise everything by reloading the page
+            location.reload();
         });
 
     }
