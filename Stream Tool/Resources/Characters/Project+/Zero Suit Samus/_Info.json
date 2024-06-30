@@ -47,21 +47,6 @@
         },
         {
             "name": "Zero Suit Samus (16)"
-        },
-        {
-            "name": "Zero Suit Samus (17)"
-        },
-        {
-            "name": "Zero Suit Samus (18)"
-        },
-        {
-            "name": "Zero Suit Samus (19)"
-        },
-        {
-            "name": "Zero Suit Samus (20)"
-        },
-        {
-            "name": "Zero Suit Samus (21)"
         }
     ],
     "scoreboard": {
@@ -74,8 +59,8 @@
     "vsScreen": {
         "neutral": {
             "x": -485,
-            "y": 140,
-            "scale": 2.5
+            "y": 100,
+            "scale": 2
         }
     },
     "gui": {
