@@ -18,7 +18,7 @@ body {
     width: 1920px;
     height: 1080px;
     overflow: hidden;
-    background: transparent;
+    background: linear-gradient(#93032d,#d3222f);
     padding: 0px;
     margin: 0px;
     text-transform: uppercase;

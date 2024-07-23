@@ -32,7 +32,8 @@ body {
     margin: 0px;
     text-transform: uppercase;
     color: white;
-    font-family: "Deansgate";
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
 }
 
 .absol {
@@ -253,7 +254,6 @@ body {
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-    font-family: "Deansgate";
     white-space: nowrap;
     display: flex;
     align-items: center;

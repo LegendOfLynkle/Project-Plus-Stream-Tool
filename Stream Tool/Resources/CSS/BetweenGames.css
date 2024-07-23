@@ -16,10 +16,10 @@
 :root {
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
-    --scoreboardXSingles: 600px;
-    --scoreboardXDoubles: 300px;
+    --scoreboardXSingles: 555px;
+    --scoreboardXDoubles: 555px;
     --scoreboardYSingles: 25px;
-    --scoreboardYDoubles: 13px;
+    --scoreboardYDoubles: 80px;
     --colorL: #14bb89;
     --colorR: #14bb89;
 }
@@ -30,9 +30,11 @@ body {
     overflow: hidden;
     padding: 0px;
     margin: 0px;
+    font-family: "Darker grotesque", sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     color: white;
-    font-family: "Deansgate";
+    background: linear-gradient(#93032d,#d3222f);
 }
 
 .absol {
@@ -49,13 +51,13 @@ body {
 }
 
 #scoreboardL {
-    top: 75px;
-    left: calc(var(--scoreboardX) * 2.35);
+    top: 155px;
+    left: calc(var(--scoreboardX) * 2.48);
     transform: scaleX(-1);
 }
 #scoreboardR {
-    top: 200px;
-    left: calc(var(--scoreboardX) * 2.35);
+    top: 300px;
+    left: calc(var(--scoreboardX) * 2.48);
     transform: scaleX(-1);
 }
 
@@ -68,13 +70,15 @@ body {
 }
 
 .charTop {
-    top: 0px;
-    left: 95px;
+    top: -8px;
+    left: 86px;
+    transform: scale(1.04, 1.04) !important;
 }
 
 .charBot {
     top: 25px;
-    left: -285px;
+    left: -312px;
+    transform: scale(1.04, 1.04) !important;
 }
 
 .pCharacter {
@@ -82,8 +86,8 @@ body {
     height: 100px;
     object-fit: scale-down;
     position: absolute;
-    left: 260px;
-    top: 12px;
+    left: 270px;
+    top: 22px;
 }
 
 
@@ -101,10 +105,10 @@ body {
 }
 
 .wrappersDubs {
-    width: 123px;
+    width: 141px;
     height: 30px;
     line-height: 30px;
-    top: 32px;
+    top: 29px;
 }
 
 .flipBack {
@@ -118,7 +122,7 @@ body {
     right: 79px;
 }
 #p3Wrapper {
-    left: 106px;
+    left: -233px;
 }
 #p4Wrapper {
     right: 106px;
@@ -128,29 +132,60 @@ body {
     color: lightgray;
 }
 
+.wrappersDubs > .tags {
+    display: none;
+}
+
+#p1Wrapper.wrappersDubs{
+    left: -406px !important;
+}
+
+#p2Wrapper.wrappersDubs{
+    right: 262px !important;
+}
+
+.wrappersDubs > .names {
+    font-size: 1.2rem !important;
+}
+
+.wrappersDubs > .states {
+    max-height: 20px;
+    top: 10px;
+}
+
 .states {
     position: relative;
-    top: 1px;
+    top: -2px;
     max-width: 30px;
     max-height: 30px;
     object-fit: scale-down;
 }
 
+.names {
+    font-size: 1.8rem !important;
+    position: relative;
+    top: -8px;
+}
+
+.wrappersDubs > .names {
+    top: 6px;
+}
+
 .teamName {
     position: absolute;
-    width: 275px;
-    height: 32px;
+    width: 309px;
+    height: 21px;
     line-height: 32px;
     text-align: center;
-    top: 67px;
+    top: 59px;
     opacity: 0;
     white-space: nowrap;
 }
 #teamNameL {
-    left: 115px;
+    left: -402px;
 }
 #teamNameR {
-    right: 115px;
+    right: 93px;
 }
 
 
@@ -187,12 +222,15 @@ body {
     overflow: hidden;
     display: flex;
     width: 380px;
-    height: 25px;
+    height: 22px;
     transform: translateX(-1px);
+    top: -8px;
+    left: 5px;
 }
 .topBarDoubles {
     width: 285px;
     transform: translateX(95px);
+    top: 16px;
     justify-content: center;
 }
 .topBarSinglesNum {
@@ -201,11 +239,18 @@ body {
 
 .topBarTexts {
     display: flex;
-    border-image: url('../Overlay/Scoreboard/WL\ BG.png') 0 7 fill / 0 7px;
-    border-right: 10px solid;
-    border-left: 10px solid;
+    justify-content: center;
+    background-color: white;
+    border-top-right-radius: 12px;
+    height: 22px;
+    width: 100px;
     gap: 8px;
-    margin-top: 5px;
+}
+
+.topBarDoubles > .absol > .topBarTexts {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px !important;
+    width: 180px;
 }
 
 .topBarProns {
@@ -244,24 +289,26 @@ body {
 
 #playerCam{
     position: absolute;
-    height: 765px;
-    width: 1350px;
-    top: 70px;
+    height: 727px;
+    width: 1282px;
+    top: 44px;
     left: 2%;
-    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
 }
 
 #gameCam{
     position: absolute;
-    height: 357px;
-    width: 630px;
-    top: 62%;
-    left: 65%;
-    background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 499.8px;
+    width: 666.4px;
+    top: 49%;
+    left: 62.5%;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
 }
 
 #casterInfo {
@@ -273,12 +320,11 @@ body {
 }
 
 #casters {
-    bottom: 5%;
+    bottom: 7%;
     left: 8%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-    font-family: "Deansgate";
     white-space: nowrap;
     display: flex;
     align-items: center;
