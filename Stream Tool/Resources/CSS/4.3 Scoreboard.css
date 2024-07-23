@@ -16,7 +16,7 @@
 :root {
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
-    --scoreboardXSingles: 600px;
+    --scoreboardXSingles: 500px;
     --scoreboardXDoubles: 300px;
     --scoreboardYSingles: 25px;
     --scoreboardYDoubles: 13px;
@@ -55,7 +55,7 @@ body {
     left: var(--scoreboardX);
 }
 #scoreboardR {
-    left: calc(var(--scoreboardX) * 2.35);
+    left: calc(var(--scoreboardX) * 2.85);
     transform: scaleX(-1);
 }
 
@@ -213,12 +213,12 @@ body {
 }
 
 #roundDiv {
-    top: 450px;
+    top: 400px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 490px;
+    width: 390px;
     transform: translateY(2px);
 }
 #roundBorder {
@@ -243,8 +243,8 @@ body {
 
 #playerCam{
     position: absolute;
-    height: 255px;
-    width: 450px;
+    height: 193.8px;
+    width: 342px;
     top: 70px;
     left: 20px;
     background-image: url('../Overlay/Scoreboard/4.3/player-cam-border-high-res.png');
@@ -262,7 +262,7 @@ body {
 
 #casters {
     bottom: 5%;
-    left: 8%;
+    left: 5%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
