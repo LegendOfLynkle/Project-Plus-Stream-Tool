@@ -34,7 +34,6 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     color: white;
-    background: linear-gradient(#93032d,#d3222f);
 }
 
 .absol {
@@ -293,22 +292,22 @@ body {
     width: 1282px;
     top: 44px;
     left: 2%;
-    background-color: black;
     border: 5px solid white;
     border-radius: 50px;
     border-top-left-radius: 0px;
+    background-color: #00FF00;
 }
 
 #gameCam{
     position: absolute;
-    height: 499.8px;
+    height: 469.8px;
     width: 666.4px;
-    top: 49%;
+    top: 51.5%;
     left: 62.5%;
-    background-color: black;
     border: 5px solid white;
     border-radius: 50px;
     border-top-left-radius: 0px;
+    background-color: #FF0000;
 }
 
 #casterInfo {
