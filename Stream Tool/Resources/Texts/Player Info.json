@@ -9,20 +9,23 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Luigi",
-        "skin": "Luigi (11)"
-      },
-      {
-        "character": "Meta Knight",
-        "skin": "Meta Knight (6)"
-      },
-      {
-        "character": "Zelda",
-        "skin": "Zelda (4)"
-      }
-    ]
+    "characters": {
+      "Melee": [],
+      "Project+": [
+        {
+          "character": "Luigi",
+          "skin": "Luigi (11)"
+        },
+        {
+          "character": "Meta Knight",
+          "skin": "Meta Knight (6)"
+        },
+        {
+          "character": "Zelda",
+          "skin": "Zelda (4)"
+        }
+      ]
+    }
   },
   {
     "name": "Clyde",
@@ -34,24 +37,32 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Marth",
-        "skin": "Marth (19)"
-      },
-      {
-        "character": "Meta Knight",
-        "skin": "Meta Knight (19)"
-      },
-      {
-        "character": "Charizard",
-        "skin": "Charizard (12)"
-      },
-      {
-        "character": "Sheik",
-        "skin": "Sheik (3)"
-      }
-    ]
+    "characters": {
+      "Melee": [
+        {
+          "character": "Sheik",
+          "skin": "Sheik (3)"
+        }
+      ],
+      "Project+": [
+        {
+          "character": "Marth",
+          "skin": "Marth (19)"
+        },
+        {
+          "character": "Meta Knight",
+          "skin": "Meta Knight (19)"
+        },
+        {
+          "character": "Charizard",
+          "skin": "Charizard (12)"
+        },
+        {
+          "character": "Sheik",
+          "skin": "Sheik (3)"
+        }
+      ]
+    }
   },
   {
     "name": "HayHay",
@@ -63,16 +74,24 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Ness",
-        "skin": "Ness (1)"
-      },
-      {
-        "character": "King Dedede",
-        "skin": "King Dedede (1)"
-      }
-    ]
+    "characters": {
+      "Melee": [
+        {
+          "character": "Sheik",
+          "skin": "Sheik (4)"
+        }
+      ],
+      "Project+": [
+        {
+          "character": "Ness",
+          "skin": "Ness (1)"
+        },
+        {
+          "character": "King Dedede",
+          "skin": "King Dedede (1)"
+        }
+      ]
+    }
   },
   {
     "name": "Lynkle",
@@ -84,20 +103,28 @@
       "twitch": "GBlynkle",
       "yt": "@gblynkle"
     },
-    "characters": [
-      {
-        "character": "Mario",
-        "skin": "Mario (20)"
-      },
-      {
-        "character": "Ness",
-        "skin": "Ness (10)"
-      },
-      {
-        "character": "Ike",
-        "skin": "Ike (14)"
-      }
-    ]
+    "characters": {
+      "Melee": [
+        {
+          "character": "Captain Falcon",
+          "skin": "Captain Falcon (5)"
+        }
+      ],
+      "Project+": [
+        {
+          "character": "Mario",
+          "skin": "Mario (20)"
+        },
+        {
+          "character": "Ness",
+          "skin": "Ness (10)"
+        },
+        {
+          "character": "Ike",
+          "skin": "Ike (14)"
+        }
+      ]
+    }
   },
   {
     "name": "Maribro",
@@ -109,36 +136,39 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Mr Game & Watch",
-        "skin": "Mr Game & Watch (2)"
-      },
-      {
-        "character": "Rob",
-        "skin": "Rob (4)"
-      },
-      {
-        "character": "Fox",
-        "skin": "Fox (9)"
-      },
-      {
-        "character": "Pit",
-        "skin": "Pit (6)"
-      },
-      {
-        "character": "Zero Suit Samus",
-        "skin": "Zero Suit Samus (2)"
-      },
-      {
-        "character": "King Dedede",
-        "skin": "King Dedede (10)"
-      },
-      {
-        "character": "Wario",
-        "skin": "Wario (7)"
-      }
-    ]
+    "characters": {
+      "Melee": [],
+      "Project+": [
+        {
+          "character": "Mr Game & Watch",
+          "skin": "Mr Game & Watch (2)"
+        },
+        {
+          "character": "Rob",
+          "skin": "Rob (4)"
+        },
+        {
+          "character": "Fox",
+          "skin": "Fox (9)"
+        },
+        {
+          "character": "Pit",
+          "skin": "Pit (6)"
+        },
+        {
+          "character": "Zero Suit Samus",
+          "skin": "Zero Suit Samus (2)"
+        },
+        {
+          "character": "King Dedede",
+          "skin": "King Dedede (10)"
+        },
+        {
+          "character": "Wario",
+          "skin": "Wario (7)"
+        }
+      ]
+    }
   },
   {
     "name": "Nrc196",
@@ -150,16 +180,19 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Lucario",
-        "skin": "Lucario (1)"
-      },
-      {
-        "character": "Charizard",
-        "skin": "Charizard (1)"
-      }
-    ]
+    "characters": {
+      "Melee": [],
+      "Project+": [
+        {
+          "character": "Lucario",
+          "skin": "Lucario (1)"
+        },
+        {
+          "character": "Charizard",
+          "skin": "Charizard (1)"
+        }
+      ]
+    }
   },
   {
     "name": "Seb",
@@ -171,12 +204,20 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Ice Climbers",
-        "skin": "Ice Climbers (7)"
-      }
-    ]
+    "characters": {
+      "Melee": [
+        {
+          "character": "Falco",
+          "skin": "Falco (3)"
+        }
+      ],
+      "Project+": [
+        {
+          "character": "Ice Climbers",
+          "skin": "Ice Climbers (7)"
+        }
+      ]
+    }
   },
   {
     "name": "Sump",
@@ -188,16 +229,28 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Fox",
-        "skin": "Fox (16)"
-      },
-      {
-        "character": "Falco",
-        "skin": "Falco (13)"
-      }
-    ]
+    "characters": {
+      "Melee": [
+        {
+          "character": "Fox",
+          "skin": "Fox (1)"
+        },
+        {
+          "character": "Falco",
+          "skin": "Falco (2)"
+        }
+      ],
+      "Project+": [
+        {
+          "character": "Fox",
+          "skin": "Fox (16)"
+        },
+        {
+          "character": "Falco",
+          "skin": "Falco (13)"
+        }
+      ]
+    }
   },
   {
     "name": "TheStillHeron",
@@ -209,16 +262,19 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Marth",
-        "skin": "Marth (1)"
-      },
-      {
-        "character": "Mario",
-        "skin": "Mario (2)"
-      }
-    ]
+    "characters": {
+      "Melee": [],
+      "Project+": [
+        {
+          "character": "Marth",
+          "skin": "Marth (1)"
+        },
+        {
+          "character": "Mario",
+          "skin": "Mario (2)"
+        }
+      ]
+    }
   },
   {
     "name": "Turn Up",
@@ -230,15 +286,18 @@
       "twitch": "",
       "yt": ""
     },
-    "characters": [
-      {
-        "character": "Roy",
-        "skin": "Roy (18)"
-      },
-      {
-        "character": "Sheik",
-        "skin": "Sheik (5)"
-      }
-    ]
+    "characters": {
+      "Melee": [],
+      "Project+": [
+        {
+          "character": "Roy",
+          "skin": "Roy (18)"
+        },
+        {
+          "character": "Sheik",
+          "skin": "Sheik (5)"
+        }
+      ]
+    }
   }
 ]

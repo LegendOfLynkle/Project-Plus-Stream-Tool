@@ -8,22 +8,30 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Marth",
-      "skin": "Marth (19)"
-    },
-    {
-      "character": "Meta Knight",
-      "skin": "Meta Knight (19)"
-    },
-    {
-      "character": "Charizard",
-      "skin": "Charizard (12)"
-    },
-    {
-      "character": "Sheik",
-      "skin": "Sheik (3)"
-    }
-  ]
+  "characters": {
+    "Melee": [
+      {
+        "character": "Sheik",
+        "skin": "Sheik (3)"
+      }
+    ],
+    "Project+": [
+      {
+        "character": "Marth",
+        "skin": "Marth (19)"
+      },
+      {
+        "character": "Meta Knight",
+        "skin": "Meta Knight (19)"
+      },
+      {
+        "character": "Charizard",
+        "skin": "Charizard (12)"
+      },
+      {
+        "character": "Sheik",
+        "skin": "Sheik (3)"
+      }
+    ]
+  }
 }

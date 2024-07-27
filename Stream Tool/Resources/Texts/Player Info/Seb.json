@@ -8,10 +8,18 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Ice Climbers",
-      "skin": "Ice Climbers (7)"
-    }
-  ]
+  "characters": {
+    "Melee": [
+      {
+        "character": "Falco",
+        "skin": "Falco (3)"
+      }
+    ],
+    "Project+": [
+      {
+        "character": "Ice Climbers",
+        "skin": "Ice Climbers (7)"
+      }
+    ]
+  }
 }

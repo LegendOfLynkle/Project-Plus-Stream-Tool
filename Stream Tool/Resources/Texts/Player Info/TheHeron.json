@@ -8,14 +8,17 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Marth",
-      "skin": "Marth (1)"
-    },
-    {
-      "character": "Mario",
-      "skin": "Mario (2)"
-    }
-  ]
+  "characters": {
+    "Melee": [],
+    "Project+": [
+      {
+        "character": "Marth",
+        "skin": "Marth (1)"
+      },
+      {
+        "character": "Mario",
+        "skin": "Mario (2)"
+      }
+    ]
+  }
 }

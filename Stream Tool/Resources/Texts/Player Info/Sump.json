@@ -8,14 +8,26 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Fox",
-      "skin": "Fox (16)"
-    },
-    {
-      "character": "Falco",
-      "skin": "Falco (13)"
-    }
-  ]
+  "characters": {
+    "Melee": [
+      {
+        "character": "Fox",
+        "skin": "Fox (1)"
+      },
+      {
+        "character": "Falco",
+        "skin": "Falco (2)"
+      }
+    ],
+    "Project+": [
+      {
+        "character": "Fox",
+        "skin": "Fox (16)"
+      },
+      {
+        "character": "Falco",
+        "skin": "Falco (13)"
+      }
+    ]
+  }
 }
