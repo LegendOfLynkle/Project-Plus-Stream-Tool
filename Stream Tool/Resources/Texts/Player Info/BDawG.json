@@ -8,18 +8,21 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Luigi",
-      "skin": "Luigi (11)"
-    },
-    {
-      "character": "Meta Knight",
-      "skin": "Meta Knight (6)"
-    },
-    {
-      "character": "Zelda",
-      "skin": "Zelda (4)"
-    }
-  ]
+  "characters": {
+    "Melee": [],
+    "Project+": [
+      {
+        "character": "Luigi",
+        "skin": "Luigi (11)"
+      },
+      {
+        "character": "Meta Knight",
+        "skin": "Meta Knight (6)"
+      },
+      {
+        "character": "Zelda",
+        "skin": "Zelda (4)"
+      }
+    ]
+  }
 }

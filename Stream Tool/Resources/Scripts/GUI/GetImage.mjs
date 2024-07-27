@@ -28,7 +28,6 @@ const anonShader = new PPlusRecolor;
  * @returns {String} - Image src
 */
 export async function getRecolorImage(shader, char, skin, colorData, imgType, failPath) {
-
     if (!skin.force && await fileExists(`${stPath.char}/${char}/${imgType}/${skin.name}.png`)) {
 
         // if the image exists and we are not forcing a recolor, send an unmodified image
@@ -91,14 +90,14 @@ export async function getTrailImage(shader, char, skin, color) {
         filePath = `${stPath.char}/${char}/Skins/Default.png`;
 
     }
-    
+
     if (filePath) {
         return await shader.getPPlusRecolor(
             "Trail",
             filePath,
             [127, 127, 127, 1], // any color would do
             [360, 100, 100, 1], // range picks up all colors
-            {hex : color, ea : true}, // with blend true, only 1 color will be applied to everything
+            { hex: color, ea: true }, // with blend true, only 1 color will be applied to everything
         )
     } else {
         // if an image can't be found, return a 1x1 transparent pixel
@@ -117,7 +116,7 @@ export async function genericRecolor(src, color) {
         src,
         [127, 127, 127, 1], // any color would do
         [360, 100, 100, 1], // range picks up all colors
-        {hex : colorForShader, ea : true}, // with blend true, only 1 color will be applied to everything
-    ) 
+        { hex: colorForShader, ea: true }, // with blend true, only 1 color will be applied to everything
+    )
 
 }

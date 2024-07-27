@@ -8,14 +8,17 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Lucario",
-      "skin": "Lucario (1)"
-    },
-    {
-      "character": "Charizard",
-      "skin": "Charizard (1)"
-    }
-  ]
+  "characters": {
+    "Melee": [],
+    "Project+": [
+      {
+        "character": "Lucario",
+        "skin": "Lucario (1)"
+      },
+      {
+        "character": "Charizard",
+        "skin": "Charizard (1)"
+      }
+    ]
+  }
 }

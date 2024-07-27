@@ -8,14 +8,17 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Roy",
-      "skin": "Roy (18)"
-    },
-    {
-      "character": "Sheik",
-      "skin": "Sheik (5)"
-    }
-  ]
+  "characters": {
+    "Melee": [],
+    "Project+": [
+      {
+        "character": "Roy",
+        "skin": "Roy (18)"
+      },
+      {
+        "character": "Sheik",
+        "skin": "Sheik (5)"
+      }
+    ]
+  }
 }

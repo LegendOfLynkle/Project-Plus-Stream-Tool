@@ -8,18 +8,26 @@
     "twitch": "GBlynkle",
     "yt": "@gblynkle"
   },
-  "characters": [
-    {
-      "character": "Mario",
-      "skin": "Mario (20)"
-    },
-    {
-      "character": "Ness",
-      "skin": "Ness (10)"
-    },
-    {
-      "character": "Ike",
-      "skin": "Ike (14)"
-    }
-  ]
+  "characters": {
+    "Melee": [
+      {
+        "character": "Captain Falcon",
+        "skin": "Captain Falcon (5)"
+      }
+    ],
+    "Project+": [
+      {
+        "character": "Mario",
+        "skin": "Mario (20)"
+      },
+      {
+        "character": "Ness",
+        "skin": "Ness (10)"
+      },
+      {
+        "character": "Ike",
+        "skin": "Ike (14)"
+      }
+    ]
+  }
 }

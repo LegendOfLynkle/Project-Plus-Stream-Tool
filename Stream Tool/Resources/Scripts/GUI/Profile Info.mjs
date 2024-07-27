@@ -4,6 +4,7 @@ import { displayNotif } from "./Notifications.mjs";
 import { stPath } from "./Globals.mjs";
 import { playerFinder } from "./Finder/Player Finder.mjs";
 import { commFinder } from "./Finder/Comm Finder.mjs";
+import { settings } from './Settings.mjs';
 
 const flagList = await getJson(stPath.text + "/Flag Names");
 
@@ -22,9 +23,9 @@ class ProfileInfo {
     #twitchInp = document.getElementById("pInfoInputTwitch");
     #ytInp = document.getElementById("pInfoInputYt");
     #twitterInp = document.getElementById("pInfoInputTwitter");
-/*  #bskyInp = document.getElementById("pInfoInputBsky");
-    #mastoInp = document.getElementById("pInfoInputMasto");
-    #cohostInp = document.getElementById("pInfoInputCohost");*/
+    /*  #bskyInp = document.getElementById("pInfoInputBsky");
+        #mastoInp = document.getElementById("pInfoInputMasto");
+        #cohostInp = document.getElementById("pInfoInputCohost");*/
 
     #curProfile;
 
@@ -52,7 +53,7 @@ class ProfileInfo {
 
             // add colors to the list
             flagOption.style.backgroundColor = "var(--bg5)";
-            
+
             this.#flagSelect.appendChild(flagOption);
 
         }
@@ -92,9 +93,9 @@ class ProfileInfo {
         this.#twitterInp.value = socials.twitter || "";
         this.#twitchInp.value = socials.twitch || "";
         this.#ytInp.value = socials.yt || "";
-/*      this.#bskyInp.value = socials.bsky || "";
-        this.#mastoInp.value = socials.masto || "";
-        this.#cohostInp.value = socials.cohost || "";*/
+        /*      this.#bskyInp.value = socials.bsky || "";
+                this.#mastoInp.value = socials.masto || "";
+                this.#cohostInp.value = socials.cohost || "";*/
 
         // give tab index so we can jump from input to input with the keyboard
         this.#setTabIndex(0);
@@ -117,7 +118,7 @@ class ProfileInfo {
         this.#pInfoDiv.style.opacity = 0;
         this.#pInfoDiv.style.transform = "scale(1.15)";
         viewport.opacity("1");
-    
+
         this.#setTabIndex("-1");
 
     }
@@ -134,26 +135,27 @@ class ProfileInfo {
 
     /** Updates player data with values from input fields */
     apply() {
-        
+
         this.#curProfile.pronouns = this.#pronounsInp.value;
         this.#curProfile.setTag(this.#tagInp.value);
         this.#curProfile.setName(this.#nameInp.value);
         this.#curProfile.setState(this.#flagSelect.value);
 
         const socials = {
-            twitter : this.#twitterInp.value,
-            twitch : this.#twitchInp.value,
-            yt : this.#ytInp.value,
-/*          bsky : this.#bskyInp.value,
-            masto : this.#mastoInp.value,
-            cohost : this.#cohostInp.value,*/
+            twitter: this.#twitterInp.value,
+            twitch: this.#twitchInp.value,
+            yt: this.#ytInp.value,
+            /*          bsky : this.#bskyInp.value,
+                        masto : this.#mastoInp.value,
+                        cohost : this.#cohostInp.value,*/
         }
         this.#curProfile.setSocials(socials);
-        
+
     }
 
     async savePreset() {
-    
+
+        const game = settings.selectedGame();
         const preset = {
             name: this.#curProfile.getName(),
             tag: this.#curProfile.getTag(),
@@ -163,31 +165,31 @@ class ProfileInfo {
         }
         if (this.#curProfile.profileType == "player") {
 
-            preset.characters = [{
+            preset.characters[game] = [{
                 character: this.#curProfile.char,
                 skin: this.#curProfile.skin.name
             }];
             if (this.#curProfile.customImg) {
-                preset.characters[0].hex = this.#curProfile.skin.hex;
-                preset.characters[0].customImg = true;
+                preset.characters[game][0].hex = this.#curProfile.skin.hex;
+                preset.characters[game][0].customImg = true;
             }
 
             // if a player preset for this player exists, add already existing characters
             const existingPreset = await getJson(`${stPath.text}/Player Info/${this.#nameInp.value}`)
             if (existingPreset) {
-                
+
                 // add existing characters to the new json, but not if the character is the same
-                for (let i = 0; i < existingPreset.characters.length; i++) {
-                    if (existingPreset.characters[i].character != this.#curProfile.char) {
-                        preset.characters.push(existingPreset.characters[i]);
+                for (let i = 0; i < existingPreset.characters[game].length; i++) {
+                    if (existingPreset.characters[game][i].character != this.#curProfile.char) {
+                        preset.characters[game].push(existingPreset.characters[game][i]);
                     }
                 }
-        
+
             }
 
         }
-    
-        
+
+
         if (this.#curProfile.profileType == "player") {
             saveJson(`/Player Info/${this.#nameInp.value}`, preset);
             displayNotif("Player preset has been saved");
@@ -197,8 +199,8 @@ class ProfileInfo {
             displayNotif("Commentator preset has been saved");
             commFinder.setCasterPresets();
         }
-        
-    
+
+
     }
 
 }

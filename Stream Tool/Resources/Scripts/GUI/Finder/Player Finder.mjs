@@ -4,6 +4,7 @@ import { getRecolorImage } from "../GetImage.mjs";
 // import { customChange, setCurrentPlayer } from "../Custom Skin.mjs";
 import { current, stPath } from "../Globals.mjs";
 import { charFinder } from "./Char Finder.mjs";
+import { settings } from '../Settings.mjs';
 
 class PlayerFinder extends Finder {
 
@@ -42,7 +43,6 @@ class PlayerFinder extends Finder {
 
             // check the files in that folder
             skinImgs = await this.#generatePresetList(player);
-
         }
 
         // if we got some presets, show up finder
@@ -60,6 +60,7 @@ class PlayerFinder extends Finder {
 
         const skinImgs = [];
         let presetOnList;
+        const game = settings.selectedGame();
 
         for (let i = 0; i < this.#playerPresets.length; i++) {
 
@@ -69,17 +70,17 @@ class PlayerFinder extends Finder {
             if (preset.name.toLocaleLowerCase().includes(player.getName().toLocaleLowerCase())) {
 
                 // for each character that player plays
-                for (let i = 0; i < preset.characters.length; i++) {
-                    
+                for (let i = 0; i < preset.characters[game].length; i++) {
+
                     // only do all of this if the char is present on the current list
-                    if (charFinder.isCharOnList(preset.characters[i].character)) {
+                    if (charFinder.isCharOnList(preset.characters[game][i].character)) {
 
                         presetOnList = true;
-                        
+
                         // this will be the div to click
                         const newDiv = document.createElement('div');
                         newDiv.className = "finderEntry";
-                        
+
                         //create the texts for the div, starting with the tag
                         const spanTag = document.createElement('span');
                         //if the tag is empty, dont do anything
@@ -95,18 +96,18 @@ class PlayerFinder extends Finder {
 
                         // player character
                         const spanChar = document.createElement('span');
-                        spanChar.innerHTML = preset.characters[i].character;
+                        spanChar.innerHTML = preset.characters[game][i].character;
                         spanChar.className = "pfChar";
 
                         // data to be accessed when clicked
                         const pData = {
-                            name : preset.name,
-                            tag : preset.tag,
-                            pronouns : preset.pronouns,
-                            state : preset.state,
-                            socials : preset.socials,
-                            char : preset.characters[i].character,
-                            skin : preset.characters[i].skin,
+                            name: preset.name,
+                            tag: preset.tag,
+                            pronouns: preset.pronouns,
+                            state: preset.state,
+                            socials: preset.socials,
+                            char: preset.characters[game][i].character,
+                            skin: preset.characters[game][i].skin,
                             // hex : preset.characters[i].hex,
                             // customImg : preset.characters[i].customImg
                         }
@@ -123,18 +124,18 @@ class PlayerFinder extends Finder {
                         // actual image
                         const charImg = document.createElement('img');
                         charImg.className = "pfCharImg";
-                        const charJson = await getJson(`${stPath.char}/${preset.characters[i].character}/_Info`);
+                        const charJson = await getJson(`${stPath.char}/${preset.characters[game][i].character}/_Info`);
                         // we will store this for later
                         skinImgs.push({
-                            el : charImg,
-                            charJson : charJson,
-                            char : preset.characters[i].character,
-                            skin : preset.characters[i].skin,
+                            el: charImg,
+                            charJson: charJson,
+                            char: preset.characters[game][i].character,
+                            skin: preset.characters[game][i].skin,
                             // hex : preset.characters[i].hex,
                             // customImg : preset.characters[i].customImg,
                         });
                         // we have to position it
-                        this.positionCharImg(preset.characters[i].skin, charImg, charJson);
+                        this.positionCharImg(preset.characters[game][i].skin, charImg, charJson);
                         // and add it to the mask
                         charImgBox.appendChild(charImg);
 
@@ -159,7 +160,7 @@ class PlayerFinder extends Finder {
 
                 // if a preset was found, but no entries had characters from the current list
                 if (!presetOnList) {
-                    
+
                     // push an entry with no character so player info is easy to set up
                     // same code as before
                     const newDiv = document.createElement('div');
@@ -176,13 +177,13 @@ class PlayerFinder extends Finder {
                     spanChar.innerHTML = "Random";
                     spanChar.className = "pfChar";
                     const pData = {
-                        name : preset.name,
-                        tag : preset.tag,
-                        pronouns : preset.pronouns,
-                        state : preset.state,
-                        socials : preset.socials,
-                        char : "Random",
-                        skin : {name: "Default"}
+                        name: preset.name,
+                        tag: preset.tag,
+                        pronouns: preset.pronouns,
+                        state: preset.state,
+                        socials: preset.socials,
+                        char: "Random",
+                        skin: { name: "Default" }
                     }
                     newDiv.appendChild(spanTag);
                     newDiv.appendChild(spanName);
@@ -193,10 +194,10 @@ class PlayerFinder extends Finder {
                     charImg.className = "pfCharImg";
                     const charJson = null;
                     skinImgs.push({
-                        el : charImg,
-                        charJson : charJson,
-                        char : "Random",
-                        skin : {name: "Default"}
+                        el: charImg,
+                        charJson: charJson,
+                        char: "Random",
+                        skin: { name: "Default" }
                     });
                     this.positionCharImg(null, charImg, charJson);
                     charImgBox.appendChild(charImg);
@@ -230,7 +231,6 @@ class PlayerFinder extends Finder {
             let skin;
             if (skinImgs[i].charJson) { // if a character is found
                 for (let j = 0; j < skinImgs[i].charJson.skinList.length; j++) {
-
                     // cicle through the skin list to find the one
                     if (skinImgs[i].charJson.skinList[j].name == skinImgs[i].skin) {
 
@@ -252,9 +252,9 @@ class PlayerFinder extends Finder {
                     }
                 }
             } else {
-                skin = {name: skinImgs[i].skin}
+                skin = { name: skinImgs[i].skin }
             }
-            
+
             let finalColorData = null;
             if (skinImgs[i].charJson) {
                 finalColorData = skinImgs[i].charJson.colorData;
@@ -300,7 +300,7 @@ class PlayerFinder extends Finder {
             setCurrentPlayer(player);
             customChange(pData.hex, pData.skin);
         } else { */ // search for all skins for name matches
-            player.skinChange(player.findSkin(pData.skin));
+        player.skinChange(player.findSkin(pData.skin));
         // }
 
         // and hide the finder of course

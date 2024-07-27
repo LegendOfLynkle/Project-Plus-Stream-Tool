@@ -8,14 +8,22 @@
     "twitch": "",
     "yt": ""
   },
-  "characters": [
-    {
-      "character": "Ness",
-      "skin": "Ness (1)"
-    },
-    {
-      "character": "King Dedede",
-      "skin": "King Dedede (1)"
-    }
-  ]
+  "characters": {
+    "Melee": [
+      {
+        "character": "Sheik",
+        "skin": "Sheik (4)"
+      }
+    ],
+    "Project+": [
+      {
+        "character": "Ness",
+        "skin": "Ness (1)"
+      },
+      {
+        "character": "King Dedede",
+        "skin": "King Dedede (1)"
+      }
+    ]
+  }
 }
