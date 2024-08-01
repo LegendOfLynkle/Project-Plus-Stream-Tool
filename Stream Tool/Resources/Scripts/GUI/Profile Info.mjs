@@ -162,9 +162,9 @@ class ProfileInfo {
             pronouns: this.#curProfile.getPronouns(),
             state: this.#curProfile.getState(),
             socials: this.#curProfile.getSocials(),
+            characters: {"Melee": [], "Project+": []}
         }
         if (this.#curProfile.profileType == "player") {
-
             preset.characters[game] = [{
                 character: this.#curProfile.char,
                 skin: this.#curProfile.skin.name
@@ -177,16 +177,17 @@ class ProfileInfo {
             // if a player preset for this player exists, add already existing characters
             const existingPreset = await getJson(`${stPath.text}/Player Info/${this.#nameInp.value}`)
             if (existingPreset) {
-
-                // add existing characters to the new json, but not if the character is the same
-                for (let i = 0; i < existingPreset.characters[game].length; i++) {
-                    if (existingPreset.characters[game][i].character != this.#curProfile.char) {
-                        preset.characters[game].push(existingPreset.characters[game][i]);
+                // Make sure we save presets for both games
+                let games = ["Melee", "Project+"];
+                games.forEach((x) => {
+                    // add existing characters to the new json, but not if the character is the same
+                    for (let i = 0; i < existingPreset.characters[x].length; i++) {
+                        if (existingPreset.characters[x][i].character != this.#curProfile.char) {
+                            preset.characters[x].push(existingPreset.characters[x][i]);
+                        }
                     }
-                }
-
+                });
             }
-
         }
 
 

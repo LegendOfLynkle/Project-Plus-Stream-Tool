@@ -94,7 +94,8 @@ class GuiSettings {
         document.getElementById('gameSelector').addEventListener("change", (x) => {
             // this.#selectedGame = x.target.value;
             this.save("selectedGame", x.target.value);
-            // Re-initialise everything by reloading the page
+            viewport.toCenter();
+            // Re-initialise everything by reloading the page cause it is an easy way to load into the new settings
             location.reload();
         });
 
