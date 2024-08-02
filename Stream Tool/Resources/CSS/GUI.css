@@ -890,6 +890,21 @@ button:hover {
   background-color: var(--bg2);
 }
 
+.settingBoxVertical {
+  padding: 2px 0px 2px 5px;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 240px;
+}
+
+.settingBoxInnerAligned > #aussmash {
+  width: 140px;
+}
+
+
 .settingsCheck {
   outline: none;
   margin-right: 4px;

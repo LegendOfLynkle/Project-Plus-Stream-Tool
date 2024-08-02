@@ -34,6 +34,8 @@ class GuiSettings {
     #zoomValue = 100;
     #restoreWindowButt = document.getElementById("restoreWindowButt");
     #selectedGame = document.getElementById("gameSelector");
+    #startGG = document.getElementById("startGG");
+    #aussmash = document.getElementById("aussmash");
 
     constructor() {
 
@@ -98,6 +100,10 @@ class GuiSettings {
             // Re-initialise everything by reloading the page cause it is an easy way to load into the new settings
             location.reload();
         });
+        // Pressing the Save API Keys button actually does something
+        document.getElementById('saveApiKeys').addEventListener("click", (x) => {
+            this.saveSecrets();
+        });
 
     }
 
@@ -106,6 +112,7 @@ class GuiSettings {
 
         // get us the json file
         const guiSettings = await getJson(`${stPath.text}/GUI Settings`);
+        const secrets = await getJson(`${stPath.text}/API Keys`);
 
         // and update it all!
         this.#introCheck.checked = guiSettings.allowIntro;
@@ -123,6 +130,8 @@ class GuiSettings {
         this.#invertScoreCheck.checked = guiSettings.invertScore;
         this.#simpleTextsCheck.checked = guiSettings.simpleTexts;
         this.#selectedGame.value = guiSettings.selectedGame;
+        this.#startGG.value = secrets.startGG;
+        this.#aussmash.value = secrets.aussmash;
 
         if (inside.electron) {
             this.#alwaysOnTopCheck.checked = guiSettings.alwaysOnTop;
@@ -154,6 +163,23 @@ class GuiSettings {
         }
 
     }
+
+    async saveSecrets() {
+   
+        if (inside.electron) {
+            // read the file
+            const secrets = await getJson(`${stPath.text}/API Keys`);
+
+            // update the setting's value
+            secrets["startGG"] = this.#startGG.value;
+            secrets["aussmash"] = this.#aussmash.value;
+
+            // save the file
+            saveJson(`/API Keys`, secrets);
+        }
+
+    }
+
 
     setIntro(value) {
         this.#introCheck.checked = value;
