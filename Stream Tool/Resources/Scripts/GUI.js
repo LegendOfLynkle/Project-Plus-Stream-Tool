@@ -39,6 +39,14 @@ export async function init() {
     
     // we need to set the current char path
     await settings.load();
+    if(settings.startGGManagement.checked) {
+        let t = document.getElementById("tournamentName");
+        t.placeholder = "Event Link";
+        t.addEventListener("change", (x) => {
+            settings.startgg.eventLink = x;
+        });
+    }
+
     stPath.char = stPath.charBase + "/" + settings.selectedGame();
 
     // colors need to be up and running before players

@@ -36,6 +36,10 @@ class GuiSettings {
     #selectedGame = document.getElementById("gameSelector");
     #startGG = document.getElementById("startGG");
     #aussmash = document.getElementById("aussmash");
+    startGGManagement = document.getElementById("startGGManagement");
+    startgg = {
+        "eventLink": ""
+    }
 
     constructor() {
 
@@ -67,6 +71,15 @@ class GuiSettings {
         });
         this.#simpleTextsCheck.addEventListener("click", () => {
             this.save("simpleTexts", this.isSimpleTextsChecked())
+        });
+        this.startGGManagement.addEventListener("click", () => {
+            this.save("startGGManagement", this.startGGManagement.checked)
+            let t = document.getElementById("tournamentName");
+            if(this.startGGManagement.checked){
+                t.placeholder = "Event Link"
+            }else{
+                t.placeholder = "Tournament Name"
+            }
         });
 
         // dont forget about the copy match to clipboard button
@@ -132,6 +145,8 @@ class GuiSettings {
         this.#selectedGame.value = guiSettings.selectedGame;
         this.#startGG.value = secrets.startGG;
         this.#aussmash.value = secrets.aussmash;
+        this.startGGManagement.checked = guiSettings.startGGManagement;
+        this.startgg = guiSettings.startgg;
 
         if (inside.electron) {
             this.#alwaysOnTopCheck.checked = guiSettings.alwaysOnTop;
@@ -141,7 +156,6 @@ class GuiSettings {
             this.#zoomValue = guiSettings.zoom;
             this.#changeZoom();
         }
-        
     }
 
     /**

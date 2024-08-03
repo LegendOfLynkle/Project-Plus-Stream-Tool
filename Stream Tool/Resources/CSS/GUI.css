@@ -653,8 +653,19 @@ button:hover {
   background-color: var(--bg2);
 }
 
+#startGGLogo {
+  height: 20px;
+}
 
-#roundName, #roundNameSelect, #tournamentName {
+#startGGSettingsTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#roundName, #roundNameSelect, #tournamentName { 
   width: 100%;
   text-align: center;
 }
@@ -730,6 +741,29 @@ button:hover {
   border-bottom-right-radius: 3px;
 }
 
+#startGGButton {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--focused);
+  border-radius: 3px;
+  transition: border-color 100ms, opacity 100ms;
+  background-color: var(--bg4);
+  padding: 1px 5px 1px 5px;
+  height: 30px;
+}
+#startGGButton:hover {
+  border-color: var(--selected);
+}
+#startGGButton:active {
+  background-color: var(--bg2);
+}
+#startGGButton:disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+#startGGButton > img {
+  height: 20px;
+}
 
 #addCasterButt {
   display: flex;
@@ -885,6 +919,7 @@ button:hover {
   display: flex;
   outline: none;
   justify-content: center;
+  gap: 4px;
 }
 .settingBox:hover {
   background-color: var(--bg2);
