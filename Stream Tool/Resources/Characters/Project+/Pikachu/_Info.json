@@ -1,79 +1,79 @@
 {
-    "skinList": [
-        {
-            "name": "Pikachu (1)"
-        },
-        {
-            "name": "Pikachu (2)"
-        },
-        {
-            "name": "Pikachu (3)"
-        },
-        {
-            "name": "Pikachu (4)"
-        },
-        {
-            "name": "Pikachu (5)"
-        },
-        {
-            "name": "Pikachu (6)"
-        },
-        {
-            "name": "Pikachu (7)"
-        },
-        {
-            "name": "Pikachu (8)"
-        },
-        {
-            "name": "Pikachu (9)"
-        },
-        {
-            "name": "Pikachu (10)"
-        },
-        {
-            "name": "Pikachu (11)"
-        },
-        {
-            "name": "Pikachu (12)"
-        },
-        {
-            "name": "Pikachu (13)"
-        },
-        {
-            "name": "Pikachu (14)"
-        },
-        {
-            "name": "Pikachu (15)"
-        },
-		{
-            "name": "Pikachu (16)"
-        },
-		{
-            "name": "Pikachu (17)"
-        },
-		{
-            "name": "Pikachu (18)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 5,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Pikachu (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 60,
-            "scale": 2
-        }
+    {
+      "name": "Pikachu (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Pikachu (3)"
+    },
+    {
+      "name": "Pikachu (4)"
+    },
+    {
+      "name": "Pikachu (5)"
+    },
+    {
+      "name": "Pikachu (6)"
+    },
+    {
+      "name": "Pikachu (7)"
+    },
+    {
+      "name": "Pikachu (8)"
+    },
+    {
+      "name": "Pikachu (9)"
+    },
+    {
+      "name": "Pikachu (10)"
+    },
+    {
+      "name": "Pikachu (11)"
+    },
+    {
+      "name": "Pikachu (12)"
+    },
+    {
+      "name": "Pikachu (13)"
+    },
+    {
+      "name": "Pikachu (14)"
+    },
+    {
+      "name": "Pikachu (15)"
+    },
+    {
+      "name": "Pikachu (16)"
+    },
+    {
+      "name": "Pikachu (17)"
+    },
+    {
+      "name": "Pikachu (18)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 5,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 60,
+      "scale": 2
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

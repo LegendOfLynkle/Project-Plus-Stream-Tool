@@ -1,91 +1,91 @@
 {
-    "skinList": [
-        {
-            "name": "Roy (1)"
-        },
-        {
-            "name": "Roy (2)"
-        },
-        {
-            "name": "Roy (3)"
-        },
-        {
-            "name": "Roy (4)"
-        },
-        {
-            "name": "Roy (5)"
-        },
-        {
-            "name": "Roy (6)"
-        },
-        {
-            "name": "Roy (7)"
-        },
-        {
-            "name": "Roy (8)"
-        },
-        {
-            "name": "Roy (9)"
-        },
-        {
-            "name": "Roy (10)"
-        },
-        {
-            "name": "Roy (11)"
-        },
-        {
-            "name": "Roy (12)"
-        },
-        {
-            "name": "Roy (13)"
-        },
-        {
-            "name": "Roy (14)"
-        },
-        {
-            "name": "Roy (15)"
-        },
-        {
-            "name": "Roy (16)"
-        },
-        {
-            "name": "Roy (17)"
-        },
-        {
-            "name": "Roy (18)"
-        },
-        {
-            "name": "Roy (19)"
-        },
-        {
-            "name": "Roy (20)"
-        },
-        {
-            "name": "Roy (21)"
-        },
-        {
-            "name": "Roy (22)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Roy (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Roy (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Roy (3)"
+    },
+    {
+      "name": "Roy (4)"
+    },
+    {
+      "name": "Roy (5)"
+    },
+    {
+      "name": "Roy (6)"
+    },
+    {
+      "name": "Roy (7)"
+    },
+    {
+      "name": "Roy (8)"
+    },
+    {
+      "name": "Roy (9)"
+    },
+    {
+      "name": "Roy (10)"
+    },
+    {
+      "name": "Roy (11)"
+    },
+    {
+      "name": "Roy (12)"
+    },
+    {
+      "name": "Roy (13)"
+    },
+    {
+      "name": "Roy (14)"
+    },
+    {
+      "name": "Roy (15)"
+    },
+    {
+      "name": "Roy (16)"
+    },
+    {
+      "name": "Roy (17)"
+    },
+    {
+      "name": "Roy (18)"
+    },
+    {
+      "name": "Roy (19)"
+    },
+    {
+      "name": "Roy (20)"
+    },
+    {
+      "name": "Roy (21)"
+    },
+    {
+      "name": "Roy (22)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

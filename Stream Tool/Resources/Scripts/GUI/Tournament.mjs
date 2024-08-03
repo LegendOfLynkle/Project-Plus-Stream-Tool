@@ -1,14 +1,12 @@
 class Tournament {
+  #tournamentInp = document.getElementById("tournamentName");
 
-    #tournamentInp = document.getElementById('tournamentName');
-
-    getText() {
-        return this.#tournamentInp.value;
-    }
-    setText(text) {
-        this.#tournamentInp.value = text;
-    }
-
+  getText() {
+    return this.#tournamentInp.value;
+  }
+  setText(text) {
+    this.#tournamentInp.value = text;
+  }
 }
 
-export const tournament = new Tournament;
+export const tournament = new Tournament();

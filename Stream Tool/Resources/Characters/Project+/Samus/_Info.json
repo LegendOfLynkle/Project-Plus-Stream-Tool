@@ -1,88 +1,88 @@
 {
-    "skinList": [
-        {
-            "name": "Samus (1)"
-        },
-        {
-            "name": "Samus (2)"
-        },
-        {
-            "name": "Samus (3)"
-        },
-        {
-            "name": "Samus (4)"
-        },
-        {
-            "name": "Samus (5)"
-        },
-        {
-            "name": "Samus (6)"
-        },
-        {
-            "name": "Samus (7)"
-        },
-        {
-            "name": "Samus (8)"
-        },
-        {
-            "name": "Samus (9)"
-        },
-        {
-            "name": "Samus (10)"
-        },
-        {
-            "name": "Samus (11)"
-        },
-        {
-            "name": "Samus (12)"
-        },
-        {
-            "name": "Samus (13)"
-        },
-        {
-            "name": "Samus (14)"
-        },
-        {
-            "name": "Samus (15)"
-        },
-        {
-            "name": "Samus (16)"
-        },
-        {
-            "name": "Samus (17)"
-        },
-        {
-            "name": "Samus (18)"
-        },
-        {
-            "name": "Samus (19)"
-        },
-        {
-            "name": "Samus (20)"
-        },
-        {
-            "name": "Samus (21)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Samus (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Samus (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Samus (3)"
+    },
+    {
+      "name": "Samus (4)"
+    },
+    {
+      "name": "Samus (5)"
+    },
+    {
+      "name": "Samus (6)"
+    },
+    {
+      "name": "Samus (7)"
+    },
+    {
+      "name": "Samus (8)"
+    },
+    {
+      "name": "Samus (9)"
+    },
+    {
+      "name": "Samus (10)"
+    },
+    {
+      "name": "Samus (11)"
+    },
+    {
+      "name": "Samus (12)"
+    },
+    {
+      "name": "Samus (13)"
+    },
+    {
+      "name": "Samus (14)"
+    },
+    {
+      "name": "Samus (15)"
+    },
+    {
+      "name": "Samus (16)"
+    },
+    {
+      "name": "Samus (17)"
+    },
+    {
+      "name": "Samus (18)"
+    },
+    {
+      "name": "Samus (19)"
+    },
+    {
+      "name": "Samus (20)"
+    },
+    {
+      "name": "Samus (21)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

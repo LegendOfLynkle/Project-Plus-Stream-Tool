@@ -11,183 +11,170 @@ const playerSizeDubs = 20;
 const tagSizeDubs = 15;
 
 export class PlayerName {
+  #name = "";
+  #tag = "";
+  #state = "";
 
-    #name = "";
-    #tag = "";
-    #state = "";
+  #nameEl;
+  #tagEl;
+  #wrapperEl;
 
-    #nameEl;
-    #tagEl;
-    #wrapperEl;
+  #stateImg;
+  #imgSrc;
 
-    #stateImg;
-    #imgSrc;
+  #side = false;
 
-    #side = false;
+  /**
+   * Controls the player's name and tags + state
+   * @param {HTMLElement} nameEl - Name element
+   * @param {HTMLElement} tagEl - Tag element
+   * @param {HTMLElement} stateImg - state image element
+   * @param {Number} id - Player Slot
+   */
+  constructor(nameEl, tagEl, stateImg, id) {
+    this.#nameEl = nameEl;
+    this.#tagEl = tagEl;
+    this.#stateImg = stateImg;
+    this.#wrapperEl = nameEl.parentElement;
+    // this determines the direction of fade movements
+    this.#side = !(id % 2 == 0);
+  }
 
-    /**
-     * Controls the player's name and tags + state
-     * @param {HTMLElement} nameEl - Name element
-     * @param {HTMLElement} tagEl - Tag element
-     * @param {HTMLElement} stateImg - state image element
-     * @param {Number} id - Player Slot
-     */
-    constructor(nameEl, tagEl, stateImg, id) {
-        this.#nameEl = nameEl;
-        this.#tagEl = tagEl;
-        this.#stateImg = stateImg;
-        this.#wrapperEl = nameEl.parentElement;
-        // this determines the direction of fade movements
-        this.#side = !(id % 2 == 0);
+  getName() {
+    return this.#name;
+  }
+  #setName(name) {
+    // set the displayed text
+    this.#nameEl.innerHTML = name;
+
+    // resize it depending on the gamemode
+    if (gamemode.getGm() == 1) {
+      this.#nameEl.style.fontSize = playerSize + "px";
+    } else {
+      this.#nameEl.style.fontSize = playerSizeDubs + "px";
+    }
+  }
+
+  getTag() {
+    return this.#tag;
+  }
+  #setTag(tag) {
+    // set the displayed text
+    this.#tagEl.innerHTML = tag;
+
+    // resize it depending on the gamemode
+    if (gamemode.getGm() == 1) {
+      this.#tagEl.style.fontSize = tagSize + "px";
+    } else {
+      this.#tagEl.style.fontSize = tagSizeDubs + "px";
+    }
+  }
+
+  getState() {
+    return this.#state;
+  }
+
+  /**
+   * Update player name and tag + state, fading them out and in
+   * @param {String} name - Name of the player
+   * @param {String} tag - Tag of the player
+   * @param {String} state - The player's state
+   */
+  async update(name, tag, state) {
+    // update internal variables
+    this.#name = name;
+    this.#tag = tag;
+    this.#state = state;
+
+    // if the image to show changed
+    if (this.#imgSrc != `Resources/SVGs/Flags/${state}.svg`) {
+      // store for later
+      this.#imgSrc = `Resources/SVGs/Flags/${state}.svg`;
     }
 
-    getName() {
-        return this.#name;
-    }
-    #setName(name) {
+    let delayTime = current.delay;
 
-        // set the displayed text
-        this.#nameEl.innerHTML = name;
-
-        // resize it depending on the gamemode
-        if (gamemode.getGm() == 1) {
-            this.#nameEl.style.fontSize = playerSize + "px";
-        } else {
-            this.#nameEl.style.fontSize = playerSizeDubs + "px";
-        }
-
+    // if not loading up
+    if (!current.startup) {
+      // we wont need delay
+      delayTime = 0;
+      // wait for the fadeout to proceed
+      if (gamemode.getGm() == 2) {
+        await fadeOut(this.#wrapperEl, fadeOutTimeSc);
+      } else {
+        await fadeOutMove(this.#wrapperEl, null, this.#side);
+      }
     }
 
-    getTag() {
-        return this.#tag;
-    }
-    #setTag(tag) {
+    // update them texts
+    this.#setName(name);
+    this.#setTag(tag);
+    this.#stateImg.src = this.#imgSrc;
+    resizeText(this.#wrapperEl);
 
-        // set the displayed text
-        this.#tagEl.innerHTML = tag;
-
-        // resize it depending on the gamemode
-        if (gamemode.getGm() == 1) {
-            this.#tagEl.style.fontSize = tagSize + "px";
-        } else {
-            this.#tagEl.style.fontSize = tagSizeDubs + "px";
-        }
-
-    }
-
-    getState() {
-        return this.#state;
+    // and fade everything in!
+    if (this.getName() || this.getTag() || this.getState()) {
+      // only if theres content
+      if (gamemode.getGm() == 2) {
+        fadeIn(this.#wrapperEl, fadeInTimeSc, delayTime);
+      } else {
+        fadeInMove(this.#wrapperEl, null, this.#side, delayTime);
+      }
     }
 
-    /**
-     * Update player name and tag + state, fading them out and in
-     * @param {String} name - Name of the player
-     * @param {String} tag - Tag of the player
-     * @param {String} state - The player's state
-     */
-    async update(name, tag, state) {
-
-        // update internal variables
-        this.#name = name;
-        this.#tag = tag;
-        this.#state = state;
-                
-        // if the image to show changed
-        if (this.#imgSrc != `Resources/SVGs/Flags/${state}.svg`) {
-
-            // store for later
-            this.#imgSrc = `Resources/SVGs/Flags/${state}.svg`;
-        }
-
-        let delayTime = current.delay;
-
-        // if not loading up
-        if (!current.startup) {
-
-            // we wont need delay
-            delayTime = 0;
-            // wait for the fadeout to proceed
-            if (gamemode.getGm() == 2) {
-                await fadeOut(this.#wrapperEl, fadeOutTimeSc);
-            } else {
-                await fadeOutMove(this.#wrapperEl, null, this.#side);
-            }
-
-        }
-
-        // update them texts
-        this.#setName(name);
-        this.#setTag(tag);
-        this.#stateImg.src = this.#imgSrc;
-        resizeText(this.#wrapperEl);
-
-        // and fade everything in!
-        if (this.getName() || this.getTag() || this.getState()) { // only if theres content
-            if (gamemode.getGm() == 2) {
-                fadeIn(this.#wrapperEl, fadeInTimeSc, delayTime);
-            } else {
-                fadeInMove(this.#wrapperEl, null, this.#side, delayTime);
-            }
-            
-        }
-
-        if (state) {
-            this.#stateImg.style.display = "inline";
-          } else {
-            this.#stateImg.style.display = "none";
-          }
-
+    if (state) {
+      this.#stateImg.style.display = "inline";
+    } else {
+      this.#stateImg.style.display = "none";
     }
+  }
 
-    /**
-     * Adapts the text elements depending on the gamemode
-     * @param {Number} gamemode - Gamemode to change to
-     */
-    changeGm(gamemode) {
+  /**
+   * Adapts the text elements depending on the gamemode
+   * @param {Number} gamemode - Gamemode to change to
+   */
+  changeGm(gamemode) {
+    if (gamemode == 2) {
+      // doubles
 
-        if (gamemode == 2) { // doubles
-            
-            // remove and add doubles classes
-            this.#wrapperEl.classList.remove("wrappersSingles");
-			this.#wrapperEl.classList.add("wrappersDubs");
-			// update the text size and resize it if it overflows
-			this.#nameEl.style.fontSize = playerSizeDubs + "px";
-			this.#tagEl.style.fontSize = tagSizeDubs + "px";
-            // and, of course, resize it
-			resizeText(this.#wrapperEl);
+      // remove and add doubles classes
+      this.#wrapperEl.classList.remove("wrappersSingles");
+      this.#wrapperEl.classList.add("wrappersDubs");
+      // update the text size and resize it if it overflows
+      this.#nameEl.style.fontSize = playerSizeDubs + "px";
+      this.#tagEl.style.fontSize = tagSizeDubs + "px";
+      // and, of course, resize it
+      resizeText(this.#wrapperEl);
 
-            // move that text
-            if (this.#side == 1) {
-                this.#wrapperEl.style.left = "257px";
-            } else {
-                this.#wrapperEl.style.right = "257px";
-            }
+      // move that text
+      if (this.#side == 1) {
+        this.#wrapperEl.style.left = "257px";
+      } else {
+        this.#wrapperEl.style.right = "257px";
+      }
+    } else {
+      // singles
 
-        } else { // singles
-            
-            // same as doubles, but for singles
-            this.#wrapperEl.classList.add("wrappersSingles");
-			this.#wrapperEl.classList.remove("wrappersDubs");
-			this.#nameEl.style.fontSize = playerSize + "px";
-			this.#tagEl.style.fontSize = tagSize + "px";
-			resizeText(this.#wrapperEl);
-            if (this.#side) {
-                this.#wrapperEl.style.left = "38px";
-            } else {
-                this.#wrapperEl.style.right = "38px";
-            }
-
-        }
-
+      // same as doubles, but for singles
+      this.#wrapperEl.classList.add("wrappersSingles");
+      this.#wrapperEl.classList.remove("wrappersDubs");
+      this.#nameEl.style.fontSize = playerSize + "px";
+      this.#tagEl.style.fontSize = tagSize + "px";
+      resizeText(this.#wrapperEl);
+      if (this.#side) {
+        this.#wrapperEl.style.left = "38px";
+      } else {
+        this.#wrapperEl.style.right = "38px";
+      }
     }
+  }
 
-    /** Displays the text wrapper, fading it in */
-    show() {
-        if (gamemode.getGm() == 2) {
-            fadeIn(this.#wrapperEl, fadeInTimeSc, current.delay);
-        } else {
-            fadeInMove(this.#wrapperEl, null, this.#side, current.delay);
-        }
+  /** Displays the text wrapper, fading it in */
+  show() {
+    if (gamemode.getGm() == 2) {
+      fadeIn(this.#wrapperEl, fadeInTimeSc, current.delay);
+    } else {
+      fadeInMove(this.#wrapperEl, null, this.#side, current.delay);
     }
-
+  }
 }

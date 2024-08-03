@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Olimar (1)"
-        },
-        {
-            "name": "Olimar (2)"
-        },
-        {
-            "name": "Olimar (3)"
-        },
-        {
-            "name": "Olimar (4)"
-        },
-        {
-            "name": "Olimar (5)"
-        },
-        {
-            "name": "Olimar (6)"
-        },
-        {
-            "name": "Olimar (7)"
-        },
-        {
-            "name": "Olimar (8)"
-        },
-        {
-            "name": "Olimar (9)"
-        },
-        {
-            "name": "Olimar (10)"
-        },
-        {
-            "name": "Olimar (11)"
-        },
-        {
-            "name": "Olimar (12)"
-        },
-        {
-            "name": "Olimar (13)"
-        },
-        {
-            "name": "Olimar (14)"
-        },
-        {
-            "name": "Olimar (15)"
-        },
-        {
-            "name": "Olimar (16)"
-        },
-        {
-            "name": "Olimar (17)"
-        },
-        {
-            "name": "Olimar (18)"
-        },
-        {
-            "name": "Olimar (19)"
-        },
-        {
-            "name": "Olimar (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 45,
-            "y": 5,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Olimar (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 60,
-            "scale": 2.5
-        }
+    {
+      "name": "Olimar (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Olimar (3)"
+    },
+    {
+      "name": "Olimar (4)"
+    },
+    {
+      "name": "Olimar (5)"
+    },
+    {
+      "name": "Olimar (6)"
+    },
+    {
+      "name": "Olimar (7)"
+    },
+    {
+      "name": "Olimar (8)"
+    },
+    {
+      "name": "Olimar (9)"
+    },
+    {
+      "name": "Olimar (10)"
+    },
+    {
+      "name": "Olimar (11)"
+    },
+    {
+      "name": "Olimar (12)"
+    },
+    {
+      "name": "Olimar (13)"
+    },
+    {
+      "name": "Olimar (14)"
+    },
+    {
+      "name": "Olimar (15)"
+    },
+    {
+      "name": "Olimar (16)"
+    },
+    {
+      "name": "Olimar (17)"
+    },
+    {
+      "name": "Olimar (18)"
+    },
+    {
+      "name": "Olimar (19)"
+    },
+    {
+      "name": "Olimar (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 45,
+      "y": 5,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 60,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

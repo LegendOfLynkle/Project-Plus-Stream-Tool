@@ -1,82 +1,82 @@
 {
-    "skinList": [
-        {
-            "name": "Charizard (1)"
-        },
-        {
-            "name": "Charizard (2)"
-        },
-        {
-            "name": "Charizard (3)"
-        },
-        {
-            "name": "Charizard (4)"
-        },
-        {
-            "name": "Charizard (5)"
-        },
-        {
-            "name": "Charizard (6)"
-        },
-        {
-            "name": "Charizard (7)"
-        },
-        {
-            "name": "Charizard (8)"
-        },
-        {
-            "name": "Charizard (9)"
-        },
-        {
-            "name": "Charizard (10)"
-        },
-        {
-            "name": "Charizard (11)"
-        },
-        {
-            "name": "Charizard (12)"
-        },
-        {
-            "name": "Charizard (13)"
-        },
-        {
-            "name": "Charizard (14)"
-        },
-        {
-            "name": "Charizard (15)"
-        },
-        {
-            "name": "Charizard (16)"
-        },
-        {
-            "name": "Charizard (17)"
-        },
-        {
-            "name": "Charizard (18)"
-        },
-        {
-            "name": "Charizard (19)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Charizard (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 170,
-            "scale": 2.5
-        }
+    {
+      "name": "Charizard (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Charizard (3)"
+    },
+    {
+      "name": "Charizard (4)"
+    },
+    {
+      "name": "Charizard (5)"
+    },
+    {
+      "name": "Charizard (6)"
+    },
+    {
+      "name": "Charizard (7)"
+    },
+    {
+      "name": "Charizard (8)"
+    },
+    {
+      "name": "Charizard (9)"
+    },
+    {
+      "name": "Charizard (10)"
+    },
+    {
+      "name": "Charizard (11)"
+    },
+    {
+      "name": "Charizard (12)"
+    },
+    {
+      "name": "Charizard (13)"
+    },
+    {
+      "name": "Charizard (14)"
+    },
+    {
+      "name": "Charizard (15)"
+    },
+    {
+      "name": "Charizard (16)"
+    },
+    {
+      "name": "Charizard (17)"
+    },
+    {
+      "name": "Charizard (18)"
+    },
+    {
+      "name": "Charizard (19)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 170,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

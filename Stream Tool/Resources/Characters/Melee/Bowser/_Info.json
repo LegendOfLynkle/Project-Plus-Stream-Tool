@@ -1,37 +1,37 @@
 {
-    "skinList": [
-        {
-            "name": "Bowser (1)"
-        },
-        {
-            "name": "Bowser (2)"
-        },
-        {
-            "name": "Bowser (3)"
-        },
-        {
-            "name": "Bowser (4)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 20,
-            "y": -4,
-            "scale": "-1.5, 1.5"
-        }
+  "skinList": [
+    {
+      "name": "Bowser (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -700,
-            "y": 28,
-            "scale": "-1.8, 1.8"
-        }
+    {
+      "name": "Bowser (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 1.5
-        }
+    {
+      "name": "Bowser (3)"
+    },
+    {
+      "name": "Bowser (4)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 20,
+      "y": -4,
+      "scale": "-1.5, 1.5"
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -700,
+      "y": 28,
+      "scale": "-1.8, 1.8"
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 1.5
+    }
+  }
 }

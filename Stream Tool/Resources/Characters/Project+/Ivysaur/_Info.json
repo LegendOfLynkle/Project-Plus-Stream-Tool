@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Ivysaur (1)"
-        },
-        {
-            "name": "Ivysaur (2)"
-        },
-        {
-            "name": "Ivysaur (3)"
-        },
-        {
-            "name": "Ivysaur (4)"
-        },
-        {
-            "name": "Ivysaur (5)"
-        },
-        {
-            "name": "Ivysaur (6)"
-        },
-        {
-            "name": "Ivysaur (7)"
-        },
-        {
-            "name": "Ivysaur (8)"
-        },
-        {
-            "name": "Ivysaur (9)"
-        },
-        {
-            "name": "Ivysaur (10)"
-        },
-        {
-            "name": "Ivysaur (11)"
-        },
-        {
-            "name": "Ivysaur (12)"
-        },
-        {
-            "name": "Ivysaur (13)"
-        },
-        {
-            "name": "Ivysaur (14)"
-        },
-        {
-            "name": "Ivysaur (15)"
-        },
-        {
-            "name": "Ivysaur (16)"
-        },
-        {
-            "name": "Ivysaur (17)"
-        },
-        {
-            "name": "Ivysaur (18)"
-        },
-        {
-            "name": "Ivysaur (19)"
-        },
-        {
-            "name": "Ivysaur (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": -30,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Ivysaur (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": -250,
-            "scale": 2.5
-        }
+    {
+      "name": "Ivysaur (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Ivysaur (3)"
+    },
+    {
+      "name": "Ivysaur (4)"
+    },
+    {
+      "name": "Ivysaur (5)"
+    },
+    {
+      "name": "Ivysaur (6)"
+    },
+    {
+      "name": "Ivysaur (7)"
+    },
+    {
+      "name": "Ivysaur (8)"
+    },
+    {
+      "name": "Ivysaur (9)"
+    },
+    {
+      "name": "Ivysaur (10)"
+    },
+    {
+      "name": "Ivysaur (11)"
+    },
+    {
+      "name": "Ivysaur (12)"
+    },
+    {
+      "name": "Ivysaur (13)"
+    },
+    {
+      "name": "Ivysaur (14)"
+    },
+    {
+      "name": "Ivysaur (15)"
+    },
+    {
+      "name": "Ivysaur (16)"
+    },
+    {
+      "name": "Ivysaur (17)"
+    },
+    {
+      "name": "Ivysaur (18)"
+    },
+    {
+      "name": "Ivysaur (19)"
+    },
+    {
+      "name": "Ivysaur (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": -30,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": -250,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

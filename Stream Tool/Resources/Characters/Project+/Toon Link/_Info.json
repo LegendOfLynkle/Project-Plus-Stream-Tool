@@ -1,106 +1,106 @@
 {
-    "skinList": [
-        {
-            "name": "Toon Link (1)"
-        },
-        {
-            "name": "Toon Link (2)"
-        },
-        {
-            "name": "Toon Link (3)"
-        },
-        {
-            "name": "Toon Link (4)"
-        },
-        {
-            "name": "Toon Link (5)"
-        },
-        {
-            "name": "Toon Link (6)"
-        },
-        {
-            "name": "Toon Link (7)"
-        },
-        {
-            "name": "Toon Link (8)"
-        },
-        {
-            "name": "Toon Link (9)"
-        },
-        {
-            "name": "Toon Link (10)"
-        },
-        {
-            "name": "Toon Link (11)"
-        },
-        {
-            "name": "Toon Link (12)"
-        },
-        {
-            "name": "Toon Link (13)"
-        },
-        {
-            "name": "Toon Link (14)"
-        },
-        {
-            "name": "Toon Link (15)"
-        },
-        {
-            "name": "Toon Link (16)"
-        },
-        {
-            "name": "Toon Link (17)"
-        },
-        {
-            "name": "Toon Link (18)"
-        },
-        {
-            "name": "Toon Link (19)"
-        },
-        {
-            "name": "Toon Link (20)"
-        },
-        {
-            "name": "Toon Link (21)"
-        },
-        {
-            "name": "Toon Link (22)"
-        },
-        {
-            "name": "Toon Link (23)"
-        },
-        {
-            "name": "Toon Link (24)"
-        },
-        {
-            "name": "Toon Link (25)"
-        },
-        {
-            "name": "Toon Link (26)"
-        },
-        {
-            "name": "Toon Link (27)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Toon Link (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Toon Link (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Toon Link (3)"
+    },
+    {
+      "name": "Toon Link (4)"
+    },
+    {
+      "name": "Toon Link (5)"
+    },
+    {
+      "name": "Toon Link (6)"
+    },
+    {
+      "name": "Toon Link (7)"
+    },
+    {
+      "name": "Toon Link (8)"
+    },
+    {
+      "name": "Toon Link (9)"
+    },
+    {
+      "name": "Toon Link (10)"
+    },
+    {
+      "name": "Toon Link (11)"
+    },
+    {
+      "name": "Toon Link (12)"
+    },
+    {
+      "name": "Toon Link (13)"
+    },
+    {
+      "name": "Toon Link (14)"
+    },
+    {
+      "name": "Toon Link (15)"
+    },
+    {
+      "name": "Toon Link (16)"
+    },
+    {
+      "name": "Toon Link (17)"
+    },
+    {
+      "name": "Toon Link (18)"
+    },
+    {
+      "name": "Toon Link (19)"
+    },
+    {
+      "name": "Toon Link (20)"
+    },
+    {
+      "name": "Toon Link (21)"
+    },
+    {
+      "name": "Toon Link (22)"
+    },
+    {
+      "name": "Toon Link (23)"
+    },
+    {
+      "name": "Toon Link (24)"
+    },
+    {
+      "name": "Toon Link (25)"
+    },
+    {
+      "name": "Toon Link (26)"
+    },
+    {
+      "name": "Toon Link (27)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

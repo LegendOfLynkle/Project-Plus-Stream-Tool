@@ -1,76 +1,76 @@
 {
-    "skinList": [
-        {
-            "name": "Falco (1)"
-        },
-        {
-            "name": "Falco (2)"
-        },
-        {
-            "name": "Falco (3)"
-        },
-        {
-            "name": "Falco (4)"
-        },
-        {
-            "name": "Falco (5)"
-        },
-        {
-            "name": "Falco (6)"
-        },
-        {
-            "name": "Falco (7)"
-        },
-        {
-            "name": "Falco (8)"
-        },
-        {
-            "name": "Falco (9)"
-        },
-        {
-            "name": "Falco (10)"
-        },
-        {
-            "name": "Falco (11)"
-        },
-        {
-            "name": "Falco (12)"
-        },
-        {
-            "name": "Falco (13)"
-        },
-        {
-            "name": "Falco (14)"
-        },
-        {
-            "name": "Falco (15)"
-        },
-        {
-            "name": "Falco (16)"
-        },
-        {
-            "name": "Falco (17)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Falco (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Falco (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Falco (3)"
+    },
+    {
+      "name": "Falco (4)"
+    },
+    {
+      "name": "Falco (5)"
+    },
+    {
+      "name": "Falco (6)"
+    },
+    {
+      "name": "Falco (7)"
+    },
+    {
+      "name": "Falco (8)"
+    },
+    {
+      "name": "Falco (9)"
+    },
+    {
+      "name": "Falco (10)"
+    },
+    {
+      "name": "Falco (11)"
+    },
+    {
+      "name": "Falco (12)"
+    },
+    {
+      "name": "Falco (13)"
+    },
+    {
+      "name": "Falco (14)"
+    },
+    {
+      "name": "Falco (15)"
+    },
+    {
+      "name": "Falco (16)"
+    },
+    {
+      "name": "Falco (17)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

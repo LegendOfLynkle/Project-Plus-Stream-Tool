@@ -258,10 +258,8 @@ void main() {
     // the GLSL shader will then separate them every 4 values
 */
 
-
 // time to create our recolored character!
 export class RoaRecolor {
-
   char;
 
   gl;
@@ -269,17 +267,14 @@ export class RoaRecolor {
   offset;
 
   constructor() {
-
     // initialize stuff
     this.canvas = document.createElement("canvas");
     this.glLocs = {};
     this.initializeShader();
-
   }
 
   /** Starts up the shader values */
   initializeShader() {
-
     // it's WebGL time, get ready to not understand anything (don't worry i dont either)
     const gl = this.canvas.getContext("webgl2", { premultipliedAlpha: false });
 
@@ -317,24 +312,21 @@ export class RoaRecolor {
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
 
     // Tell the attribute how to get data out of positionBuffer (ARRAY_BUFFER)
-    const size = 2;          // 2 components per iteration
-    const type = gl.FLOAT;   // the data is 32bit floats
+    const size = 2; // 2 components per iteration
+    const type = gl.FLOAT; // the data is 32bit floats
     const normalize = false; // don't normalize the data
-    const stride = 0;        // 0 = move forward size * sizeof(type) each iteration to get the next position
-    const offset = 0;        // start at the beginning of the buffer
+    const stride = 0; // 0 = move forward size * sizeof(type) each iteration to get the next position
+    const offset = 0; // start at the beginning of the buffer
     gl.vertexAttribPointer(positionAttributeLocation, size, type, normalize, stride, offset);
 
     // provide texture coordinates for the rectangle.
     const texCoordBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, texCoordBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
-        0.0,  0.0,
-        1.0,  0.0,
-        0.0,  1.0,
-        0.0,  1.0,
-        1.0,  0.0,
-        1.0,  1.0,
-    ]), gl.STATIC_DRAW);
+    gl.bufferData(
+      gl.ARRAY_BUFFER,
+      new Float32Array([0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0]),
+      gl.STATIC_DRAW,
+    );
 
     // Turn on the attribute
     gl.enableVertexAttribArray(texCoordAttributeLocation);
@@ -369,17 +361,13 @@ export class RoaRecolor {
     this.gl = gl;
     this.positionBuffer = positionBuffer;
     this.offset = offset;
-
   }
 
-
   updateData(char, colIn, colRan, blend, special) {
-
     this.char = char;
     this.updateColorData(colIn, colRan);
     this.updateBlend(blend);
     this.updateSpecial(special);
-
   }
 
   /**
@@ -388,7 +376,6 @@ export class RoaRecolor {
    * @param {Array} colRan - Character's color ranges
    */
   updateColorData(colIn, colRan) {
-
     // create new arrays with the provided data
     const ogCols = Array(36).fill(0); // max of 9 parts * 4 because of rgba
     const colTol = Array(36).fill(0);
@@ -411,7 +398,6 @@ export class RoaRecolor {
 
     // store for later, just in case
     this.colorIn = colIn;
-
   }
 
   /**
@@ -419,7 +405,6 @@ export class RoaRecolor {
    * @param {Boolean} blend - False for regular shading, true for retro
    */
   updateBlend(blend) {
-
     let finalBlend = [];
 
     // this is a variable that the shader will use for Early Access colors
@@ -446,7 +431,6 @@ export class RoaRecolor {
 
     // aaaand make it happen
     this.gl.uniform4fv(this.glLocs.blendLoc, finalBlend);
-    
   }
 
   /**
@@ -466,9 +450,8 @@ export class RoaRecolor {
    * @param {String} imgPath - Path to the image to add
    */
   async addImage(imgPath) {
-
     const skinImg = new Image();
-    skinImg.src = imgPath;  // MUST BE SAME DOMAIN!!!
+    skinImg.src = imgPath; // MUST BE SAME DOMAIN!!!
     await skinImg.decode(); // wait for the image to be loaded
 
     this.canvas.width = skinImg.width;
@@ -477,9 +460,9 @@ export class RoaRecolor {
     const gl = this.gl;
 
     // Upload the image into the texture
-    const mipLevel = 0;               // the largest mip
-    const internalFormat = gl.RGBA;   // format we want in the texture
-    const srcFormat = gl.RGBA;        // format of data we are supplying
+    const mipLevel = 0; // the largest mip
+    const internalFormat = gl.RGBA; // format we want in the texture
+    const srcFormat = gl.RGBA; // format of data we are supplying
     const srcType = gl.UNSIGNED_BYTE; // type of data we are supplying
     gl.texImage2D(gl.TEXTURE_2D, mipLevel, internalFormat, srcFormat, srcType, skinImg);
 
@@ -503,12 +486,10 @@ export class RoaRecolor {
 
     // Set a rectangle the same size as the image.
     setRectangle(gl, 0, 0, skinImg.width, skinImg.height);
-
   }
 
   // this will be called on each paint
   recolor(colorOut) {
-
     // if no code is sent, use the original colors
     const finalOut = colorOut ? colorOut : this.colorIn;
 
@@ -518,7 +499,7 @@ export class RoaRecolor {
       actualFinalOut[i] = finalOut[i];
     }
     actualFinalOut[finalOut.length + 3] = 1; // alpha for last value
-    
+
     // Pass in the uniform to the shader
     this.gl.uniform4fv(this.glLocs.colorOutLoc, div255(actualFinalOut));
 
@@ -530,17 +511,15 @@ export class RoaRecolor {
     // to take an image out of a gl canvas, you need to capture it before
     // the main thread has finished, so it can only be done here
     return this.canvas.toDataURL();
-
   }
 
-  
   /**
    * @typedef {Object} Skin
    * @property {String} hex - The skin color code to be used
    * @property {Boolean} blend - Makes the image have "Early Access" shading
    * @property {Array} alpha - Set the transparency for each part (for example: [1, 0.75, 0.5, 1])
    * @property {Boolean} golden - Adds golden shading to the character's black pixels
-  */
+   */
   /**
    * Takes an image, then returns it in a different color with the provided color code
    * @param {String} charName - The name of the character to recolor
@@ -549,9 +528,8 @@ export class RoaRecolor {
    * @param {Array} colRan - The color range for color variations
    * @param {Skin} skin - Skin data
    * @returns {String} Image data to be used in a .src atribute
-  */
+   */
   async getRoARecolor(char, imgSrc, colIn, colRan, skin) {
-  
     // at the image and wait for it to be added
     await this.addImage(imgSrc);
 
@@ -563,131 +541,121 @@ export class RoaRecolor {
 
     // update the shader data
     this.updateData(char, colIn, finalRan, skin.ea, skin.special);
-  
+
     // translate the hex into array
     const recolorRgb = hexDecode(skin.hex);
 
-    if (char == "Orcane") { // orcane has green and yellow hidden parts
+    if (char == "Orcane") {
+      // orcane has green and yellow hidden parts
       for (let i = 0; i < 8; i++) {
-        if (skin.golden) { // orcane is a very special boi
-          recolorRgb[i+8] = 255;
+        if (skin.golden) {
+          // orcane is a very special boi
+          recolorRgb[i + 8] = 255;
         } else {
           // add the 1st colors as the 3rd colors, 2nd to 4th
-          recolorRgb[i+8] = recolorRgb[i];
+          recolorRgb[i + 8] = recolorRgb[i];
         }
       }
     }
-  
+
     // if transparency, add the data to the 4th value of each color
     if (skin.alpha) {
       for (let i = 0; i < recolorRgb.length; i++) {
-        if ((i+1)%4 == 0) {
-          recolorRgb[i] = skin.alpha[[((i+1) / 4) - 1]];
+        if ((i + 1) % 4 == 0) {
+          recolorRgb[i] = skin.alpha[[(i + 1) / 4 - 1]];
         }
       }
     }
-  
+
     // golden skins have a predefined color for black pixels
     if (skin.golden) {
       recolorRgb.push(76, 53, 0, 1);
     }
-  
+
     // render the actual image
     return this.recolor(recolorRgb);
-    
   }
 
   /** Bracket players will love this feature! */
   killContext() {
-    this.gl.getExtension('WEBGL_lose_context').loseContext();
+    this.gl.getExtension("WEBGL_lose_context").loseContext();
   }
-  
 }
 
-
 /**
-  * Creates and compiles a shader.
-  *
-  * @param {!WebGLRenderingContext} gl The WebGL Context.
-  * @param {string} shaderSource The GLSL source code for the shader.
-  * @param {number} shaderType The type of shader, VERTEX_SHADER or
-  *     FRAGMENT_SHADER.
-  * @return {!WebGLShader} The shader.
-*/
+ * Creates and compiles a shader.
+ *
+ * @param {!WebGLRenderingContext} gl The WebGL Context.
+ * @param {string} shaderSource The GLSL source code for the shader.
+ * @param {number} shaderType The type of shader, VERTEX_SHADER or
+ *     FRAGMENT_SHADER.
+ * @return {!WebGLShader} The shader.
+ */
 function compileShader(gl, shaderType, shaderSource) {
   // Create the shader object
   const shader = gl.createShader(shaderType);
-  
+
   // Set the shader source code.
   gl.shaderSource(shader, shaderSource);
-  
+
   // Compile the shader
   gl.compileShader(shader);
-  
+
   // Check if it compiled
   const success = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
   if (!success) {
     // Something went wrong during compilation; get the error
     throw "could not compile shader:" + gl.getShaderInfoLog(shader);
   }
-  
+
   return shader;
 }
 
 /**
-  * Creates a program from 2 shaders.
-  *
-  * @param {!WebGLRenderingContext) gl The WebGL context.
-  * @param {!WebGLShader} vertexShader A vertex shader.
-  * @param {!WebGLShader} fragmentShader A fragment shader.
-  * @return {!WebGLProgram} A program.
-*/
+ * Creates a program from 2 shaders.
+ *
+ * @param {!WebGLRenderingContext) gl The WebGL context.
+ * @param {!WebGLShader} vertexShader A vertex shader.
+ * @param {!WebGLShader} fragmentShader A fragment shader.
+ * @return {!WebGLProgram} A program.
+ */
 function createProgram(gl, vertexShader, fragmentShader) {
   // create a program.
   const program = gl.createProgram();
-  
+
   // attach the shaders.
   gl.attachShader(program, vertexShader);
   gl.attachShader(program, fragmentShader);
-  
+
   // link the program.
   gl.linkProgram(program);
-  
+
   // Check if it linked.
   const success = gl.getProgramParameter(program, gl.LINK_STATUS);
   if (!success) {
-      // something went wrong with the link
-      throw ("program filed to link:" + gl.getProgramInfoLog (program));
+    // something went wrong with the link
+    throw "program filed to link:" + gl.getProgramInfoLog(program);
   }
-  
+
   return program;
-};
+}
 
 function setRectangle(gl, x, y, width, height) {
   const x1 = x;
   const x2 = x + width;
   const y1 = y;
   const y2 = y + height;
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
-     x1, y1,
-     x2, y1,
-     x1, y2,
-     x1, y2,
-     x2, y1,
-     x2, y2,
-  ]), gl.STATIC_DRAW);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([x1, y1, x2, y1, x1, y2, x1, y2, x2, y1, x2, y2]), gl.STATIC_DRAW);
 }
-
-
 
 // shaders need the rbga values on a [0~1] range
 function div255(array) {
   const newArray = [];
   for (let i = 1; i < array.length + 1; i++) {
     if (i % 4 != 0) {
-      newArray[i-1] = array[i-1]/255;
+      newArray[i - 1] = array[i - 1] / 255;
     } else {
-      newArray[i-1] = array[i-1];
+      newArray[i - 1] = array[i - 1];
     }
   }
   return newArray;
@@ -699,9 +667,9 @@ function divHSV(array) {
   for (let i = 0; i < array.length; i++) {
     count++;
     if (count == 1) {
-      newArray[i] = array[i]/360;
+      newArray[i] = array[i] / 360;
     } else if (count == 2 || count == 3) {
-      newArray[i] = array[i]/100;
+      newArray[i] = array[i] / 100;
     } else {
       newArray[i] = array[i];
       count = 0;
@@ -720,7 +688,6 @@ function hex2rgb(hex) {
 }
 
 function hexDecode(hex) {
-
   // delete those "-" from the code
   let newHex = hex.replace(/-/g, "");
 
@@ -730,13 +697,12 @@ function hexDecode(hex) {
   // create an array for the shader with rgba values
   const charRGB = [];
   for (let i = 0; i < charHex.length; i++) {
-      const newArr = hex2rgb(charHex[i]);
-      charRGB.push(newArr[0], newArr[1], newArr[2], 1); //r, g, b, a
+    const newArr = hex2rgb(charHex[i]);
+    charRGB.push(newArr[0], newArr[1], newArr[2], 1); //r, g, b, a
   }
 
   // removes the extra rgb generated by the end of the code
-  charRGB.splice(charRGB.length-4);
-  
-  return charRGB;
+  charRGB.splice(charRGB.length - 4);
 
+  return charRGB;
 }

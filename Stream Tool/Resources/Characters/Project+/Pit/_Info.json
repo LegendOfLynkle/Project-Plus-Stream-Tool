@@ -1,97 +1,97 @@
 {
-    "skinList": [
-        {
-            "name": "Pit (1)"
-        },
-        {
-            "name": "Pit (2)"
-        },
-        {
-            "name": "Pit (3)"
-        },
-        {
-            "name": "Pit (4)"
-        },
-        {
-            "name": "Pit (5)"
-        },
-        {
-            "name": "Pit (6)"
-        },
-        {
-            "name": "Pit (7)"
-        },
-        {
-            "name": "Pit (8)"
-        },
-        {
-            "name": "Pit (9)"
-        },
-        {
-            "name": "Pit (10)"
-        },
-        {
-            "name": "Pit (11)"
-        },
-        {
-            "name": "Pit (12)"
-        },
-        {
-            "name": "Pit (13)"
-        },
-        {
-            "name": "Pit (14)"
-        },
-        {
-            "name": "Pit (15)"
-        },
-        {
-            "name": "Pit (16)"
-        },
-        {
-            "name": "Pit (17)"
-        },
-        {
-            "name": "Pit (18)"
-        },
-        {
-            "name": "Pit (19)"
-        },
-        {
-            "name": "Pit (20)"
-        },
-        {
-            "name": "Pit (21)"
-        },
-        {
-            "name": "Pit (22)"
-        },
-        {
-            "name": "Pit (23)"
-        },
-        {
-            "name": "Pit (24)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Pit (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 140,
-            "scale": 2.5
-        }
+    {
+      "name": "Pit (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Pit (3)"
+    },
+    {
+      "name": "Pit (4)"
+    },
+    {
+      "name": "Pit (5)"
+    },
+    {
+      "name": "Pit (6)"
+    },
+    {
+      "name": "Pit (7)"
+    },
+    {
+      "name": "Pit (8)"
+    },
+    {
+      "name": "Pit (9)"
+    },
+    {
+      "name": "Pit (10)"
+    },
+    {
+      "name": "Pit (11)"
+    },
+    {
+      "name": "Pit (12)"
+    },
+    {
+      "name": "Pit (13)"
+    },
+    {
+      "name": "Pit (14)"
+    },
+    {
+      "name": "Pit (15)"
+    },
+    {
+      "name": "Pit (16)"
+    },
+    {
+      "name": "Pit (17)"
+    },
+    {
+      "name": "Pit (18)"
+    },
+    {
+      "name": "Pit (19)"
+    },
+    {
+      "name": "Pit (20)"
+    },
+    {
+      "name": "Pit (21)"
+    },
+    {
+      "name": "Pit (22)"
+    },
+    {
+      "name": "Pit (23)"
+    },
+    {
+      "name": "Pit (24)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 140,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

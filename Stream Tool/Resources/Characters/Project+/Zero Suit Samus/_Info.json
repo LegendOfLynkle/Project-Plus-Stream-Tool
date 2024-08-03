@@ -1,73 +1,73 @@
 {
-    "skinList": [
-        {
-            "name": "Zero Suit Samus (1)"
-        },
-        {
-            "name": "Zero Suit Samus (2)"
-        },
-        {
-            "name": "Zero Suit Samus (3)"
-        },
-        {
-            "name": "Zero Suit Samus (4)"
-        },
-        {
-            "name": "Zero Suit Samus (5)"
-        },
-        {
-            "name": "Zero Suit Samus (6)"
-        },
-        {
-            "name": "Zero Suit Samus (7)"
-        },
-        {
-            "name": "Zero Suit Samus (8)"
-        },
-        {
-            "name": "Zero Suit Samus (9)"
-        },
-        {
-            "name": "Zero Suit Samus (10)"
-        },
-        {
-            "name": "Zero Suit Samus (11)"
-        },
-        {
-            "name": "Zero Suit Samus (12)"
-        },
-        {
-            "name": "Zero Suit Samus (13)"
-        },
-        {
-            "name": "Zero Suit Samus (14)"
-        },
-        {
-            "name": "Zero Suit Samus (15)"
-        },
-        {
-            "name": "Zero Suit Samus (16)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 40,
-            "y": 10,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Zero Suit Samus (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 100,
-            "scale": 2
-        }
+    {
+      "name": "Zero Suit Samus (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Zero Suit Samus (3)"
+    },
+    {
+      "name": "Zero Suit Samus (4)"
+    },
+    {
+      "name": "Zero Suit Samus (5)"
+    },
+    {
+      "name": "Zero Suit Samus (6)"
+    },
+    {
+      "name": "Zero Suit Samus (7)"
+    },
+    {
+      "name": "Zero Suit Samus (8)"
+    },
+    {
+      "name": "Zero Suit Samus (9)"
+    },
+    {
+      "name": "Zero Suit Samus (10)"
+    },
+    {
+      "name": "Zero Suit Samus (11)"
+    },
+    {
+      "name": "Zero Suit Samus (12)"
+    },
+    {
+      "name": "Zero Suit Samus (13)"
+    },
+    {
+      "name": "Zero Suit Samus (14)"
+    },
+    {
+      "name": "Zero Suit Samus (15)"
+    },
+    {
+      "name": "Zero Suit Samus (16)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 40,
+      "y": 10,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 100,
+      "scale": 2
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

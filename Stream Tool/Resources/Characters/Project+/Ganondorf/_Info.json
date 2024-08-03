@@ -1,94 +1,94 @@
 {
-    "skinList": [
-        {
-            "name": "Ganondorf (1)"
-        },
-        {
-            "name": "Ganondorf (2)"
-        },
-        {
-            "name": "Ganondorf (3)"
-        },
-        {
-            "name": "Ganondorf (4)"
-        },
-        {
-            "name": "Ganondorf (5)"
-        },
-        {
-            "name": "Ganondorf (6)"
-        },
-        {
-            "name": "Ganondorf (7)"
-        },
-        {
-            "name": "Ganondorf (8)"
-        },
-        {
-            "name": "Ganondorf (9)"
-        },
-        {
-            "name": "Ganondorf (10)"
-        },
-        {
-            "name": "Ganondorf (11)"
-        },
-        {
-            "name": "Ganondorf (12)"
-        },
-        {
-            "name": "Ganondorf (13)"
-        },
-        {
-            "name": "Ganondorf (14)"
-        },
-        {
-            "name": "Ganondorf (15)"
-        },
-        {
-            "name": "Ganondorf (16)"
-        },
-        {
-            "name": "Ganondorf (17)"
-        },
-        {
-            "name": "Ganondorf (18)"
-        },    
-        {
-            "name": "Ganondorf (19)"
-        }, 
-        {
-            "name": "Ganondorf (20)"
-        }, 
-        {
-            "name": "Ganondorf (21)"
-        }, 
-        {
-            "name": "Ganondorf (22)"
-        }, 
-        {
-            "name": "Ganondorf (23)"
-        }           
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Ganondorf (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 170,
-            "scale": 1.875
-        }
+    {
+      "name": "Ganondorf (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Ganondorf (3)"
+    },
+    {
+      "name": "Ganondorf (4)"
+    },
+    {
+      "name": "Ganondorf (5)"
+    },
+    {
+      "name": "Ganondorf (6)"
+    },
+    {
+      "name": "Ganondorf (7)"
+    },
+    {
+      "name": "Ganondorf (8)"
+    },
+    {
+      "name": "Ganondorf (9)"
+    },
+    {
+      "name": "Ganondorf (10)"
+    },
+    {
+      "name": "Ganondorf (11)"
+    },
+    {
+      "name": "Ganondorf (12)"
+    },
+    {
+      "name": "Ganondorf (13)"
+    },
+    {
+      "name": "Ganondorf (14)"
+    },
+    {
+      "name": "Ganondorf (15)"
+    },
+    {
+      "name": "Ganondorf (16)"
+    },
+    {
+      "name": "Ganondorf (17)"
+    },
+    {
+      "name": "Ganondorf (18)"
+    },
+    {
+      "name": "Ganondorf (19)"
+    },
+    {
+      "name": "Ganondorf (20)"
+    },
+    {
+      "name": "Ganondorf (21)"
+    },
+    {
+      "name": "Ganondorf (22)"
+    },
+    {
+      "name": "Ganondorf (23)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 170,
+      "scale": 1.875
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

@@ -1,94 +1,94 @@
 {
-    "skinList": [
-        {
-            "name": "Donkey Kong (1)"
-        },
-        {
-            "name": "Donkey Kong (2)"
-        },
-        {
-            "name": "Donkey Kong (3)"
-        },
-        {
-            "name": "Donkey Kong (4)"
-        },
-        {
-            "name": "Donkey Kong (5)"
-        },
-        {
-            "name": "Donkey Kong (6)"
-        },
-        {
-            "name": "Donkey Kong (7)"
-        },
-        {
-            "name": "Donkey Kong (8)"
-        },
-        {
-            "name": "Donkey Kong (9)"
-        },
-        {
-            "name": "Donkey Kong (10)"
-        },
-        {
-            "name": "Donkey Kong (11)"
-        },
-        {
-            "name": "Donkey Kong (12)"
-        },
-        {
-            "name": "Donkey Kong (13)"
-        },
-        {
-            "name": "Donkey Kong (14)"
-        },
-        {
-            "name": "Donkey Kong (15)"
-        },
-        {
-            "name": "Donkey Kong (16)"
-        },
-        {
-            "name": "Donkey Kong (17)"
-        },
-        {
-            "name": "Donkey Kong (18)"
-        },
-        {
-            "name": "Donkey Kong (19)"
-        },
-        {
-            "name": "Donkey Kong (20)"
-        },
-        {
-            "name": "Donkey Kong (21)"
-        },
-        {
-            "name": "Donkey Kong (22)"
-        },
-        {
-            "name": "Donkey Kong (23)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Donkey Kong (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Donkey Kong (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Donkey Kong (3)"
+    },
+    {
+      "name": "Donkey Kong (4)"
+    },
+    {
+      "name": "Donkey Kong (5)"
+    },
+    {
+      "name": "Donkey Kong (6)"
+    },
+    {
+      "name": "Donkey Kong (7)"
+    },
+    {
+      "name": "Donkey Kong (8)"
+    },
+    {
+      "name": "Donkey Kong (9)"
+    },
+    {
+      "name": "Donkey Kong (10)"
+    },
+    {
+      "name": "Donkey Kong (11)"
+    },
+    {
+      "name": "Donkey Kong (12)"
+    },
+    {
+      "name": "Donkey Kong (13)"
+    },
+    {
+      "name": "Donkey Kong (14)"
+    },
+    {
+      "name": "Donkey Kong (15)"
+    },
+    {
+      "name": "Donkey Kong (16)"
+    },
+    {
+      "name": "Donkey Kong (17)"
+    },
+    {
+      "name": "Donkey Kong (18)"
+    },
+    {
+      "name": "Donkey Kong (19)"
+    },
+    {
+      "name": "Donkey Kong (20)"
+    },
+    {
+      "name": "Donkey Kong (21)"
+    },
+    {
+      "name": "Donkey Kong (22)"
+    },
+    {
+      "name": "Donkey Kong (23)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

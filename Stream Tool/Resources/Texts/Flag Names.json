@@ -1,29 +1,29 @@
 [
-    {
-        "name": "Western Australia"
-    },
-    {
-        "name": "Australian Capital Territory"
-    },
-    {
-        "name": "New South Wales"
-    },
-    {
-        "name": "New Zealand"
-    },
-    {
-        "name": "Northern Territory"
-    },
-    {
-        "name": "Queensland"
-    },
-    {
-        "name": "South Australia"
-    },
-    {
-        "name": "Tasmania"
-    },
-    {
-        "name": "Victoria"
-    }
+  {
+    "name": "Western Australia"
+  },
+  {
+    "name": "Australian Capital Territory"
+  },
+  {
+    "name": "New South Wales"
+  },
+  {
+    "name": "New Zealand"
+  },
+  {
+    "name": "Northern Territory"
+  },
+  {
+    "name": "Queensland"
+  },
+  {
+    "name": "South Australia"
+  },
+  {
+    "name": "Tasmania"
+  },
+  {
+    "name": "Victoria"
+  }
 ]

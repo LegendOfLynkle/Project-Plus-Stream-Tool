@@ -1,37 +1,37 @@
 {
-    "skinList": [
-        {
-            "name": "Ness (1)"
-        },
-        {
-            "name": "Ness (2)"
-        },
-        {
-            "name": "Ness (3)"
-        },
-        {
-            "name": "Ness (4)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 0,
-            "scale": 1.1
-        }
+  "skinList": [
+    {
+      "name": "Ness (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -505,
-            "y": 90,
-            "scale": 1.3
-        }
+    {
+      "name": "Ness (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Ness (3)"
+    },
+    {
+      "name": "Ness (4)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 0,
+      "scale": 1.1
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -505,
+      "y": 90,
+      "scale": 1.3
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

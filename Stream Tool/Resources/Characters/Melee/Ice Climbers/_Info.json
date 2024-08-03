@@ -1,37 +1,37 @@
 {
-    "skinList": [
-        {
-            "name": "Ice Climbers (1)"
-        },
-        {
-            "name": "Ice Climbers (2)"
-        },
-        {
-            "name": "Ice Climbers (3)"
-        },
-        {
-            "name": "Ice Climbers (4)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 28,
-            "y": 10,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Ice Climbers (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 60,
-            "scale": 1.3
-        }
+    {
+      "name": "Ice Climbers (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Ice Climbers (3)"
+    },
+    {
+      "name": "Ice Climbers (4)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 28,
+      "y": 10,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 60,
+      "scale": 1.3
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

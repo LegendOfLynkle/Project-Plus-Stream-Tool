@@ -253,6 +253,31 @@
     }
   },
   {
+    "name": "Test",
+    "tag": "",
+    "pronouns": "He/Him",
+    "state": "Western Australia",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": {
+      "Melee": [
+        {
+          "character": "Donkey Kong",
+          "skin": "Donkey Kong (1)"
+        }
+      ],
+      "Project+": [
+        {
+          "character": "Captain Falcon",
+          "skin": "Captain Falcon (1)"
+        }
+      ]
+    }
+  },
+  {
     "name": "TheStillHeron",
     "tag": "",
     "pronouns": "He/Him",

@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Lucario (1)"
-        },
-        {
-            "name": "Lucario (2)"
-        },
-        {
-            "name": "Lucario (3)"
-        },
-        {
-            "name": "Lucario (4)"
-        },
-        {
-            "name": "Lucario (5)"
-        },
-        {
-            "name": "Lucario (6)"
-        },
-        {
-            "name": "Lucario (7)"
-        },
-        {
-            "name": "Lucario (8)"
-        },
-        {
-            "name": "Lucario (9)"
-        },
-        {
-            "name": "Lucario (10)"
-        },
-        {
-            "name": "Lucario (11)"
-        },
-        {
-            "name": "Lucario (12)"
-        },
-        {
-            "name": "Lucario (13)"
-        },
-        {
-            "name": "Lucario (14)"
-        },
-        {
-            "name": "Lucario (15)"
-        },
-        {
-            "name": "Lucario (16)"
-        },
-        {
-            "name": "Lucario (17)"
-        },
-        {
-            "name": "Lucario (18)"
-        },
-        {
-            "name": "Lucario (19)"
-        },
-        {
-            "name": "Lucario (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Lucario (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Lucario (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Lucario (3)"
+    },
+    {
+      "name": "Lucario (4)"
+    },
+    {
+      "name": "Lucario (5)"
+    },
+    {
+      "name": "Lucario (6)"
+    },
+    {
+      "name": "Lucario (7)"
+    },
+    {
+      "name": "Lucario (8)"
+    },
+    {
+      "name": "Lucario (9)"
+    },
+    {
+      "name": "Lucario (10)"
+    },
+    {
+      "name": "Lucario (11)"
+    },
+    {
+      "name": "Lucario (12)"
+    },
+    {
+      "name": "Lucario (13)"
+    },
+    {
+      "name": "Lucario (14)"
+    },
+    {
+      "name": "Lucario (15)"
+    },
+    {
+      "name": "Lucario (16)"
+    },
+    {
+      "name": "Lucario (17)"
+    },
+    {
+      "name": "Lucario (18)"
+    },
+    {
+      "name": "Lucario (19)"
+    },
+    {
+      "name": "Lucario (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

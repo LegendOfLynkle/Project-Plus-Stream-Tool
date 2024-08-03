@@ -39,9 +39,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "SixLabors.ImageSharp >= 3.1.4"
-    ]
+    "net8.0": ["SixLabors.ImageSharp >= 3.1.4"]
   },
   "packageFolders": {
     "/Users/lynkle/.nuget/packages/": {}
@@ -55,12 +53,8 @@
       "packagesPath": "/Users/lynkle/.nuget/packages/",
       "outputPath": "/Users/lynkle/Documents/Repos/Project-Plus-Stream-Tool/Stream Tool/Resources/Characters/obj/",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "/Users/lynkle/.nuget/NuGet/NuGet.Config"
-      ],
-      "originalTargetFrameworks": [
-        "net8.0"
-      ],
+      "configFilePaths": ["/Users/lynkle/.nuget/NuGet/NuGet.Config"],
+      "originalTargetFrameworks": ["net8.0"],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -71,9 +65,7 @@
         }
       },
       "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
+        "warnAsError": ["NU1605"]
       },
       "restoreAuditProperties": {
         "enableAudit": "true",
@@ -90,15 +82,7 @@
             "version": "[3.1.4, )"
           }
         },
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48",
-          "net481"
-        ],
+        "imports": ["net461", "net462", "net47", "net471", "net472", "net48", "net481"],
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {

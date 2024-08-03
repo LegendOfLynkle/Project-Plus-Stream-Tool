@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Peach (1)"
-        },
-        {
-            "name": "Peach (2)"
-        },
-        {
-            "name": "Peach (3)"
-        },
-        {
-            "name": "Peach (4)"
-        },
-        {
-            "name": "Peach (5)"
-        },
-        {
-            "name": "Peach (6)"
-        },
-        {
-            "name": "Peach (7)"
-        },
-        {
-            "name": "Peach (8)"
-        },
-        {
-            "name": "Peach (9)"
-        },
-        {
-            "name": "Peach (10)"
-        },
-        {
-            "name": "Peach (11)"
-        },
-        {
-            "name": "Peach (12)"
-        },
-        {
-            "name": "Peach (13)"
-        },
-        {
-            "name": "Peach (14)"
-        },
-        {
-            "name": "Peach (15)"
-        },
-        {
-            "name": "Peach (16)"
-        },
-        {
-            "name": "Peach (17)"
-        },
-        {
-            "name": "Peach (18)"
-        },
-        {
-            "name": "Peach (19)"
-        },
-        {
-            "name": "Peach (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 10,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Peach (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 100,
-            "scale": 2.5
-        }
+    {
+      "name": "Peach (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Peach (3)"
+    },
+    {
+      "name": "Peach (4)"
+    },
+    {
+      "name": "Peach (5)"
+    },
+    {
+      "name": "Peach (6)"
+    },
+    {
+      "name": "Peach (7)"
+    },
+    {
+      "name": "Peach (8)"
+    },
+    {
+      "name": "Peach (9)"
+    },
+    {
+      "name": "Peach (10)"
+    },
+    {
+      "name": "Peach (11)"
+    },
+    {
+      "name": "Peach (12)"
+    },
+    {
+      "name": "Peach (13)"
+    },
+    {
+      "name": "Peach (14)"
+    },
+    {
+      "name": "Peach (15)"
+    },
+    {
+      "name": "Peach (16)"
+    },
+    {
+      "name": "Peach (17)"
+    },
+    {
+      "name": "Peach (18)"
+    },
+    {
+      "name": "Peach (19)"
+    },
+    {
+      "name": "Peach (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 10,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 100,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

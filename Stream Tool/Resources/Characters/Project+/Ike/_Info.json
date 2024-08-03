@@ -1,88 +1,88 @@
 {
-    "skinList": [
-        {
-            "name": "Ike (1)"
-        },
-        {
-            "name": "Ike (2)"
-        },
-        {
-            "name": "Ike (3)"
-        },
-        {
-            "name": "Ike (4)"
-        },
-        {
-            "name": "Ike (5)"
-        },
-        {
-            "name": "Ike (6)"
-        },
-        {
-            "name": "Ike (7)"
-        },
-        {
-            "name": "Ike (8)"
-        },
-        {
-            "name": "Ike (9)"
-        },
-        {
-            "name": "Ike (10)"
-        },
-        {
-            "name": "Ike (11)"
-        },
-        {
-            "name": "Ike (12)"
-        },
-        {
-            "name": "Ike (13)"
-        },
-        {
-            "name": "Ike (14)"
-        },
-        {
-            "name": "Ike (15)"
-        },
-        {
-            "name": "Ike (16)"
-        },
-        {
-            "name": "Ike (17)"
-        },
-        {
-            "name": "Ike (18)"
-        },
-        {
-            "name": "Ike (19)"
-        },
-        {
-            "name": "Ike (20)"
-        },
-        {
-            "name": "Ike (21)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Ike (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Ike (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Ike (3)"
+    },
+    {
+      "name": "Ike (4)"
+    },
+    {
+      "name": "Ike (5)"
+    },
+    {
+      "name": "Ike (6)"
+    },
+    {
+      "name": "Ike (7)"
+    },
+    {
+      "name": "Ike (8)"
+    },
+    {
+      "name": "Ike (9)"
+    },
+    {
+      "name": "Ike (10)"
+    },
+    {
+      "name": "Ike (11)"
+    },
+    {
+      "name": "Ike (12)"
+    },
+    {
+      "name": "Ike (13)"
+    },
+    {
+      "name": "Ike (14)"
+    },
+    {
+      "name": "Ike (15)"
+    },
+    {
+      "name": "Ike (16)"
+    },
+    {
+      "name": "Ike (17)"
+    },
+    {
+      "name": "Ike (18)"
+    },
+    {
+      "name": "Ike (19)"
+    },
+    {
+      "name": "Ike (20)"
+    },
+    {
+      "name": "Ike (21)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

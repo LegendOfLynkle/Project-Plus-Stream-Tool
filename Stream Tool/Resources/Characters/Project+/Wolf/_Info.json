@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Wolf (1)"
-        },
-        {
-            "name": "Wolf (2)"
-        },
-        {
-            "name": "Wolf (3)"
-        },
-        {
-            "name": "Wolf (4)"
-        },
-        {
-            "name": "Wolf (5)"
-        },
-        {
-            "name": "Wolf (6)"
-        },
-        {
-            "name": "Wolf (7)"
-        },
-        {
-            "name": "Wolf (8)"
-        },
-        {
-            "name": "Wolf (9)"
-        },
-        {
-            "name": "Wolf (10)"
-        },
-        {
-            "name": "Wolf (11)"
-        },
-        {
-            "name": "Wolf (12)"
-        },
-        {
-            "name": "Wolf (13)"
-        },
-        {
-            "name": "Wolf (14)"
-        },
-        {
-            "name": "Wolf (15)"
-        },
-        {
-            "name": "Wolf (16)"
-        },
-        {
-            "name": "Wolf (17)"
-        },
-        {
-            "name": "Wolf (18)"
-        },
-        {
-            "name": "Wolf (19)"
-        },
-        {
-            "name": "Wolf (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 37,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Wolf (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 150,
-            "scale": 2.5
-        }
+    {
+      "name": "Wolf (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Wolf (3)"
+    },
+    {
+      "name": "Wolf (4)"
+    },
+    {
+      "name": "Wolf (5)"
+    },
+    {
+      "name": "Wolf (6)"
+    },
+    {
+      "name": "Wolf (7)"
+    },
+    {
+      "name": "Wolf (8)"
+    },
+    {
+      "name": "Wolf (9)"
+    },
+    {
+      "name": "Wolf (10)"
+    },
+    {
+      "name": "Wolf (11)"
+    },
+    {
+      "name": "Wolf (12)"
+    },
+    {
+      "name": "Wolf (13)"
+    },
+    {
+      "name": "Wolf (14)"
+    },
+    {
+      "name": "Wolf (15)"
+    },
+    {
+      "name": "Wolf (16)"
+    },
+    {
+      "name": "Wolf (17)"
+    },
+    {
+      "name": "Wolf (18)"
+    },
+    {
+      "name": "Wolf (19)"
+    },
+    {
+      "name": "Wolf (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 37,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 150,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

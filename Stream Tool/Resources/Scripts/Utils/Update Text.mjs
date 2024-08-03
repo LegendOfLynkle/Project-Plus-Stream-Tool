@@ -5,11 +5,9 @@
  * @param {Number} maxSize - Text's maximun size for resizing shenanigans
  */
 export function updateText(textEL, textToType, maxSize = false) {
+  // set original text size for possible sesizes later
+  if (maxSize) textEL.style.fontSize = maxSize + "px";
 
-    // set original text size for possible sesizes later
-    if (maxSize) textEL.style.fontSize = maxSize + "px";
-	
-    // change the actual text
-	textEL.textContent = textToType;
-
+  // change the actual text
+  textEL.textContent = textToType;
 }

@@ -1,88 +1,88 @@
 {
-    "skinList": [
-        {
-            "name": "Squirtle (1)"
-        },
-        {
-            "name": "Squirtle (2)"
-        },
-        {
-            "name": "Squirtle (3)"
-        },
-        {
-            "name": "Squirtle (4)"
-        },
-        {
-            "name": "Squirtle (5)"
-        },
-        {
-            "name": "Squirtle (6)"
-        },
-        {
-            "name": "Squirtle (7)"
-        },
-        {
-            "name": "Squirtle (8)"
-        },
-        {
-            "name": "Squirtle (9)"
-        },
-        {
-            "name": "Squirtle (10)"
-        },
-        {
-            "name": "Squirtle (11)"
-        },
-        {
-            "name": "Squirtle (12)"
-        },
-        {
-            "name": "Squirtle (13)"
-        },
-        {
-            "name": "Squirtle (14)"
-        },
-        {
-            "name": "Squirtle (15)"
-        },
-        {
-            "name": "Squirtle (16)"
-        },
-        {
-            "name": "Squirtle (17)"
-        },
-        {
-            "name": "Squirtle (18)"
-        },
-        {
-            "name": "Squirtle (19)"
-        },
-        {
-            "name": "Squirtle (20)"
-        },
-        {
-            "name": "Squirtle (21)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 10,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Squirtle (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 80,
-            "scale": 2.5
-        }
+    {
+      "name": "Squirtle (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Squirtle (3)"
+    },
+    {
+      "name": "Squirtle (4)"
+    },
+    {
+      "name": "Squirtle (5)"
+    },
+    {
+      "name": "Squirtle (6)"
+    },
+    {
+      "name": "Squirtle (7)"
+    },
+    {
+      "name": "Squirtle (8)"
+    },
+    {
+      "name": "Squirtle (9)"
+    },
+    {
+      "name": "Squirtle (10)"
+    },
+    {
+      "name": "Squirtle (11)"
+    },
+    {
+      "name": "Squirtle (12)"
+    },
+    {
+      "name": "Squirtle (13)"
+    },
+    {
+      "name": "Squirtle (14)"
+    },
+    {
+      "name": "Squirtle (15)"
+    },
+    {
+      "name": "Squirtle (16)"
+    },
+    {
+      "name": "Squirtle (17)"
+    },
+    {
+      "name": "Squirtle (18)"
+    },
+    {
+      "name": "Squirtle (19)"
+    },
+    {
+      "name": "Squirtle (20)"
+    },
+    {
+      "name": "Squirtle (21)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 10,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 80,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

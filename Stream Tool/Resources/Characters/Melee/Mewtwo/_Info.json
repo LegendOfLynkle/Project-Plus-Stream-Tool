@@ -1,37 +1,37 @@
 {
-    "skinList": [
-        {
-            "name": "Mewtwo (1)"
-        },
-        {
-            "name": "Mewtwo (2)"
-        },
-        {
-            "name": "Mewtwo (3)"
-        },
-        {
-            "name": "Mewtwo (4)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 15,
-            "scale": "-1.5, 1.5"
-        }
+  "skinList": [
+    {
+      "name": "Mewtwo (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 140,
-            "scale": 1.4
-        }
+    {
+      "name": "Mewtwo (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Mewtwo (3)"
+    },
+    {
+      "name": "Mewtwo (4)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 15,
+      "scale": "-1.5, 1.5"
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 140,
+      "scale": 1.4
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

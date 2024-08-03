@@ -12,37 +12,33 @@ export const bracketPlayers = [];
  * @returns {Boolean} Ready (true) or not ready (false)
  */
 export function playersReady() {
-    let allReady = true;
-    for (let i = 0; i < players.length; i++) {
-        if (!players[i].getReadyState()) {
-            allReady = false;
-        }            
+  let allReady = true;
+  for (let i = 0; i < players.length; i++) {
+    if (!players[i].getReadyState()) {
+      allReady = false;
     }
-    for (let i = 0; i < bracketPlayers.length; i++) {
-        if (!bracketPlayers[i].getReadyState()) {
-            allReady = false;
-        } 
+  }
+  for (let i = 0; i < bracketPlayers.length; i++) {
+    if (!bracketPlayers[i].getReadyState()) {
+      allReady = false;
     }
-    return allReady;
+  }
+  return allReady;
 }
 
 /** Resets all player data */
 export function clearPlayers() {
-    
-    for (let i = 0; i < players.length; i++) {
+  for (let i = 0; i < players.length; i++) {
+    //clear player texts
+    players[i].setName("");
 
-        //clear player texts
-        players[i].setName("");
-        
-        // clear player info
-        players[i].pronouns = "";
-        players[i].setTag("");
-        players[i].socials = {};
-        players[i].state = "";
+    // clear player info
+    players[i].pronouns = "";
+    players[i].setTag("");
+    players[i].socials = {};
+    players[i].state = "";
 
-        //reset characters to random
-        players[i].charChange("Random");
-
-    }
-
+    //reset characters to random
+    players[i].charChange("Random");
+  }
 }

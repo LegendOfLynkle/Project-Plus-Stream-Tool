@@ -1,91 +1,91 @@
 {
-    "skinList": [
-        {
-            "name": "Lucas (1)"
-        },
-        {
-            "name": "Lucas (2)"
-        },
-        {
-            "name": "Lucas (3)"
-        },
-        {
-            "name": "Lucas (4)"
-        },
-        {
-            "name": "Lucas (5)"
-        },
-        {
-            "name": "Lucas (6)"
-        },
-        {
-            "name": "Lucas (7)"
-        },
-        {
-            "name": "Lucas (8)"
-        },
-        {
-            "name": "Lucas (9)"
-        },
-        {
-            "name": "Lucas (10)"
-        },
-        {
-            "name": "Lucas (11)"
-        },
-        {
-            "name": "Lucas (12)"
-        },
-        {
-            "name": "Lucas (13)"
-        },
-        {
-            "name": "Lucas (14)"
-        },
-        {
-            "name": "Lucas (15)"
-        },
-        {
-            "name": "Lucas (16)"
-        },
-        {
-            "name": "Lucas (17)"
-        },
-        {
-            "name": "Lucas (18)"
-        },
-        {
-            "name": "Lucas (19)"
-        },
-        {
-            "name": "Lucas (20)"
-        },
-        {
-            "name": "Lucas (21)"
-        },
-        {
-            "name": "Lucas (22)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Lucas (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 140,
-            "scale": 2.5
-        }
+    {
+      "name": "Lucas (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Lucas (3)"
+    },
+    {
+      "name": "Lucas (4)"
+    },
+    {
+      "name": "Lucas (5)"
+    },
+    {
+      "name": "Lucas (6)"
+    },
+    {
+      "name": "Lucas (7)"
+    },
+    {
+      "name": "Lucas (8)"
+    },
+    {
+      "name": "Lucas (9)"
+    },
+    {
+      "name": "Lucas (10)"
+    },
+    {
+      "name": "Lucas (11)"
+    },
+    {
+      "name": "Lucas (12)"
+    },
+    {
+      "name": "Lucas (13)"
+    },
+    {
+      "name": "Lucas (14)"
+    },
+    {
+      "name": "Lucas (15)"
+    },
+    {
+      "name": "Lucas (16)"
+    },
+    {
+      "name": "Lucas (17)"
+    },
+    {
+      "name": "Lucas (18)"
+    },
+    {
+      "name": "Lucas (19)"
+    },
+    {
+      "name": "Lucas (20)"
+    },
+    {
+      "name": "Lucas (21)"
+    },
+    {
+      "name": "Lucas (22)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 140,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

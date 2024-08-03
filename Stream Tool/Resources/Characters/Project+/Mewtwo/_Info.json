@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Mewtwo (1)"
-        },
-        {
-            "name": "Mewtwo (2)"
-        },
-        {
-            "name": "Mewtwo (3)"
-        },
-        {
-            "name": "Mewtwo (4)"
-        },
-        {
-            "name": "Mewtwo (5)"
-        },
-        {
-            "name": "Mewtwo (6)"
-        },
-        {
-            "name": "Mewtwo (7)"
-        },
-        {
-            "name": "Mewtwo (8)"
-        },
-        {
-            "name": "Mewtwo (9)"
-        },
-        {
-            "name": "Mewtwo (10)"
-        },
-        {
-            "name": "Mewtwo (11)"
-        },
-        {
-            "name": "Mewtwo (12)"
-        },
-        {
-            "name": "Mewtwo (13)"
-        },
-        {
-            "name": "Mewtwo (14)"
-        },
-        {
-            "name": "Mewtwo (15)"
-        },
-        {
-            "name": "Mewtwo (16)"
-        },
-        {
-            "name": "Mewtwo (17)"
-        },
-        {
-            "name": "Mewtwo (18)"
-        },
-        {
-            "name": "Mewtwo (19)"
-        },
-        {
-            "name": "Mewtwo (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Mewtwo (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 140,
-            "scale": 2.5
-        }
+    {
+      "name": "Mewtwo (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Mewtwo (3)"
+    },
+    {
+      "name": "Mewtwo (4)"
+    },
+    {
+      "name": "Mewtwo (5)"
+    },
+    {
+      "name": "Mewtwo (6)"
+    },
+    {
+      "name": "Mewtwo (7)"
+    },
+    {
+      "name": "Mewtwo (8)"
+    },
+    {
+      "name": "Mewtwo (9)"
+    },
+    {
+      "name": "Mewtwo (10)"
+    },
+    {
+      "name": "Mewtwo (11)"
+    },
+    {
+      "name": "Mewtwo (12)"
+    },
+    {
+      "name": "Mewtwo (13)"
+    },
+    {
+      "name": "Mewtwo (14)"
+    },
+    {
+      "name": "Mewtwo (15)"
+    },
+    {
+      "name": "Mewtwo (16)"
+    },
+    {
+      "name": "Mewtwo (17)"
+    },
+    {
+      "name": "Mewtwo (18)"
+    },
+    {
+      "name": "Mewtwo (19)"
+    },
+    {
+      "name": "Mewtwo (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 140,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

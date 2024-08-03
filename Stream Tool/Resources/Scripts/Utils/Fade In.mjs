@@ -7,9 +7,7 @@ import { fadeInTimeSc, fadeOutTimeSc } from "../Scoreboard/ScGlobals.mjs";
  * @param {Number} delay - Time in seconds to wait until fade happens
  */
 export function fadeIn(itemID, dur, delay = 0) {
-
-	itemID.style.animation = `fadeIn ${dur}s ${delay}s both`;
-
+  itemID.style.animation = `fadeIn ${dur}s ${delay}s both`;
 }
 
 /**
@@ -20,27 +18,18 @@ export function fadeIn(itemID, dur, delay = 0) {
  * @param {Number} delay - How much to wait before animating, in seconds
  */
 export function fadeInMove(itemID, chara, side, delay = 0) {
-
-	if (chara) {
-
-		itemID.parentElement.style.animation = `charaMoveIn ${fadeOutTimeSc}s ${delay}s both
-			, fadeIn ${fadeOutTimeSc}s ${delay}s both`
-		;
-
-	} else {
-
-		if (side) {
-			itemID.style.animation = `moveInLeft ${fadeInTimeSc}s ${delay}s both
-				, fadeIn ${fadeInTimeSc}s ${delay}s both`
-			;
-		} else {
-			itemID.style.animation = `moveInRight ${fadeInTimeSc}s ${delay}s both
-				, fadeIn ${fadeInTimeSc}s ${delay}s both`
-			;
-		}
-
-	}
-
+  if (chara) {
+    itemID.parentElement.style.animation = `charaMoveIn ${fadeOutTimeSc}s ${delay}s both
+			, fadeIn ${fadeOutTimeSc}s ${delay}s both`;
+  } else {
+    if (side) {
+      itemID.style.animation = `moveInLeft ${fadeInTimeSc}s ${delay}s both
+				, fadeIn ${fadeInTimeSc}s ${delay}s both`;
+    } else {
+      itemID.style.animation = `moveInRight ${fadeInTimeSc}s ${delay}s both
+				, fadeIn ${fadeInTimeSc}s ${delay}s both`;
+    }
+  }
 }
 
 /**
@@ -51,10 +40,8 @@ export function fadeInMove(itemID, chara, side, delay = 0) {
  * @param {Number} delay - Time in seconds to wait until fade happens
  */
 export function charaFadeIn(charaEL, trailEL, dur, delay = 0) {
-	charaEL.style.animation = `charaMoveIn ${dur + .1}s ${delay + .2}s both
-		, fadeIn ${dur + .1}s ${delay + .2}s both`
-	;
-	trailEL.parentElement.style.animation = `trailMoveIn ${dur + .1}s ${delay + .4}s both
-		, fadeIn ${dur + .1}s ${delay + .4}s both`
-	;
+  charaEL.style.animation = `charaMoveIn ${dur + 0.1}s ${delay + 0.2}s both
+		, fadeIn ${dur + 0.1}s ${delay + 0.2}s both`;
+  trailEL.parentElement.style.animation = `trailMoveIn ${dur + 0.1}s ${delay + 0.4}s both
+		, fadeIn ${dur + 0.1}s ${delay + 0.4}s both`;
 }

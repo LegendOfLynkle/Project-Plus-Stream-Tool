@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Ice Climbers (1)"
-        },
-        {
-            "name": "Ice Climbers (2)"
-        },
-        {
-            "name": "Ice Climbers (3)"
-        },
-        {
-            "name": "Ice Climbers (4)"
-        },
-        {
-            "name": "Ice Climbers (5)"
-        },
-        {
-            "name": "Ice Climbers (6)"
-        },
-        {
-            "name": "Ice Climbers (7)"
-        },
-        {
-            "name": "Ice Climbers (8)"
-        },
-        {
-            "name": "Ice Climbers (9)"
-        },
-        {
-            "name": "Ice Climbers (10)"
-        },
-        {
-            "name": "Ice Climbers (11)"
-        },
-        {
-            "name": "Ice Climbers (12)"
-        },
-        {
-            "name": "Ice Climbers (13)"
-        },
-        {
-            "name": "Ice Climbers (14)"
-        },
-        {
-            "name": "Ice Climbers (15)"
-        },
-        {
-            "name": "Ice Climbers (16)"
-        },
-        {
-            "name": "Ice Climbers (17)"
-        },
-        {
-            "name": "Ice Climbers (18)"
-        },
-        {
-            "name": "Ice Climbers (19)"
-        },
-        {
-            "name": "Ice Climbers (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 40,
-            "y": 10,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Ice Climbers (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 60,
-            "scale": 2.5
-        }
+    {
+      "name": "Ice Climbers (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Ice Climbers (3)"
+    },
+    {
+      "name": "Ice Climbers (4)"
+    },
+    {
+      "name": "Ice Climbers (5)"
+    },
+    {
+      "name": "Ice Climbers (6)"
+    },
+    {
+      "name": "Ice Climbers (7)"
+    },
+    {
+      "name": "Ice Climbers (8)"
+    },
+    {
+      "name": "Ice Climbers (9)"
+    },
+    {
+      "name": "Ice Climbers (10)"
+    },
+    {
+      "name": "Ice Climbers (11)"
+    },
+    {
+      "name": "Ice Climbers (12)"
+    },
+    {
+      "name": "Ice Climbers (13)"
+    },
+    {
+      "name": "Ice Climbers (14)"
+    },
+    {
+      "name": "Ice Climbers (15)"
+    },
+    {
+      "name": "Ice Climbers (16)"
+    },
+    {
+      "name": "Ice Climbers (17)"
+    },
+    {
+      "name": "Ice Climbers (18)"
+    },
+    {
+      "name": "Ice Climbers (19)"
+    },
+    {
+      "name": "Ice Climbers (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 40,
+      "y": 10,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 60,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

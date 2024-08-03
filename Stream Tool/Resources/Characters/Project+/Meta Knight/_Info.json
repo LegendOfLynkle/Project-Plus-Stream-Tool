@@ -1,97 +1,97 @@
 {
-    "skinList": [
-        {
-            "name": "Meta Knight (1)"
-        },
-        {
-            "name": "Meta Knight (2)"
-        },
-        {
-            "name": "Meta Knight (3)"
-        },
-        {
-            "name": "Meta Knight (4)"
-        },
-        {
-            "name": "Meta Knight (5)"
-        },
-        {
-            "name": "Meta Knight (6)"
-        },
-        {
-            "name": "Meta Knight (7)"
-        },
-        {
-            "name": "Meta Knight (8)"
-        },
-        {
-            "name": "Meta Knight (9)"
-        },
-        {
-            "name": "Meta Knight (10)"
-        },
-        {
-            "name": "Meta Knight (11)"
-        },
-        {
-            "name": "Meta Knight (12)"
-        },
-        {
-            "name": "Meta Knight (13)"
-        },
-        {
-            "name": "Meta Knight (14)"
-        },
-        {
-            "name": "Meta Knight (15)"
-        },
-        {
-            "name": "Meta Knight (16)"
-        },
-        {
-            "name": "Meta Knight (17)"
-        },
-        {
-            "name": "Meta Knight (18)"
-        },
-        {
-            "name": "Meta Knight (19)"
-        },
-        {
-            "name": "Meta Knight (20)"
-        },
-        {
-            "name": "Meta Knight (21)"
-        },
-        {
-            "name": "Meta Knight (22)"
-        },
-        {
-            "name": "Meta Knight (23)"
-        },
-        {
-            "name": "Meta Knight (24)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": -20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Meta Knight (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": -125,
-            "scale": 2.5
-        }
+    {
+      "name": "Meta Knight (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Meta Knight (3)"
+    },
+    {
+      "name": "Meta Knight (4)"
+    },
+    {
+      "name": "Meta Knight (5)"
+    },
+    {
+      "name": "Meta Knight (6)"
+    },
+    {
+      "name": "Meta Knight (7)"
+    },
+    {
+      "name": "Meta Knight (8)"
+    },
+    {
+      "name": "Meta Knight (9)"
+    },
+    {
+      "name": "Meta Knight (10)"
+    },
+    {
+      "name": "Meta Knight (11)"
+    },
+    {
+      "name": "Meta Knight (12)"
+    },
+    {
+      "name": "Meta Knight (13)"
+    },
+    {
+      "name": "Meta Knight (14)"
+    },
+    {
+      "name": "Meta Knight (15)"
+    },
+    {
+      "name": "Meta Knight (16)"
+    },
+    {
+      "name": "Meta Knight (17)"
+    },
+    {
+      "name": "Meta Knight (18)"
+    },
+    {
+      "name": "Meta Knight (19)"
+    },
+    {
+      "name": "Meta Knight (20)"
+    },
+    {
+      "name": "Meta Knight (21)"
+    },
+    {
+      "name": "Meta Knight (22)"
+    },
+    {
+      "name": "Meta Knight (23)"
+    },
+    {
+      "name": "Meta Knight (24)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": -20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": -125,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

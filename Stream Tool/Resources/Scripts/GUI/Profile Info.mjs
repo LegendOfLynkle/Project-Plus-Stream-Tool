@@ -4,206 +4,192 @@ import { displayNotif } from "./Notifications.mjs";
 import { stPath } from "./Globals.mjs";
 import { playerFinder } from "./Finder/Player Finder.mjs";
 import { commFinder } from "./Finder/Comm Finder.mjs";
-import { settings } from './Settings.mjs';
+import { settings } from "./Settings.mjs";
 
 const flagList = await getJson(stPath.text + "/Flag Names");
 
 class ProfileInfo {
+  #pInfoDiv = document.getElementById("pInfoDiv");
 
-    #pInfoDiv = document.getElementById("pInfoDiv");
+  #pTypeSpan = document.getElementById("pInfoType");
 
-    #pTypeSpan = document.getElementById("pInfoType");
+  #inputs = document.getElementsByClassName("pInfoInput");
 
-    #inputs = document.getElementsByClassName("pInfoInput");
-
-    #pronounsInp = document.getElementById("pInfoInputPronouns");
-    #tagInp = document.getElementById("pInfoInputTag");
-    #nameInp = document.getElementById("pInfoInputName");
-    #flagSelect = document.getElementById('pInfoInputState');
-    #twitchInp = document.getElementById("pInfoInputTwitch");
-    #ytInp = document.getElementById("pInfoInputYt");
-    #twitterInp = document.getElementById("pInfoInputTwitter");
-    /*  #bskyInp = document.getElementById("pInfoInputBsky");
+  #pronounsInp = document.getElementById("pInfoInputPronouns");
+  #tagInp = document.getElementById("pInfoInputTag");
+  #nameInp = document.getElementById("pInfoInputName");
+  #flagSelect = document.getElementById("pInfoInputState");
+  #twitchInp = document.getElementById("pInfoInputTwitch");
+  #ytInp = document.getElementById("pInfoInputYt");
+  #twitterInp = document.getElementById("pInfoInputTwitter");
+  /*  #bskyInp = document.getElementById("pInfoInputBsky");
         #mastoInp = document.getElementById("pInfoInputMasto");
         #cohostInp = document.getElementById("pInfoInputCohost");*/
 
-    #curProfile;
+  #curProfile;
 
-    constructor() {
+  constructor() {
+    document.getElementById("pInfoBackButt").addEventListener("click", () => {
+      this.hide();
+    });
+    document.getElementById("pInfoSaveButt").addEventListener("click", () => {
+      this.apply();
+      this.savePreset();
+      this.hide();
+    });
+    document.getElementById("pInfoApplyButt").addEventListener("click", () => {
+      this.apply();
+      this.hide();
+    });
 
-        document.getElementById("pInfoBackButt").addEventListener("click", () => {
-            this.hide();
-        });
-        document.getElementById("pInfoSaveButt").addEventListener("click", () => {
-            this.apply();
-            this.savePreset();
-            this.hide();
-        });
-        document.getElementById("pInfoApplyButt").addEventListener("click", () => {
-            this.apply();
-            this.hide();
-        });
+    // create the flag select list
+    for (let i = 0; i < flagList.length; i++) {
+      const flagOption = document.createElement("option");
+      flagOption.value = flagList[i].name;
+      flagOption.innerHTML = flagList[i].name;
 
-        // create the flag select list
-        for (let i = 0; i < flagList.length; i++) {
+      // add colors to the list
+      flagOption.style.backgroundColor = "var(--bg5)";
 
-            const flagOption = document.createElement('option');
-            flagOption.value = flagList[i].name;
-            flagOption.innerHTML = flagList[i].name;
-
-            // add colors to the list
-            flagOption.style.backgroundColor = "var(--bg5)";
-
-            this.#flagSelect.appendChild(flagOption);
-
-        }
-
-        // add in additional none option
-        const noneOption = document.createElement('option');
-        noneOption.value = "";
-        noneOption.innerHTML = "(none)";
-        noneOption.style.backgroundColor = "var(--bg5)";
-        this.#flagSelect.appendChild(noneOption);
-
+      this.#flagSelect.appendChild(flagOption);
     }
 
-    /**
-     * Checks if the player info menu is currently visible
-     * @returns True if menu is visible, false if not
-     */
-    isVisible() {
-        return this.#pInfoDiv.style.pointerEvents == "auto";
-    }
+    // add in additional none option
+    const noneOption = document.createElement("option");
+    noneOption.value = "";
+    noneOption.innerHTML = "(none)";
+    noneOption.style.backgroundColor = "var(--bg5)";
+    this.#flagSelect.appendChild(noneOption);
+  }
 
-    /**
-     * Displays the player info div on screen
-     * @param {PlayerGame} profile Player data to fill inputs
-     */
-    show(profile) {
+  /**
+   * Checks if the player info menu is currently visible
+   * @returns True if menu is visible, false if not
+   */
+  isVisible() {
+    return this.#pInfoDiv.style.pointerEvents == "auto";
+  }
 
-        // update player number text
-        this.#pTypeSpan.textContent = profile.profileType;
+  /**
+   * Displays the player info div on screen
+   * @param {PlayerGame} profile Player data to fill inputs
+   */
+  show(profile) {
+    // update player number text
+    this.#pTypeSpan.textContent = profile.profileType;
 
-        // display the current info for this player
-        this.#pronounsInp.value = profile.getPronouns();
-        this.#tagInp.value = profile.getTag();
-        this.#nameInp.value = profile.getName();
-        this.#flagSelect.value = profile.getState();
-        const socials = profile.getSocials() || [];
-        this.#twitterInp.value = socials.twitter || "";
-        this.#twitchInp.value = socials.twitch || "";
-        this.#ytInp.value = socials.yt || "";
-        /*      this.#bskyInp.value = socials.bsky || "";
+    // display the current info for this player
+    this.#pronounsInp.value = profile.getPronouns();
+    this.#tagInp.value = profile.getTag();
+    this.#nameInp.value = profile.getName();
+    this.#flagSelect.value = profile.getState();
+    const socials = profile.getSocials() || [];
+    this.#twitterInp.value = socials.twitter || "";
+    this.#twitchInp.value = socials.twitch || "";
+    this.#ytInp.value = socials.yt || "";
+    /*      this.#bskyInp.value = socials.bsky || "";
                 this.#mastoInp.value = socials.masto || "";
                 this.#cohostInp.value = socials.cohost || "";*/
 
-        // give tab index so we can jump from input to input with the keyboard
-        this.#setTabIndex(0);
+    // give tab index so we can jump from input to input with the keyboard
+    this.#setTabIndex(0);
 
-        // display the overall div
-        this.#pInfoDiv.style.pointerEvents = "auto";
-        this.#pInfoDiv.style.opacity = 1;
-        this.#pInfoDiv.style.transform = "scale(1)";
-        viewport.opacity(".25");
+    // display the overall div
+    this.#pInfoDiv.style.pointerEvents = "auto";
+    this.#pInfoDiv.style.opacity = 1;
+    this.#pInfoDiv.style.transform = "scale(1)";
+    viewport.opacity(".25");
 
-        // store current class for later
-        this.#curProfile = profile;
+    // store current class for later
+    this.#curProfile = profile;
+  }
 
+  /** Hides the player info div */
+  hide() {
+    this.#pInfoDiv.style.pointerEvents = "none";
+    this.#pInfoDiv.style.opacity = 0;
+    this.#pInfoDiv.style.transform = "scale(1.15)";
+    viewport.opacity("1");
+
+    this.#setTabIndex("-1");
+  }
+
+  /**
+   * Sets a tab index value for all input elements inside the player info div
+   * @param {Number} num - Tab index value
+   */
+  #setTabIndex(num) {
+    for (let i = 0; i < this.#inputs.length; i++) {
+      this.#inputs[i].setAttribute("tabindex", num);
     }
+  }
 
-    /** Hides the player info div */
-    hide() {
+  /** Updates player data with values from input fields */
+  apply() {
+    this.#curProfile.pronouns = this.#pronounsInp.value;
+    this.#curProfile.setTag(this.#tagInp.value);
+    this.#curProfile.setName(this.#nameInp.value);
+    this.#curProfile.setState(this.#flagSelect.value);
 
-        this.#pInfoDiv.style.pointerEvents = "none";
-        this.#pInfoDiv.style.opacity = 0;
-        this.#pInfoDiv.style.transform = "scale(1.15)";
-        viewport.opacity("1");
-
-        this.#setTabIndex("-1");
-
-    }
-
-    /**
-     * Sets a tab index value for all input elements inside the player info div
-     * @param {Number} num - Tab index value
-     */
-    #setTabIndex(num) {
-        for (let i = 0; i < this.#inputs.length; i++) {
-            this.#inputs[i].setAttribute("tabindex", num);
-        }
-    }
-
-    /** Updates player data with values from input fields */
-    apply() {
-
-        this.#curProfile.pronouns = this.#pronounsInp.value;
-        this.#curProfile.setTag(this.#tagInp.value);
-        this.#curProfile.setName(this.#nameInp.value);
-        this.#curProfile.setState(this.#flagSelect.value);
-
-        const socials = {
-            twitter: this.#twitterInp.value,
-            twitch: this.#twitchInp.value,
-            yt: this.#ytInp.value,
-            /*          bsky : this.#bskyInp.value,
+    const socials = {
+      twitter: this.#twitterInp.value,
+      twitch: this.#twitchInp.value,
+      yt: this.#ytInp.value,
+      /*          bsky : this.#bskyInp.value,
                         masto : this.#mastoInp.value,
                         cohost : this.#cohostInp.value,*/
-        }
-        this.#curProfile.setSocials(socials);
+    };
+    this.#curProfile.setSocials(socials);
+  }
 
+  async savePreset() {
+    const game = settings.selectedGame();
+    const preset = {
+      name: this.#curProfile.getName(),
+      tag: this.#curProfile.getTag(),
+      pronouns: this.#curProfile.getPronouns(),
+      state: this.#curProfile.getState(),
+      socials: this.#curProfile.getSocials(),
+      characters: { Melee: [], "Project+": [] },
+    };
+    if (this.#curProfile.profileType == "player") {
+      preset.characters[game] = [
+        {
+          character: this.#curProfile.char,
+          skin: this.#curProfile.skin.name,
+        },
+      ];
+      if (this.#curProfile.customImg) {
+        preset.characters[game][0].hex = this.#curProfile.skin.hex;
+        preset.characters[game][0].customImg = true;
+      }
+
+      // if a player preset for this player exists, add already existing characters
+      const existingPreset = await getJson(`${stPath.text}/Player Info/${this.#nameInp.value}`);
+      if (existingPreset) {
+        // Make sure we save presets for both games
+        let games = ["Melee", "Project+"];
+        games.forEach((x) => {
+          // add existing characters to the new json, but not if the character is the same
+          for (let i = 0; i < existingPreset.characters[x].length; i++) {
+            if (existingPreset.characters[x][i].character != this.#curProfile.char) {
+              preset.characters[x].push(existingPreset.characters[x][i]);
+            }
+          }
+        });
+      }
     }
 
-    async savePreset() {
-
-        const game = settings.selectedGame();
-        const preset = {
-            name: this.#curProfile.getName(),
-            tag: this.#curProfile.getTag(),
-            pronouns: this.#curProfile.getPronouns(),
-            state: this.#curProfile.getState(),
-            socials: this.#curProfile.getSocials(),
-            characters: {"Melee": [], "Project+": []}
-        }
-        if (this.#curProfile.profileType == "player") {
-            preset.characters[game] = [{
-                character: this.#curProfile.char,
-                skin: this.#curProfile.skin.name
-            }];
-            if (this.#curProfile.customImg) {
-                preset.characters[game][0].hex = this.#curProfile.skin.hex;
-                preset.characters[game][0].customImg = true;
-            }
-
-            // if a player preset for this player exists, add already existing characters
-            const existingPreset = await getJson(`${stPath.text}/Player Info/${this.#nameInp.value}`)
-            if (existingPreset) {
-                // Make sure we save presets for both games
-                let games = ["Melee", "Project+"];
-                games.forEach((x) => {
-                    // add existing characters to the new json, but not if the character is the same
-                    for (let i = 0; i < existingPreset.characters[x].length; i++) {
-                        if (existingPreset.characters[x][i].character != this.#curProfile.char) {
-                            preset.characters[x].push(existingPreset.characters[x][i]);
-                        }
-                    }
-                });
-            }
-        }
-
-
-        if (this.#curProfile.profileType == "player") {
-            saveJson(`/Player Info/${this.#nameInp.value}`, preset);
-            displayNotif("Player preset has been saved");
-            playerFinder.setPlayerPresets();
-        } else {
-            saveJson(`/Commentator Info/${this.#nameInp.value}`, preset);
-            displayNotif("Commentator preset has been saved");
-            commFinder.setCasterPresets();
-        }
-
-
+    if (this.#curProfile.profileType == "player") {
+      saveJson(`/Player Info/${this.#nameInp.value}`, preset);
+      displayNotif("Player preset has been saved");
+      playerFinder.setPlayerPresets();
+    } else {
+      saveJson(`/Commentator Info/${this.#nameInp.value}`, preset);
+      displayNotif("Commentator preset has been saved");
+      commFinder.setCasterPresets();
     }
-
+  }
 }
 
-export const profileInfo = new ProfileInfo;
+export const profileInfo = new ProfileInfo();

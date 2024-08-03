@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "King Dedede (1)"
-        },
-        {
-            "name": "King Dedede (2)"
-        },
-        {
-            "name": "King Dedede (3)"
-        },
-        {
-            "name": "King Dedede (4)"
-        },
-        {
-            "name": "King Dedede (5)"
-        },
-        {
-            "name": "King Dedede (6)"
-        },
-        {
-            "name": "King Dedede (7)"
-        },
-        {
-            "name": "King Dedede (8)"
-        },
-        {
-            "name": "King Dedede (9)"
-        },
-        {
-            "name": "King Dedede (10)"
-        },
-        {
-            "name": "King Dedede (11)"
-        },
-        {
-            "name": "King Dedede (12)"
-        },
-        {
-            "name": "King Dedede (13)"
-        },
-        {
-            "name": "King Dedede (14)"
-        },
-        {
-            "name": "King Dedede (15)"
-        },
-        {
-            "name": "King Dedede (16)"
-        },
-        {
-            "name": "King Dedede (17)"
-        },
-        {
-            "name": "King Dedede (18)"
-        },
-        {
-            "name": "King Dedede (19)"
-        },
-        {
-            "name": "King Dedede (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "King Dedede (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 80,
-            "scale": 2.5
-        }
+    {
+      "name": "King Dedede (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "King Dedede (3)"
+    },
+    {
+      "name": "King Dedede (4)"
+    },
+    {
+      "name": "King Dedede (5)"
+    },
+    {
+      "name": "King Dedede (6)"
+    },
+    {
+      "name": "King Dedede (7)"
+    },
+    {
+      "name": "King Dedede (8)"
+    },
+    {
+      "name": "King Dedede (9)"
+    },
+    {
+      "name": "King Dedede (10)"
+    },
+    {
+      "name": "King Dedede (11)"
+    },
+    {
+      "name": "King Dedede (12)"
+    },
+    {
+      "name": "King Dedede (13)"
+    },
+    {
+      "name": "King Dedede (14)"
+    },
+    {
+      "name": "King Dedede (15)"
+    },
+    {
+      "name": "King Dedede (16)"
+    },
+    {
+      "name": "King Dedede (17)"
+    },
+    {
+      "name": "King Dedede (18)"
+    },
+    {
+      "name": "King Dedede (19)"
+    },
+    {
+      "name": "King Dedede (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 80,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

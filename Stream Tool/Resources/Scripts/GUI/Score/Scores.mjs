@@ -8,14 +8,14 @@ export const scores = [];
  * @param {Number} mode - "Best of" mode
  */
 export function showScoreMode(mode) {
-    for (let i = 0; i < scores.length; i++) {
-        scores[i].showMode(mode);        
-    }
+  for (let i = 0; i < scores.length; i++) {
+    scores[i].showMode(mode);
+  }
 }
 
 /** Resets all scores to 0 */
 export function clearScores() {
-    for (let i = 0; i < scores.length; i++) {
-        scores[i].setScore(0);
-    }
+  for (let i = 0; i < scores.length; i++) {
+    scores[i].setScore(0);
+  }
 }

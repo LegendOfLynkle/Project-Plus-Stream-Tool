@@ -8,9 +8,10 @@
   "scoreAutoUpdate": true,
   "simpleTexts": false,
   "alwaysOnTop": false,
-  "resizable": true,
+  "resizable": false,
   "zoom": 100,
   "remoteUpdatePort": 1111,
   "webSocketPort": 8080,
-  "selectedGame": "Project+"
+  "selectedGame": "Project+",
+  "startGGManagement": true
 }

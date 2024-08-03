@@ -1,12 +1,11 @@
-
 @font-face {
   font-family: "Roboto-Regular";
-  src: url('../Fonts/Roboto-Regular.ttf');
+  src: url("../Fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url('../Fonts/Roboto-Medium.ttf');
+  src: url("../Fonts/Roboto-Medium.ttf");
 }
 
 :root {
@@ -14,7 +13,7 @@
   --text2: #00ffd9;
   --bg1: #0a2424;
   --bg2: #134849;
-  --bg3: #0e3131; 
+  --bg3: #0e3131;
   --bg4: #1e887ab2;
   --bg5: #113f3f;
   --selected: #2db29f;
@@ -37,7 +36,8 @@
   background-color: var(--focused);
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   height: 100%;
@@ -50,10 +50,9 @@ body {
   background-color: var(--bg2);
   color: var(--text1);
   user-select: none;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   font-size: 16px;
 }
-
 
 /* general text input class*/
 .textInput {
@@ -66,10 +65,10 @@ body {
   box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid var(--bg4);
-  transition: border-color 100ms;  
+  transition: border-color 100ms;
 }
 input[type="text"] {
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   font-size: 13px;
 }
 
@@ -94,7 +93,8 @@ button {
   text-transform: inherit;
   text-shadow: inherit;
 }
-button, [type="button"] {
+button,
+[type="button"] {
   -webkit-appearance: button;
 }
 button:hover {
@@ -120,7 +120,6 @@ button:hover {
   background-color: var(--bg2);
 }
 
-
 /* main viewport */
 #viewport {
   position: relative;
@@ -129,7 +128,6 @@ button:hover {
   display: flex;
   transition: transform 300ms ease;
 }
-
 
 /* where all the magic happens */
 #overlay {
@@ -169,7 +167,6 @@ button:hover {
   gap: 5px;
 }
 
-
 .teamName {
   width: 100%;
   display: none;
@@ -179,22 +176,28 @@ button:hover {
   display: flex;
 }
 
-.pInfoButt, .cInfoButt, .cDeleteButt {
+.pInfoButt,
+.cInfoButt,
+.cDeleteButt {
   width: 30px;
   background-color: var(--bg4);
   border-radius: 3px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border: 1px solid var(--bg4);
-  transition: border-color 100ms;  
+  transition: border-color 100ms;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pInfoButt:hover, .cInfoButt:hover, .cDeleteButt:hover {
+.pInfoButt:hover,
+.cInfoButt:hover,
+.cDeleteButt:hover {
   border-color: var(--selected);
 }
-.pInfoButt:focus, .cInfoButt:focus, .cDeleteButt:focus {
+.pInfoButt:focus,
+.cInfoButt:focus,
+.cDeleteButt:focus {
   border-color: var(--focused);
 }
 .pInfoButtIcon {
@@ -272,7 +275,7 @@ button:hover {
   width: 100%;
   margin-left: 75%;
   overflow: hidden;
-  opacity: .8;
+  opacity: 0.8;
 }
 .pfCharImg {
   position: absolute;
@@ -280,10 +283,9 @@ button:hover {
   top: 0px;
   object-fit: contain;
   height: 40px;
-  opacity: .8;
+  opacity: 0.8;
   z-index: 31;
 }
-
 
 .pColor {
   width: 30px;
@@ -326,7 +328,7 @@ button:hover {
   position: absolute;
   background-color: var(--bg5);
   width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 3;
   font-size: 15px;
 }
@@ -352,7 +354,6 @@ button:hover {
   display: block;
 }
 
-
 .selector {
   /* max-width: 145px; */
   height: 32px;
@@ -365,7 +366,7 @@ button:hover {
   font-size: 14px;
   display: flex;
   align-items: center;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   white-space: nowrap;
   gap: 3px;
   overflow: hidden;
@@ -395,7 +396,6 @@ button:hover {
   width: 70px;
 } */
 
-
 .finder {
   display: none;
   position: absolute;
@@ -405,7 +405,8 @@ button:hover {
   z-index: 3;
   max-height: 165px;
 }
-.charSelector:focus-within .finder, .skinSelector:focus-within .finder {
+.charSelector:focus-within .finder,
+.skinSelector:focus-within .finder {
   display: block;
 }
 .listSearch {
@@ -427,7 +428,8 @@ button:hover {
   position: relative;
 }
 
-#characterFinder, #skinFinder {
+#characterFinder,
+#skinFinder {
   width: 200px;
 }
 
@@ -438,11 +440,10 @@ button:hover {
   padding-left: 4px;
 }
 
-
 .skinSelector {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  border-left: 0px solid var(--selected);;
+  border-left: 0px solid var(--selected);
 }
 .skinSelector:hover {
   margin-left: -1px;
@@ -458,7 +459,6 @@ button:hover {
   border-left: 1px solid var(--selected);
 }
 
-
 .scoreBox {
   background-color: var(--bg4);
   height: 30px;
@@ -470,14 +470,15 @@ button:hover {
   display: flex;
   align-items: center;
   color: var(--text2);
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   gap: 8px;
 }
 .scoreBox:hover {
   border-color: var(--selected);
 }
 
-#scoreText1, #scoreText2 {
+#scoreText1,
+#scoreText2 {
   margin-right: -2px;
 }
 
@@ -497,7 +498,7 @@ button:hover {
   border-radius: 3px;
   background-color: var(--bg2);
   color: var(--text1);
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   font-size: 16px;
   padding-left: 3px;
 }
@@ -505,7 +506,7 @@ button:hover {
 .wlButtons {
   display: none;
   font-size: 13px;
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
 }
 
 .wlBox {
@@ -525,26 +526,27 @@ button:hover {
   border-color: var(--selected);
 }
 
-#p1W, #p2W {
+#p1W,
+#p2W {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-#p1W:hover, #p2W:hover {
+#p1W:hover,
+#p2W:hover {
   transform: scale(1);
 }
-#p1L, #p2L {
+#p1L,
+#p2L {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   box-sizing: border-box;
   padding-left: 7px;
 }
 
-
 /* elements that will show up when changing gamemode */
 .elGm2 {
   display: none;
 }
-
 
 #sideSep {
   width: 20px;
@@ -581,11 +583,13 @@ button:hover {
   fill: var(--iconFill);
   opacity: 0;
   transform: scale(1.5);
-  transition: opacity 200ms, transform 200ms;
+  transition:
+    opacity 200ms,
+    transform 200ms;
   display: inline-block;
 }
 #swapIcon {
-  opacity: .5;
+  opacity: 0.5;
 }
 #swapButton:hover #swapIcon {
   opacity: 1;
@@ -595,7 +599,6 @@ button:hover {
   opacity: 1;
   transform: scale(2);
 }
-
 
 .charImgBox {
   width: 100%;
@@ -613,7 +616,6 @@ button:hover {
   box-sizing: border-box;
 }
 
-
 /* round propierties */
 #roundInfo {
   height: 40px;
@@ -627,7 +629,6 @@ button:hover {
   padding: 0px 10px;
   gap: 8px;
 }
-
 
 #bestOf {
   background-color: var(--bg4);
@@ -643,7 +644,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: var(--text2);
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
 }
 #bestOf:hover {
   border-color: var(--selected);
@@ -665,7 +666,9 @@ button:hover {
   gap: 8px;
 }
 
-#roundName, #roundNameSelect, #tournamentName { 
+#roundName,
+#roundNameSelect,
+#tournamentName {
   width: 100%;
   text-align: center;
 }
@@ -674,7 +677,6 @@ button:hover {
   width: 46px;
   text-align: center;
 }
-
 
 #gamemode {
   background-color: var(--bg4);
@@ -689,7 +691,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: var(--text2);
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
 }
 #gamemode:hover {
   border-color: var(--selected);
@@ -698,7 +700,6 @@ button:hover {
 #gamemode:active {
   background-color: var(--bg2);
 }
-
 
 /* caster region */
 #casterInfo {
@@ -728,7 +729,6 @@ button:hover {
   display: flex;
 }
 
-
 .cName {
   width: 100px;
   border-radius: 0;
@@ -746,7 +746,9 @@ button:hover {
   align-items: center;
   border: 1px solid var(--focused);
   border-radius: 3px;
-  transition: border-color 100ms, opacity 100ms;
+  transition:
+    border-color 100ms,
+    opacity 100ms;
   background-color: var(--bg4);
   padding: 1px 5px 1px 5px;
   height: 30px;
@@ -759,7 +761,7 @@ button:hover {
 }
 #startGGButton:disabled {
   pointer-events: none;
-  opacity: .5;
+  opacity: 0.5;
 }
 #startGGButton > img {
   height: 20px;
@@ -770,7 +772,9 @@ button:hover {
   align-items: center;
   border: 1px solid var(--focused);
   border-radius: 3px;
-  transition: border-color 100ms, opacity 100ms;
+  transition:
+    border-color 100ms,
+    opacity 100ms;
   background-color: var(--bg4);
   padding: 1px 2px 1px 5px;
   height: 30px;
@@ -783,7 +787,7 @@ button:hover {
 }
 #addCasterButt:disabled {
   pointer-events: none;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #casterFinder {
@@ -801,7 +805,6 @@ button:hover {
 .cFinderPosition {
   width: 100px;
 }
-
 
 /* the bottom bar */
 #botBar {
@@ -822,7 +825,7 @@ button:hover {
 
 .botText {
   color: var(--text1);
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   white-space: nowrap;
 }
 
@@ -836,13 +839,14 @@ button:hover {
 #updateRegion:hover {
   background-color: var(--bg3);
 }
-#updateRegion:active{
+#updateRegion:active {
   background-color: var(--bg5);
 }
 
-#botBarBracket, #settingsRegion {
+#botBarBracket,
+#settingsRegion {
   width: 32px;
-  background-color: var(--bg3)
+  background-color: var(--bg3);
 }
 
 #bracketIcon {
@@ -856,14 +860,15 @@ button:hover {
   fill: var(--text2);
 }
 
-#botBarBracket:hover, #settingsRegion:hover {
+#botBarBracket:hover,
+#settingsRegion:hover {
   background-color: var(--bg1);
 }
 
-#botBarBracket:active, #settingsRegion:active{
+#botBarBracket:active,
+#settingsRegion:active {
   background-color: var(--bg5);
 }
-
 
 /* settings section */
 #settings {
@@ -874,14 +879,12 @@ button:hover {
   right: -240px;
 }
 
-
 #actualSettings {
   width: 240px;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 
 #settingsTitleTop {
   height: 40px;
@@ -939,7 +942,6 @@ button:hover {
   width: 140px;
 }
 
-
 .settingsCheck {
   outline: none;
   margin-right: 4px;
@@ -969,7 +971,7 @@ button:hover {
   filter: brightness(1.4);
 }
 .settingsButton:active {
-  filter: brightness(.8);
+  filter: brightness(0.8);
 }
 
 #settingsElectron {
@@ -1010,7 +1012,6 @@ button:hover {
   overflow: hidden;
 }
 
-
 #bracketTitle {
   font-family: "Roboto-Medium";
   font-size: 18px;
@@ -1038,7 +1039,7 @@ button:hover {
   align-items: center;
   gap: 5px;
 }
-.bEncounter { 
+.bEncounter {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1057,12 +1058,12 @@ button:hover {
   border-color: var(--selected);
 }
 
-
 .bInput {
   width: 90px;
   border-radius: 5px;
 }
-.bTagInp, .bScoreInp {
+.bTagInp,
+.bScoreInp {
   width: 50px;
 }
 
@@ -1083,12 +1084,10 @@ button:hover {
   background-color: var(--bg2);
 }
 
-
 #bBotButts {
   display: flex;
   gap: 10px;
 }
-
 
 /* clickable area that gets enabled when moving the viewport */
 #goBack {
@@ -1098,7 +1097,6 @@ button:hover {
   z-index: 100;
   display: none;
 }
-
 
 /* player info menu that appears on top of viewport */
 #pInfoDiv {
@@ -1110,7 +1108,9 @@ button:hover {
   opacity: 0;
   transform: scale(1.15);
   pointer-events: none;
-  transition: opacity 150ms, transform 150ms;
+  transition:
+    opacity 150ms,
+    transform 150ms;
   z-index: 100;
 }
 #pInfoCenter {
@@ -1186,13 +1186,11 @@ button:hover {
   background-color: var(--bg2);
   border: 1px solid var(--focused);
   border-radius: 3px;
-  transition: border-color 100ms;  
-
+  transition: border-color 100ms;
 }
 .pInfoBotButt:hover {
   border-color: var(--selected);
 }
-
 
 .pInfoSep {
   height: 1px;
@@ -1215,7 +1213,6 @@ button:hover {
 .pselectDropDown:active {
   background-color: var(--bg2);
 }
-
 
 /* Custom skin menu */
 /* #customSkinDiv {
@@ -1244,7 +1241,6 @@ button:hover {
 #customSkinInput:hover {
   border: 1px solid var(--selected);
 } */
-
 
 /* notification area */
 #notifDiv {
@@ -1275,19 +1271,24 @@ button:hover {
     opacity: 0px;
     border-color: var(--selected);
   }
-  10% {opacity: 1;}
-  20% {border-color: var(--focused);}
-  75% {opacity: 1;}
-  100% {opacity: 0;}
+  10% {
+    opacity: 1;
+  }
+  20% {
+    border-color: var(--focused);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-
 @media (max-width: 590px) {
-
   #playerRegion {
     flex-direction: column;
   }
-
 
   .side {
     height: 50%;
@@ -1311,27 +1312,25 @@ button:hover {
   #swapIcon {
     transform: rotate(90deg) scale(1.5);
   }
-  #swapButton:hover #swapIcon{
+  #swapButton:hover #swapIcon {
     opacity: 1;
     transform: scale(2.5) rotate(90deg);
   }
 
-
   #botBar {
     height: 40px;
   }
-  #settingsRegion, #botBarBracket {
+  #settingsRegion,
+  #botBarBracket {
     width: 50px;
   }
-
 
   .pInfoRow {
     flex-direction: column;
   }
-
 }
 
-
-#caster1, #caster2 {
+#caster1,
+#caster2 {
   display: none;
 }

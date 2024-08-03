@@ -1,88 +1,88 @@
 {
-    "skinList": [
-        {
-            "name": "Fox (1)"
-        },
-        {
-            "name": "Fox (2)"
-        },
-        {
-            "name": "Fox (3)"
-        },
-        {
-            "name": "Fox (4)"
-        },
-        {
-            "name": "Fox (5)"
-        },
-        {
-            "name": "Fox (6)"
-        },
-        {
-            "name": "Fox (7)"
-        },
-        {
-            "name": "Fox (8)"
-        },
-        {
-            "name": "Fox (9)"
-        },
-        {
-            "name": "Fox (10)"
-        },
-        {
-            "name": "Fox (11)"
-        },
-        {
-            "name": "Fox (12)"
-        },
-        {
-            "name": "Fox (13)"
-        },
-        {
-            "name": "Fox (14)"
-        },
-        {
-            "name": "Fox (15)"
-        },
-        {
-            "name": "Fox (16)"
-        },
-        {
-            "name": "Fox (17)"
-        },
-        {
-            "name": "Fox (18)"
-        },
-        {
-            "name": "Fox (19)"
-        },
-        {
-            "name": "Fox (20)"
-        },
-        {
-            "name": "Fox (21)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Fox (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 160,
-            "scale": 2.5
-        }
+    {
+      "name": "Fox (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Fox (3)"
+    },
+    {
+      "name": "Fox (4)"
+    },
+    {
+      "name": "Fox (5)"
+    },
+    {
+      "name": "Fox (6)"
+    },
+    {
+      "name": "Fox (7)"
+    },
+    {
+      "name": "Fox (8)"
+    },
+    {
+      "name": "Fox (9)"
+    },
+    {
+      "name": "Fox (10)"
+    },
+    {
+      "name": "Fox (11)"
+    },
+    {
+      "name": "Fox (12)"
+    },
+    {
+      "name": "Fox (13)"
+    },
+    {
+      "name": "Fox (14)"
+    },
+    {
+      "name": "Fox (15)"
+    },
+    {
+      "name": "Fox (16)"
+    },
+    {
+      "name": "Fox (17)"
+    },
+    {
+      "name": "Fox (18)"
+    },
+    {
+      "name": "Fox (19)"
+    },
+    {
+      "name": "Fox (20)"
+    },
+    {
+      "name": "Fox (21)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 160,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

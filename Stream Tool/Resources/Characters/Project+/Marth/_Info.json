@@ -1,88 +1,88 @@
 {
-    "skinList": [
-        {
-            "name": "Marth (1)"
-        },
-        {
-            "name": "Marth (2)"
-        },
-        {
-            "name": "Marth (3)"
-        },
-        {
-            "name": "Marth (4)"
-        },
-        {
-            "name": "Marth (5)"
-        },
-        {
-            "name": "Marth (6)"
-        },
-        {
-            "name": "Marth (7)"
-        },
-        {
-            "name": "Marth (8)"
-        },
-        {
-            "name": "Marth (9)"
-        },
-        {
-            "name": "Marth (10)"
-        },
-        {
-            "name": "Marth (11)"
-        },
-        {
-            "name": "Marth (12)"
-        },
-        {
-            "name": "Marth (13)"
-        },
-        {
-            "name": "Marth (14)"
-        },
-        {
-            "name": "Marth (15)"
-        },
-        {
-            "name": "Marth (16)"
-        },
-        {
-            "name": "Marth (17)"
-        },
-        {
-            "name": "Marth (18)"
-        },
-        {
-            "name": "Marth (19)"
-        },
-        {
-            "name": "Marth (20)"
-        },
-        {
-            "name": "Marth (21)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 40,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Marth (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Marth (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Marth (3)"
+    },
+    {
+      "name": "Marth (4)"
+    },
+    {
+      "name": "Marth (5)"
+    },
+    {
+      "name": "Marth (6)"
+    },
+    {
+      "name": "Marth (7)"
+    },
+    {
+      "name": "Marth (8)"
+    },
+    {
+      "name": "Marth (9)"
+    },
+    {
+      "name": "Marth (10)"
+    },
+    {
+      "name": "Marth (11)"
+    },
+    {
+      "name": "Marth (12)"
+    },
+    {
+      "name": "Marth (13)"
+    },
+    {
+      "name": "Marth (14)"
+    },
+    {
+      "name": "Marth (15)"
+    },
+    {
+      "name": "Marth (16)"
+    },
+    {
+      "name": "Marth (17)"
+    },
+    {
+      "name": "Marth (18)"
+    },
+    {
+      "name": "Marth (19)"
+    },
+    {
+      "name": "Marth (20)"
+    },
+    {
+      "name": "Marth (21)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 40,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

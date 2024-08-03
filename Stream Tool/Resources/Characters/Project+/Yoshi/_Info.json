@@ -1,103 +1,103 @@
 {
-    "skinList": [
-        {
-            "name": "Yoshi (1)"
-        },
-        {
-            "name": "Yoshi (2)"
-        },
-        {
-            "name": "Yoshi (3)"
-        },
-        {
-            "name": "Yoshi (4)"
-        },
-        {
-            "name": "Yoshi (5)"
-        },
-        {
-            "name": "Yoshi (6)"
-        },
-        {
-            "name": "Yoshi (7)"
-        },
-        {
-            "name": "Yoshi (8)"
-        },
-        {
-            "name": "Yoshi (9)"
-        },
-        {
-            "name": "Yoshi (10)"
-        },
-        {
-            "name": "Yoshi (11)"
-        },
-        {
-            "name": "Yoshi (12)"
-        },
-        {
-            "name": "Yoshi (13)"
-        },
-        {
-            "name": "Yoshi (14)"
-        },
-        {
-            "name": "Yoshi (15)"
-        },
-        {
-            "name": "Yoshi (16)"
-        },
-        {
-            "name": "Yoshi (17)"
-        },
-        {
-            "name": "Yoshi (18)"
-        },
-        {
-            "name": "Yoshi (19)"
-        },
-        {
-            "name": "Yoshi (20)"
-        },
-        {
-            "name": "Yoshi (21)"
-        },
-        {
-            "name": "Yoshi (22)"
-        },
-        {
-            "name": "Yoshi (23)"
-        },
-        {
-            "name": "Yoshi (24)"
-        },
-        {
-            "name": "Yoshi (25)"
-        },
-        {
-            "name": "Yoshi (26)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 22,
-            "y": 17,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Yoshi (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 120,
-            "scale": 2.5
-        }
+    {
+      "name": "Yoshi (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Yoshi (3)"
+    },
+    {
+      "name": "Yoshi (4)"
+    },
+    {
+      "name": "Yoshi (5)"
+    },
+    {
+      "name": "Yoshi (6)"
+    },
+    {
+      "name": "Yoshi (7)"
+    },
+    {
+      "name": "Yoshi (8)"
+    },
+    {
+      "name": "Yoshi (9)"
+    },
+    {
+      "name": "Yoshi (10)"
+    },
+    {
+      "name": "Yoshi (11)"
+    },
+    {
+      "name": "Yoshi (12)"
+    },
+    {
+      "name": "Yoshi (13)"
+    },
+    {
+      "name": "Yoshi (14)"
+    },
+    {
+      "name": "Yoshi (15)"
+    },
+    {
+      "name": "Yoshi (16)"
+    },
+    {
+      "name": "Yoshi (17)"
+    },
+    {
+      "name": "Yoshi (18)"
+    },
+    {
+      "name": "Yoshi (19)"
+    },
+    {
+      "name": "Yoshi (20)"
+    },
+    {
+      "name": "Yoshi (21)"
+    },
+    {
+      "name": "Yoshi (22)"
+    },
+    {
+      "name": "Yoshi (23)"
+    },
+    {
+      "name": "Yoshi (24)"
+    },
+    {
+      "name": "Yoshi (25)"
+    },
+    {
+      "name": "Yoshi (26)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 22,
+      "y": 17,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 120,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

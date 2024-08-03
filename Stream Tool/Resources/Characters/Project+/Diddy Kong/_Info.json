@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Diddy Kong (1)"
-        },
-        {
-            "name": "Diddy Kong (2)"
-        },
-        {
-            "name": "Diddy Kong (3)"
-        },
-        {
-            "name": "Diddy Kong (4)"
-        },
-        {
-            "name": "Diddy Kong (5)"
-        },
-        {
-            "name": "Diddy Kong (6)"
-        },
-        {
-            "name": "Diddy Kong (7)"
-        },
-        {
-            "name": "Diddy Kong (8)"
-        },
-        {
-            "name": "Diddy Kong (9)"
-        },
-        {
-            "name": "Diddy Kong (10)"
-        },
-        {
-            "name": "Diddy Kong (11)"
-        },
-        {
-            "name": "Diddy Kong (12)"
-        },
-        {
-            "name": "Diddy Kong (13)"
-        },
-        {
-            "name": "Diddy Kong (14)"
-        },
-        {
-            "name": "Diddy Kong (15)"
-        },
-        {
-            "name": "Diddy Kong (16)"
-        },
-        {
-            "name": "Diddy Kong (17)"
-        },
-        {
-            "name": "Diddy Kong (18)"
-        },
-        {
-            "name": "Diddy Kong (19)"
-        },
-        {
-            "name": "Diddy Kong (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 30,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Diddy Kong (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 100,
-            "scale": 2.5
-        }
+    {
+      "name": "Diddy Kong (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Diddy Kong (3)"
+    },
+    {
+      "name": "Diddy Kong (4)"
+    },
+    {
+      "name": "Diddy Kong (5)"
+    },
+    {
+      "name": "Diddy Kong (6)"
+    },
+    {
+      "name": "Diddy Kong (7)"
+    },
+    {
+      "name": "Diddy Kong (8)"
+    },
+    {
+      "name": "Diddy Kong (9)"
+    },
+    {
+      "name": "Diddy Kong (10)"
+    },
+    {
+      "name": "Diddy Kong (11)"
+    },
+    {
+      "name": "Diddy Kong (12)"
+    },
+    {
+      "name": "Diddy Kong (13)"
+    },
+    {
+      "name": "Diddy Kong (14)"
+    },
+    {
+      "name": "Diddy Kong (15)"
+    },
+    {
+      "name": "Diddy Kong (16)"
+    },
+    {
+      "name": "Diddy Kong (17)"
+    },
+    {
+      "name": "Diddy Kong (18)"
+    },
+    {
+      "name": "Diddy Kong (19)"
+    },
+    {
+      "name": "Diddy Kong (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 30,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 100,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

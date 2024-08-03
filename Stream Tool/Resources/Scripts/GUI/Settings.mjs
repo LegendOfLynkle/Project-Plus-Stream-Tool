@@ -10,199 +10,197 @@ import { round } from "./Round.mjs";
 import { teams } from "./Team/Teams.mjs";
 import { init } from "../GUI.js";
 
-
 class GuiSettings {
+  #introCheck = document.getElementById("allowIntro");
+  // #altArtCheck = document.getElementById("forceAlt");
 
-    #introCheck = document.getElementById("allowIntro");
-    // #altArtCheck = document.getElementById("forceAlt");
+  // #HDCheck = document.getElementById('forceHD');
+  // #noLoACheck = document.getElementById('noLoAHD');
 
-    // #HDCheck = document.getElementById('forceHD');
-    // #noLoACheck = document.getElementById('noLoAHD');
+  // #wsCheck = document.getElementById('workshopToggle');
+  #customRound = document.getElementById("customRound");
+  #forceWLCheck = document.getElementById("forceWLToggle");
+  #scoreAutoCheck = document.getElementById("scoreAutoUpdate");
+  #invertScoreCheck = document.getElementById("invertScore");
+  #simpleTextsCheck = document.getElementById("simpleTexts");
 
-    // #wsCheck = document.getElementById('workshopToggle');
-    #customRound = document.getElementById('customRound');
-    #forceWLCheck = document.getElementById('forceWLToggle');
-    #scoreAutoCheck = document.getElementById("scoreAutoUpdate");
-    #invertScoreCheck = document.getElementById("invertScore");
-    #simpleTextsCheck = document.getElementById("simpleTexts")
+  #alwaysOnTopCheck = document.getElementById("alwaysOnTop");
+  #resizableCheck = document.getElementById("resizableWindow");
+  #lessZoomButt = document.getElementById("lessZoomButt");
+  #moreZoomButt = document.getElementById("moreZoomButt");
+  #zoomTextValue = document.getElementById("zoomTextValue");
+  #zoomValue = 100;
+  #restoreWindowButt = document.getElementById("restoreWindowButt");
+  #selectedGame = document.getElementById("gameSelector");
+  #startGG = document.getElementById("startGG");
+  #aussmash = document.getElementById("aussmash");
+  startGGManagement = document.getElementById("startGGManagement");
+  startgg = {
+    eventLink: "",
+  };
 
-    #alwaysOnTopCheck = document.getElementById("alwaysOnTop");
-    #resizableCheck = document.getElementById("resizableWindow");
-    #lessZoomButt = document.getElementById("lessZoomButt");
-    #moreZoomButt = document.getElementById("moreZoomButt");
-    #zoomTextValue = document.getElementById("zoomTextValue");
-    #zoomValue = 100;
-    #restoreWindowButt = document.getElementById("restoreWindowButt");
-    #selectedGame = document.getElementById("gameSelector");
-    #startGG = document.getElementById("startGG");
-    #aussmash = document.getElementById("aussmash");
-    startGGManagement = document.getElementById("startGGManagement");
-    startgg = {
-        "eventLink": ""
-    }
+  constructor() {
+    // scoreboard listeners
+    this.#introCheck.addEventListener("click", () => {
+      this.save("allowIntro", this.isIntroChecked());
+    });
+    // this.#altArtCheck.addEventListener("click", () => {this.toggleAltArt()});
 
-    constructor() {
+    // vs screen listeners
+    // this.#HDCheck.addEventListener("click", () => {this.toggleHD()});
+    // this.#noLoACheck.addEventListener("click", () => {this.toggleNoLoA()});
 
-        // scoreboard listeners
-        this.#introCheck.addEventListener("click", () => {
-            this.save("allowIntro", this.isIntroChecked())
-        });
-        // this.#altArtCheck.addEventListener("click", () => {this.toggleAltArt()});
-
-        // vs screen listeners
-        // this.#HDCheck.addEventListener("click", () => {this.toggleHD()});
-        // this.#noLoACheck.addEventListener("click", () => {this.toggleNoLoA()});
-
-        // gui settings listeners
-        /* this.#wsCheck.addEventListener("click", () => {
+    // gui settings listeners
+    /* this.#wsCheck.addEventListener("click", () => {
             if (inside.electron) {
                 this.toggleWs();
             } else {
                 this.sendWsToggle();
             }            
         }); */
-        this.#customRound.addEventListener("click", () => {this.toggleCustomRound()});
-        this.#forceWLCheck.addEventListener("click", () => {this.toggleForceWL()});
-        this.#scoreAutoCheck.addEventListener("click", () => {
-            this.save("scoreAutoUpdate", this.isScoreAutoChecked())
-        });
-        this.#invertScoreCheck.addEventListener("click", () => {
-            this.save("invertScore", this.isInvertScoreChecked())
-        });
-        this.#simpleTextsCheck.addEventListener("click", () => {
-            this.save("simpleTexts", this.isSimpleTextsChecked())
-        });
-        this.startGGManagement.addEventListener("click", () => {
-            this.save("startGGManagement", this.startGGManagement.checked)
-            let t = document.getElementById("tournamentName");
-            if(this.startGGManagement.checked){
-                t.placeholder = "Event Link"
-            }else{
-                t.placeholder = "Tournament Name"
-            }
-        });
+    this.#customRound.addEventListener("click", () => {
+      this.toggleCustomRound();
+    });
+    this.#forceWLCheck.addEventListener("click", () => {
+      this.toggleForceWL();
+    });
+    this.#scoreAutoCheck.addEventListener("click", () => {
+      this.save("scoreAutoUpdate", this.isScoreAutoChecked());
+    });
+    this.#invertScoreCheck.addEventListener("click", () => {
+      this.save("invertScore", this.isInvertScoreChecked());
+    });
+    this.#simpleTextsCheck.addEventListener("click", () => {
+      this.save("simpleTexts", this.isSimpleTextsChecked());
+    });
+    this.startGGManagement.addEventListener("click", () => {
+      this.save("startGGManagement", this.startGGManagement.checked);
+      let t = document.getElementById("tournamentName");
+      if (this.startGGManagement.checked) {
+        t.placeholder = "Event Link";
+      } else {
+        t.placeholder = "Tournament Name";
+      }
+    });
 
-        // dont forget about the copy match to clipboard button
-        document.getElementById("copyMatch").addEventListener("click", () => {
-            this.copyMatch();
-        });
+    // dont forget about the copy match to clipboard button
+    document.getElementById("copyMatch").addEventListener("click", () => {
+      this.copyMatch();
+    });
 
-        // only electron cares about this
-        if (inside.electron) {
-            this.#setAlwaysOnTopListener();
-            this.#setResizableListener();
-            this.#lessZoomButt.addEventListener("click", () => {this.#lessZoom()})
-            this.#moreZoomButt.addEventListener("click", () => {this.#moreZoom()})
-            this.#restoreWindowButt.addEventListener("click", () => {
-                this.#restoreWindowDefaults()
-            });
-        } else {
-            document.getElementById("settingsElectron").style.display = "none";
-        }
-
-        // clicking the settings button will bring up the menu
-        document.getElementById('settingsRegion').addEventListener("click", () => {
-            viewport.toSettings();
-        });
-
-        // Changing the selected Game does something
-        document.getElementById('gameSelector').addEventListener("change", (x) => {
-            // this.#selectedGame = x.target.value;
-            this.save("selectedGame", x.target.value);
-            viewport.toCenter();
-            // Re-initialise everything by reloading the page cause it is an easy way to load into the new settings
-            location.reload();
-        });
-        // Pressing the Save API Keys button actually does something
-        document.getElementById('saveApiKeys').addEventListener("click", (x) => {
-            this.saveSecrets();
-        });
-
+    // only electron cares about this
+    if (inside.electron) {
+      this.#setAlwaysOnTopListener();
+      this.#setResizableListener();
+      this.#lessZoomButt.addEventListener("click", () => {
+        this.#lessZoom();
+      });
+      this.#moreZoomButt.addEventListener("click", () => {
+        this.#moreZoom();
+      });
+      this.#restoreWindowButt.addEventListener("click", () => {
+        this.#restoreWindowDefaults();
+      });
+    } else {
+      document.getElementById("settingsElectron").style.display = "none";
     }
 
-    /** Loads all settings from the "GUI Settings.json" file */
-    async load() {
+    // clicking the settings button will bring up the menu
+    document.getElementById("settingsRegion").addEventListener("click", () => {
+      viewport.toSettings();
+    });
 
-        // get us the json file
-        const guiSettings = await getJson(`${stPath.text}/GUI Settings`);
-        const secrets = await getJson(`${stPath.text}/API Keys`);
+    // Changing the selected Game does something
+    document.getElementById("gameSelector").addEventListener("change", (x) => {
+      // this.#selectedGame = x.target.value;
+      this.save("selectedGame", x.target.value);
+      viewport.toCenter();
+      // Re-initialise everything by reloading the page cause it is an easy way to load into the new settings
+      location.reload();
+    });
+    // Pressing the Save API Keys button actually does something
+    document.getElementById("saveApiKeys").addEventListener("click", (x) => {
+      this.saveSecrets();
+    });
+  }
 
-        // and update it all!
-        this.#introCheck.checked = guiSettings.allowIntro;
-        // this.#altArtCheck.checked = guiSettings.forceAlt;
+  /** Loads all settings from the "GUI Settings.json" file */
+  async load() {
+    // get us the json file
+    const guiSettings = await getJson(`${stPath.text}/GUI Settings`);
+    const secrets = await getJson(`${stPath.text}/API Keys`);
 
-        // this.#HDCheck.checked = guiSettings.forceHD;
-        // if (guiSettings.forceHD) this.#noLoACheck.disabled = false;
-        // this.#noLoACheck.checked = guiSettings.noLoAHD;
+    // and update it all!
+    this.#introCheck.checked = guiSettings.allowIntro;
+    // this.#altArtCheck.checked = guiSettings.forceAlt;
 
-        // this.#wsCheck.checked = guiSettings.workshop;
-        // if (guiSettings.workshop) this.#altArtCheck.disabled = false;
-        if (guiSettings.customRound) this.#customRound.click();
-        if (guiSettings.forceWL) this.#forceWLCheck.click();
-        this.#scoreAutoCheck.checked = guiSettings.scoreAutoUpdate;
-        this.#invertScoreCheck.checked = guiSettings.invertScore;
-        this.#simpleTextsCheck.checked = guiSettings.simpleTexts;
-        this.#selectedGame.value = guiSettings.selectedGame;
-        this.#startGG.value = secrets.startGG;
-        this.#aussmash.value = secrets.aussmash;
-        this.startGGManagement.checked = guiSettings.startGGManagement;
-        this.startgg = guiSettings.startgg;
+    // this.#HDCheck.checked = guiSettings.forceHD;
+    // if (guiSettings.forceHD) this.#noLoACheck.disabled = false;
+    // this.#noLoACheck.checked = guiSettings.noLoAHD;
 
-        if (inside.electron) {
-            this.#alwaysOnTopCheck.checked = guiSettings.alwaysOnTop;
-            this.toggleAlwaysOnTop();
-            this.#resizableCheck.checked = guiSettings.resizable;
-            this.toggleResizable();
-            this.#zoomValue = guiSettings.zoom;
-            this.#changeZoom();
-        }
+    // this.#wsCheck.checked = guiSettings.workshop;
+    // if (guiSettings.workshop) this.#altArtCheck.disabled = false;
+    if (guiSettings.customRound) this.#customRound.click();
+    if (guiSettings.forceWL) this.#forceWLCheck.click();
+    this.#scoreAutoCheck.checked = guiSettings.scoreAutoUpdate;
+    this.#invertScoreCheck.checked = guiSettings.invertScore;
+    this.#simpleTextsCheck.checked = guiSettings.simpleTexts;
+    this.#selectedGame.value = guiSettings.selectedGame;
+    this.#startGG.value = secrets.startGG;
+    this.#aussmash.value = secrets.aussmash;
+    this.startGGManagement.checked = guiSettings.startGGManagement;
+    this.startgg = guiSettings.startgg;
+
+    if (inside.electron) {
+      this.#alwaysOnTopCheck.checked = guiSettings.alwaysOnTop;
+      this.toggleAlwaysOnTop();
+      this.#resizableCheck.checked = guiSettings.resizable;
+      this.toggleResizable();
+      this.#zoomValue = guiSettings.zoom;
+      this.#changeZoom();
     }
+  }
 
-    /**
-     * Updates a setting inside "GUI Settings.json"
-     * @param {String} name - Name of the json variable
-     * @param {} value - Value to add to the variable
-     */
-    async save(name, value) {
-   
-        if (inside.electron) {
-            // read the file
-            const guiSettings = await getJson(`${stPath.text}/GUI Settings`);
+  /**
+   * Updates a setting inside "GUI Settings.json"
+   * @param {String} name - Name of the json variable
+   * @param {} value - Value to add to the variable
+   */
+  async save(name, value) {
+    if (inside.electron) {
+      // read the file
+      const guiSettings = await getJson(`${stPath.text}/GUI Settings`);
 
-            // update the setting's value
-            guiSettings[name] = value;
+      // update the setting's value
+      guiSettings[name] = value;
 
-            // save the file
-            saveJson(`/GUI Settings`, guiSettings);
-        }
-
+      // save the file
+      saveJson(`/GUI Settings`, guiSettings);
     }
+  }
 
-    async saveSecrets() {
-   
-        if (inside.electron) {
-            // read the file
-            const secrets = await getJson(`${stPath.text}/API Keys`);
+  async saveSecrets() {
+    if (inside.electron) {
+      // read the file
+      const secrets = await getJson(`${stPath.text}/API Keys`);
 
-            // update the setting's value
-            secrets["startGG"] = this.#startGG.value;
-            secrets["aussmash"] = this.#aussmash.value;
+      // update the setting's value
+      secrets["startGG"] = this.#startGG.value;
+      secrets["aussmash"] = this.#aussmash.value;
 
-            // save the file
-            saveJson(`/API Keys`, secrets);
-        }
-
+      // save the file
+      saveJson(`/API Keys`, secrets);
     }
+  }
 
+  setIntro(value) {
+    this.#introCheck.checked = value;
+  }
+  isIntroChecked() {
+    return this.#introCheck.checked;
+  }
 
-    setIntro(value) {
-        this.#introCheck.checked = value;
-    }
-    isIntroChecked() {
-        return this.#introCheck.checked;
-    }
-
-    /* setAltArt(value) {
+  /* setAltArt(value) {
         this.#altArtCheck.checked = value;
     }
     isAltArtChecked() {
@@ -223,7 +221,7 @@ class GuiSettings {
 
     } */
 
-    /* setHD(value) {
+  /* setHD(value) {
         this.#HDCheck.checked = value;
     }
     isHDChecked() {
@@ -272,7 +270,7 @@ class GuiSettings {
 
     } */
 
-    /* setWs(value) {
+  /* setWs(value) {
         this.#wsCheck.checked = value;
     }
     isWsChecked() {
@@ -301,146 +299,142 @@ class GuiSettings {
         await this.save("workshop", this.isWsChecked());
 
     } */
-    /** Will send a signal to the GUI to toggle current WS values */
-    /* async sendWsToggle() {
+  /** Will send a signal to the GUI to toggle current WS values */
+  /* async sendWsToggle() {
         const remote = await import("./Remote Requests.mjs");
         remote.sendRemoteData({message: "toggleWs", value: this.isWsChecked()});
     } */
 
-    setForceWL(value) {
-        this.#forceWLCheck.checked = value;
-    }
-    isForceWLChecked() {
-        return this.#forceWLCheck.checked;
-    }
+  setForceWL(value) {
+    this.#forceWLCheck.checked = value;
+  }
+  isForceWLChecked() {
+    return this.#forceWLCheck.checked;
+  }
 
-    setCustomRound(value) {
-        this.#customRound.checked = value;
-    }
+  setCustomRound(value) {
+    this.#customRound.checked = value;
+  }
 
-    isCustomRoundChecked () {
-        return this.#customRound.checked;
-    }
+  isCustomRoundChecked() {
+    return this.#customRound.checked;
+  }
 
-    toggleCustomRound () {
-        if (this.isCustomRoundChecked()) {
-            round.showTextInput();
-        } else {
-            round.hideTextInput();
-        }
-
-        this.save("customRound", this.isCustomRoundChecked());
-
+  toggleCustomRound() {
+    if (this.isCustomRoundChecked()) {
+      round.showTextInput();
+    } else {
+      round.hideTextInput();
     }
 
-    toggleForceWL() {
+    this.save("customRound", this.isCustomRoundChecked());
+  }
 
-        // forces the W/L buttons to appear, or unforces them
-        if (this.isForceWLChecked()) {
-            wl.show();
-        } else {
-            wl.hide();
-        }
-
-        // save current checkbox value to the settings file
-        this.save("forceWL", this.isForceWLChecked());
-
+  toggleForceWL() {
+    // forces the W/L buttons to appear, or unforces them
+    if (this.isForceWLChecked()) {
+      wl.show();
+    } else {
+      wl.hide();
     }
 
-    isScoreAutoChecked() {
-        return this.#scoreAutoCheck.checked;
+    // save current checkbox value to the settings file
+    this.save("forceWL", this.isForceWLChecked());
+  }
+
+  isScoreAutoChecked() {
+    return this.#scoreAutoCheck.checked;
+  }
+
+  isInvertScoreChecked() {
+    return this.#invertScoreCheck.checked;
+  }
+
+  isSimpleTextsChecked() {
+    return this.#simpleTextsCheck.checked;
+  }
+
+  /**
+   * Will copy the current match info to the clipboard
+   * Format: "Tournament Name - Round - Player1 (Character1) VS Player2 (Character2)"
+   */
+  copyMatch() {
+    // initialize the string
+    let copiedText = tournament.getText() + " - " + round.getText() + " - ";
+
+    if (gamemode.getGm() == 1) {
+      // for singles matches
+      // check if the player has a tag to add
+      if (players[0].tag) {
+        copiedText += players[0].tag + " | ";
+      }
+      copiedText += players[0].getName() + " (" + players[0].char + ") VS ";
+      if (players[1].tag) {
+        copiedText += players[1].tag + " | ";
+      }
+      copiedText += players[1].getName() + " (" + players[1].char + ")";
+    } else {
+      // for team matches
+      copiedText += teams[0].getName() + " VS " + teams[1].getName();
     }
 
-    isInvertScoreChecked() {
-        return this.#invertScoreCheck.checked;
-    }
+    // send the string to the user's clipboard
+    navigator.clipboard.writeText(copiedText);
+  }
 
-    isSimpleTextsChecked() {
-        return this.#simpleTextsCheck.checked;
-    }
+  #setAlwaysOnTopListener() {
+    this.#alwaysOnTopCheck.addEventListener("click", () => {
+      this.toggleAlwaysOnTop();
+    });
+  }
+  async toggleAlwaysOnTop() {
+    const ipc = await import("./IPC.mjs");
+    ipc.alwaysOnTop(this.#alwaysOnTopCheck.checked);
+    this.save("alwaysOnTop", this.#alwaysOnTopCheck.checked);
+  }
 
-    /**
-     * Will copy the current match info to the clipboard
-     * Format: "Tournament Name - Round - Player1 (Character1) VS Player2 (Character2)"
-     */
-    copyMatch() {
+  #setResizableListener() {
+    this.#resizableCheck.addEventListener("click", () => {
+      this.toggleResizable();
+    });
+  }
+  async toggleResizable() {
+    const ipc = await import("./IPC.mjs");
+    ipc.resizable(this.#resizableCheck.checked);
+    this.save("resizable", this.#resizableCheck.checked);
+  }
 
-        // initialize the string
-        let copiedText = tournament.getText() + " - " + round.getText() + " - ";
+  #lessZoom() {
+    if (this.#zoomValue > 100) {
+      this.#zoomValue -= 10;
+      this.#changeZoom();
+    }
+  }
+  #moreZoom() {
+    if (this.#zoomValue < 400) {
+      this.#zoomValue += 10;
+      this.#changeZoom();
+    }
+  }
+  #changeZoom() {
+    const { webFrame } = require("electron");
+    webFrame.setZoomFactor(this.#zoomValue / 100);
+    this.#zoomTextValue.innerHTML = `${this.#zoomValue}%`;
+    this.save("zoom", this.#zoomValue);
+  }
 
-        if (gamemode.getGm() == 1) { // for singles matches
-            // check if the player has a tag to add
-            if (players[0].tag) {
-                copiedText += players[0].tag + " | ";
-            }
-            copiedText += players[0].getName() + " (" + players[0].char +") VS ";
-            if (players[1].tag) {
-                copiedText += players[1].tag + " | ";
-            }
-            copiedText += players[1].getName() + " (" +  players[1].char +")";
-        } else { // for team matches
-            copiedText += teams[0].getName() + " VS " + teams[1].getName();
-        }
+  async #restoreWindowDefaults() {
+    this.#resizableCheck.checked = false;
+    this.toggleResizable();
+    this.#zoomValue = 100;
+    this.#changeZoom();
+    const ipc = await import("./IPC.mjs");
+    ipc.defaultWindowDimensions();
+  }
 
-        // send the string to the user's clipboard
-        navigator.clipboard.writeText(copiedText);
-
-    }
-
-    #setAlwaysOnTopListener() {
-        this.#alwaysOnTopCheck.addEventListener("click", () => {
-            this.toggleAlwaysOnTop();
-        });
-    }
-    async toggleAlwaysOnTop() {
-        const ipc = await import("./IPC.mjs");
-        ipc.alwaysOnTop(this.#alwaysOnTopCheck.checked);
-        this.save("alwaysOnTop", this.#alwaysOnTopCheck.checked);
-    }
-
-    #setResizableListener() {
-        this.#resizableCheck.addEventListener("click", () => {
-            this.toggleResizable();
-        });
-    }
-    async toggleResizable() {
-        const ipc = await import("./IPC.mjs");
-        ipc.resizable(this.#resizableCheck.checked);
-        this.save("resizable", this.#resizableCheck.checked);
-    }
-
-    #lessZoom() {
-        if (this.#zoomValue > 100) {
-            this.#zoomValue -= 10;
-            this.#changeZoom();
-        }
-    }
-    #moreZoom() {
-        if (this.#zoomValue < 400) {
-            this.#zoomValue += 10;
-            this.#changeZoom();
-        }
-    }
-    #changeZoom() {
-        const { webFrame } = require('electron');
-        webFrame.setZoomFactor(this.#zoomValue / 100);
-        this.#zoomTextValue.innerHTML = `${this.#zoomValue}%`;
-        this.save("zoom", this.#zoomValue);
-    }
-
-    async #restoreWindowDefaults() {
-        this.#resizableCheck.checked = false;
-        this.toggleResizable();
-        this.#zoomValue = 100;
-        this.#changeZoom();
-        const ipc = await import("./IPC.mjs");
-        ipc.defaultWindowDimensions();
-    }
-
-    selectedGame() {
-        return this.#selectedGame.value;
-    }
-
+  selectedGame() {
+    return this.#selectedGame.value;
+  }
 }
 
-export const settings = new GuiSettings;
+export const settings = new GuiSettings();

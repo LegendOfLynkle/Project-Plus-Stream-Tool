@@ -1,82 +1,82 @@
 {
-    "skinList": [
-        {
-            "name": "Sheik (1)"
-        },
-        {
-            "name": "Sheik (2)"
-        },
-        {
-            "name": "Sheik (3)"
-        },
-        {
-            "name": "Sheik (4)"
-        },
-        {
-            "name": "Sheik (5)"
-        },
-        {
-            "name": "Sheik (6)"
-        },
-        {
-            "name": "Sheik (7)"
-        },
-        {
-            "name": "Sheik (8)"
-        },
-        {
-            "name": "Sheik (9)"
-        },
-        {
-            "name": "Sheik (10)"
-        },
-        {
-            "name": "Sheik (11)"
-        },
-        {
-            "name": "Sheik (12)"
-        },
-        {
-            "name": "Sheik (13)"
-        },
-        {
-            "name": "Sheik (14)"
-        },
-        {
-            "name": "Sheik (15)"
-        },
-        {
-            "name": "Sheik (16)"
-        },
-        {
-            "name": "Sheik (17)"
-        },
-        {
-            "name": "Sheik (18)"
-        },
-        {
-            "name": "Sheik (19)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Sheik (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Sheik (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Sheik (3)"
+    },
+    {
+      "name": "Sheik (4)"
+    },
+    {
+      "name": "Sheik (5)"
+    },
+    {
+      "name": "Sheik (6)"
+    },
+    {
+      "name": "Sheik (7)"
+    },
+    {
+      "name": "Sheik (8)"
+    },
+    {
+      "name": "Sheik (9)"
+    },
+    {
+      "name": "Sheik (10)"
+    },
+    {
+      "name": "Sheik (11)"
+    },
+    {
+      "name": "Sheik (12)"
+    },
+    {
+      "name": "Sheik (13)"
+    },
+    {
+      "name": "Sheik (14)"
+    },
+    {
+      "name": "Sheik (15)"
+    },
+    {
+      "name": "Sheik (16)"
+    },
+    {
+      "name": "Sheik (17)"
+    },
+    {
+      "name": "Sheik (18)"
+    },
+    {
+      "name": "Sheik (19)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

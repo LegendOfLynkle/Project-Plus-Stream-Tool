@@ -1,97 +1,97 @@
 {
-    "skinList": [
-        {
-            "name": "Wario (1)"
-        },
-        {
-            "name": "Wario (2)"
-        },
-        {
-            "name": "Wario (3)"
-        },
-        {
-            "name": "Wario (4)"
-        },
-        {
-            "name": "Wario (5)"
-        },
-        {
-            "name": "Wario (6)"
-        },
-        {
-            "name": "Wario (7)"
-        },
-        {
-            "name": "Wario (8)"
-        },
-        {
-            "name": "Wario (9)"
-        },
-        {
-            "name": "Wario (10)"
-        },
-        {
-            "name": "Wario (11)"
-        },
-        {
-            "name": "Wario (12)"
-        },
-        {
-            "name": "Wario (13)"
-        },
-        {
-            "name": "Wario (14)"
-        },
-        {
-            "name": "Wario (15)"
-        },
-        {
-            "name": "Wario (16)"
-        },
-        {
-            "name": "Wario (17)"
-        },
-        {
-            "name": "Wario (18)"
-        },
-        {
-            "name": "Wario (19)"
-        },
-        {
-            "name": "Wario (20)"
-        },
-        {
-            "name": "Wario (21)"
-        },
-        {
-            "name": "Wario (22)"
-        },
-        {
-            "name": "Wario (23)"
-        },
-        {
-            "name": "Wario (24)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Wario (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Wario (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Wario (3)"
+    },
+    {
+      "name": "Wario (4)"
+    },
+    {
+      "name": "Wario (5)"
+    },
+    {
+      "name": "Wario (6)"
+    },
+    {
+      "name": "Wario (7)"
+    },
+    {
+      "name": "Wario (8)"
+    },
+    {
+      "name": "Wario (9)"
+    },
+    {
+      "name": "Wario (10)"
+    },
+    {
+      "name": "Wario (11)"
+    },
+    {
+      "name": "Wario (12)"
+    },
+    {
+      "name": "Wario (13)"
+    },
+    {
+      "name": "Wario (14)"
+    },
+    {
+      "name": "Wario (15)"
+    },
+    {
+      "name": "Wario (16)"
+    },
+    {
+      "name": "Wario (17)"
+    },
+    {
+      "name": "Wario (18)"
+    },
+    {
+      "name": "Wario (19)"
+    },
+    {
+      "name": "Wario (20)"
+    },
+    {
+      "name": "Wario (21)"
+    },
+    {
+      "name": "Wario (22)"
+    },
+    {
+      "name": "Wario (23)"
+    },
+    {
+      "name": "Wario (24)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

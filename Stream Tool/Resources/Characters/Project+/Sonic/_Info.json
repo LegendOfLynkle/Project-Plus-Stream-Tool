@@ -1,91 +1,91 @@
 {
-    "skinList": [
-        {
-            "name": "Sonic (1)"
-        },
-        {
-            "name": "Sonic (2)"
-        },
-        {
-            "name": "Sonic (3)"
-        },
-        {
-            "name": "Sonic (4)"
-        },
-        {
-            "name": "Sonic (5)"
-        },
-        {
-            "name": "Sonic (6)"
-        },
-        {
-            "name": "Sonic (7)"
-        },
-        {
-            "name": "Sonic (8)"
-        },
-        {
-            "name": "Sonic (9)"
-        },
-        {
-            "name": "Sonic (10)"
-        },
-        {
-            "name": "Sonic (11)"
-        },
-        {
-            "name": "Sonic (12)"
-        },
-        {
-            "name": "Sonic (13)"
-        },
-        {
-            "name": "Sonic (14)"
-        },
-        {
-            "name": "Sonic (15)"
-        },
-        {
-            "name": "Sonic (16)"
-        },
-        {
-            "name": "Sonic (17)"
-        },
-        {
-            "name": "Sonic (18)"
-        },
-        {
-            "name": "Sonic (19)"
-        },
-        {
-            "name": "Sonic (20)"
-        },
-        {
-            "name": "Sonic (21)"
-        },
-        {
-            "name": "Sonic (22)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Sonic (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 140,
-            "scale": 2.5
-        }
+    {
+      "name": "Sonic (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Sonic (3)"
+    },
+    {
+      "name": "Sonic (4)"
+    },
+    {
+      "name": "Sonic (5)"
+    },
+    {
+      "name": "Sonic (6)"
+    },
+    {
+      "name": "Sonic (7)"
+    },
+    {
+      "name": "Sonic (8)"
+    },
+    {
+      "name": "Sonic (9)"
+    },
+    {
+      "name": "Sonic (10)"
+    },
+    {
+      "name": "Sonic (11)"
+    },
+    {
+      "name": "Sonic (12)"
+    },
+    {
+      "name": "Sonic (13)"
+    },
+    {
+      "name": "Sonic (14)"
+    },
+    {
+      "name": "Sonic (15)"
+    },
+    {
+      "name": "Sonic (16)"
+    },
+    {
+      "name": "Sonic (17)"
+    },
+    {
+      "name": "Sonic (18)"
+    },
+    {
+      "name": "Sonic (19)"
+    },
+    {
+      "name": "Sonic (20)"
+    },
+    {
+      "name": "Sonic (21)"
+    },
+    {
+      "name": "Sonic (22)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 140,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

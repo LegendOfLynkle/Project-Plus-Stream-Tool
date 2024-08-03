@@ -1,89 +1,88 @@
 {
-    "skinList": [
-        {
-            "name": "Rob (1)"
-        },
-        {
-            "name": "Rob (2)"
-        },
-        {
-            "name": "Rob (3)"
-        },
-        {
-            "name": "Rob (4)"
-        },
-        {
-            "name": "Rob (5)"
-        },
-        {
-            "name": "Rob (6)"
-        },
-        {
-            "name": "Rob (7)"
-        },
-        {
-            "name": "Rob (8)"
-        },
-        {
-            "name": "Rob (9)"
-        },
-        {
-            "name": "Rob (10)"
-        },
-        {
-            "name": "Rob (11)"
-        },
-        {
-            "name": "Rob (12)"
-        },
-        {
-            "name": "Rob (13)"
-        },
-        {
-            "name": "Rob (14)"
-        },
-        {
-            "name": "Rob (15)"
-        },
-        {
-            "name": "Rob (16)"
-        },
-        {
-            "name": "Rob (17)"
-        },
-        {
-            "name": "Rob (18)"
-        },
-        {
-            "name": "Rob (19)"
-        },
-        {
-            "name": "Rob (20)"
-        },
-        {
-            "name": "Rob (21)"
-        }
-
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Rob (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Rob (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Rob (3)"
+    },
+    {
+      "name": "Rob (4)"
+    },
+    {
+      "name": "Rob (5)"
+    },
+    {
+      "name": "Rob (6)"
+    },
+    {
+      "name": "Rob (7)"
+    },
+    {
+      "name": "Rob (8)"
+    },
+    {
+      "name": "Rob (9)"
+    },
+    {
+      "name": "Rob (10)"
+    },
+    {
+      "name": "Rob (11)"
+    },
+    {
+      "name": "Rob (12)"
+    },
+    {
+      "name": "Rob (13)"
+    },
+    {
+      "name": "Rob (14)"
+    },
+    {
+      "name": "Rob (15)"
+    },
+    {
+      "name": "Rob (16)"
+    },
+    {
+      "name": "Rob (17)"
+    },
+    {
+      "name": "Rob (18)"
+    },
+    {
+      "name": "Rob (19)"
+    },
+    {
+      "name": "Rob (20)"
+    },
+    {
+      "name": "Rob (21)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

@@ -1,82 +1,82 @@
 {
-    "skinList": [
-        {
-            "name": "Zelda (1)"
-        },
-        {
-            "name": "Zelda (2)"
-        },
-        {
-            "name": "Zelda (3)"
-        },
-        {
-            "name": "Zelda (4)"
-        },
-        {
-            "name": "Zelda (5)"
-        },
-        {
-            "name": "Zelda (6)"
-        },
-        {
-            "name": "Zelda (7)"
-        },
-        {
-            "name": "Zelda (8)"
-        },
-        {
-            "name": "Zelda (9)"
-        },
-        {
-            "name": "Zelda (10)"
-        },
-        {
-            "name": "Zelda (11)"
-        },
-        {
-            "name": "Zelda (12)"
-        },
-        {
-            "name": "Zelda (13)"
-        },
-        {
-            "name": "Zelda (14)"
-        },
-        {
-            "name": "Zelda (15)"
-        },
-        {
-            "name": "Zelda (16)"
-        },
-        {
-            "name": "Zelda (17)"
-        },
-        {
-            "name": "Zelda (18)"
-        },
-        {
-            "name": "Zelda (19)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Zelda (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Zelda (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Zelda (3)"
+    },
+    {
+      "name": "Zelda (4)"
+    },
+    {
+      "name": "Zelda (5)"
+    },
+    {
+      "name": "Zelda (6)"
+    },
+    {
+      "name": "Zelda (7)"
+    },
+    {
+      "name": "Zelda (8)"
+    },
+    {
+      "name": "Zelda (9)"
+    },
+    {
+      "name": "Zelda (10)"
+    },
+    {
+      "name": "Zelda (11)"
+    },
+    {
+      "name": "Zelda (12)"
+    },
+    {
+      "name": "Zelda (13)"
+    },
+    {
+      "name": "Zelda (14)"
+    },
+    {
+      "name": "Zelda (15)"
+    },
+    {
+      "name": "Zelda (16)"
+    },
+    {
+      "name": "Zelda (17)"
+    },
+    {
+      "name": "Zelda (18)"
+    },
+    {
+      "name": "Zelda (19)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

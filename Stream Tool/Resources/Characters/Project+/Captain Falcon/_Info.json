@@ -1,100 +1,100 @@
 {
-    "skinList": [
-        {
-            "name": "Captain Falcon (1)"
-        },
-        {
-            "name": "Captain Falcon (2)"
-        },
-        {
-            "name": "Captain Falcon (3)"
-        },
-        {
-            "name": "Captain Falcon (4)"
-        },
-        {
-            "name": "Captain Falcon (5)"
-        },
-        {
-            "name": "Captain Falcon (6)"
-        },
-        {
-            "name": "Captain Falcon (7)"
-        },
-        {
-            "name": "Captain Falcon (8)"
-        },
-        {
-            "name": "Captain Falcon (9)"
-        },
-        {
-            "name": "Captain Falcon (10)"
-        },
-        {
-            "name": "Captain Falcon (11)"
-        },
-        {
-            "name": "Captain Falcon (12)"
-        },
-        {
-            "name": "Captain Falcon (13)"
-        },
-        {
-            "name": "Captain Falcon (14)"
-        },
-        {
-            "name": "Captain Falcon (15)"
-        },
-        {
-            "name": "Captain Falcon (16)"
-        },
-        {
-            "name": "Captain Falcon (17)"
-        },
-        {
-            "name": "Captain Falcon (18)"
-        },          
-        {
-            "name": "Captain Falcon (19)"
-        },
-        {
-            "name": "Captain Falcon (20)"
-        },
-        {
-            "name": "Captain Falcon (21)"
-        },
-        {
-            "name": "Captain Falcon (22)"
-        },
-        {
-            "name": "Captain Falcon (23)"
-        },
-        {
-            "name": "Captain Falcon (24)"
-        },
-        {
-            "name": "Captain Falcon (25)"
-        }      
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 25,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Captain Falcon (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Captain Falcon (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Captain Falcon (3)"
+    },
+    {
+      "name": "Captain Falcon (4)"
+    },
+    {
+      "name": "Captain Falcon (5)"
+    },
+    {
+      "name": "Captain Falcon (6)"
+    },
+    {
+      "name": "Captain Falcon (7)"
+    },
+    {
+      "name": "Captain Falcon (8)"
+    },
+    {
+      "name": "Captain Falcon (9)"
+    },
+    {
+      "name": "Captain Falcon (10)"
+    },
+    {
+      "name": "Captain Falcon (11)"
+    },
+    {
+      "name": "Captain Falcon (12)"
+    },
+    {
+      "name": "Captain Falcon (13)"
+    },
+    {
+      "name": "Captain Falcon (14)"
+    },
+    {
+      "name": "Captain Falcon (15)"
+    },
+    {
+      "name": "Captain Falcon (16)"
+    },
+    {
+      "name": "Captain Falcon (17)"
+    },
+    {
+      "name": "Captain Falcon (18)"
+    },
+    {
+      "name": "Captain Falcon (19)"
+    },
+    {
+      "name": "Captain Falcon (20)"
+    },
+    {
+      "name": "Captain Falcon (21)"
+    },
+    {
+      "name": "Captain Falcon (22)"
+    },
+    {
+      "name": "Captain Falcon (23)"
+    },
+    {
+      "name": "Captain Falcon (24)"
+    },
+    {
+      "name": "Captain Falcon (25)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 25,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

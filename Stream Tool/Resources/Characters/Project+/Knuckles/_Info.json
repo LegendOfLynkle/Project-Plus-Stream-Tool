@@ -1,91 +1,91 @@
 {
-    "skinList": [
-        {
-            "name": "Knuckles (1)"
-        },
-        {
-            "name": "Knuckles (2)"
-        },
-        {
-            "name": "Knuckles (3)"
-        },
-        {
-            "name": "Knuckles (4)"
-        },
-        {
-            "name": "Knuckles (5)"
-        },
-        {
-            "name": "Knuckles (6)"
-        },
-        {
-            "name": "Knuckles (7)"
-        },
-        {
-            "name": "Knuckles (8)"
-        },
-        {
-            "name": "Knuckles (9)"
-        },
-        {
-            "name": "Knuckles (10)"
-        },
-        {
-            "name": "Knuckles (11)"
-        },
-        {
-            "name": "Knuckles (12)"
-        },
-        {
-            "name": "Knuckles (13)"
-        },
-        {
-            "name": "Knuckles (14)"
-        },
-        {
-            "name": "Knuckles (15)"
-        },
-        {
-            "name": "Knuckles (16)"
-        },
-        {
-            "name": "Knuckles (17)"
-        },
-        {
-            "name": "Knuckles (18)"
-        },
-        {
-            "name": "Knuckles (19)"
-        },
-        {
-            "name": "Knuckles (20)"
-        },
-        {
-            "name": "Knuckles (21)"
-        },
-        {
-            "name": "Knuckles (22)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 35,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Knuckles (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Knuckles (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Knuckles (3)"
+    },
+    {
+      "name": "Knuckles (4)"
+    },
+    {
+      "name": "Knuckles (5)"
+    },
+    {
+      "name": "Knuckles (6)"
+    },
+    {
+      "name": "Knuckles (7)"
+    },
+    {
+      "name": "Knuckles (8)"
+    },
+    {
+      "name": "Knuckles (9)"
+    },
+    {
+      "name": "Knuckles (10)"
+    },
+    {
+      "name": "Knuckles (11)"
+    },
+    {
+      "name": "Knuckles (12)"
+    },
+    {
+      "name": "Knuckles (13)"
+    },
+    {
+      "name": "Knuckles (14)"
+    },
+    {
+      "name": "Knuckles (15)"
+    },
+    {
+      "name": "Knuckles (16)"
+    },
+    {
+      "name": "Knuckles (17)"
+    },
+    {
+      "name": "Knuckles (18)"
+    },
+    {
+      "name": "Knuckles (19)"
+    },
+    {
+      "name": "Knuckles (20)"
+    },
+    {
+      "name": "Knuckles (21)"
+    },
+    {
+      "name": "Knuckles (22)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 35,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

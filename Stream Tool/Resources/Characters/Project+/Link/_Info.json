@@ -1,91 +1,91 @@
 {
-    "skinList": [
-        {
-            "name": "Link (1)"
-        },
-        {
-            "name": "Link (2)"
-        },
-        {
-            "name": "Link (3)"
-        },
-        {
-            "name": "Link (4)"
-        },
-        {
-            "name": "Link (5)"
-        },
-        {
-            "name": "Link (6)"
-        },
-        {
-            "name": "Link (7)"
-        },
-        {
-            "name": "Link (8)"
-        },
-        {
-            "name": "Link (9)"
-        },
-        {
-            "name": "Link (10)"
-        },
-        {
-            "name": "Link (11)"
-        },
-        {
-            "name": "Link (12)"
-        },
-        {
-            "name": "Link (13)"
-        },
-        {
-            "name": "Link (14)"
-        },
-        {
-            "name": "Link (15)"
-        },
-        {
-            "name": "Link (16)"
-        },
-        {
-            "name": "Link (17)"
-        },
-        {
-            "name": "Link (18)"
-        },
-        {
-            "name": "Link (19)"
-        },
-        {
-            "name": "Link (20)"
-        },
-        {
-            "name": "Link (21)"
-        },
-        {
-            "name": "Link (22)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 40,
-            "y": 20,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Link (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Link (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Link (3)"
+    },
+    {
+      "name": "Link (4)"
+    },
+    {
+      "name": "Link (5)"
+    },
+    {
+      "name": "Link (6)"
+    },
+    {
+      "name": "Link (7)"
+    },
+    {
+      "name": "Link (8)"
+    },
+    {
+      "name": "Link (9)"
+    },
+    {
+      "name": "Link (10)"
+    },
+    {
+      "name": "Link (11)"
+    },
+    {
+      "name": "Link (12)"
+    },
+    {
+      "name": "Link (13)"
+    },
+    {
+      "name": "Link (14)"
+    },
+    {
+      "name": "Link (15)"
+    },
+    {
+      "name": "Link (16)"
+    },
+    {
+      "name": "Link (17)"
+    },
+    {
+      "name": "Link (18)"
+    },
+    {
+      "name": "Link (19)"
+    },
+    {
+      "name": "Link (20)"
+    },
+    {
+      "name": "Link (21)"
+    },
+    {
+      "name": "Link (22)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 40,
+      "y": 20,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }

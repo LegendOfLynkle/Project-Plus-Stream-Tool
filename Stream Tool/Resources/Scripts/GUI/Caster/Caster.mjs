@@ -4,108 +4,100 @@ import { profileInfo } from "../Profile Info.mjs";
 import { deletCaster } from "./Casters.mjs";
 
 export class Caster {
+  #id = 0;
+  #el;
 
-    #id = 0;
-    #el;
+  profileType = "commentator";
 
-    profileType = "commentator";
+  tag = "";
+  pronouns = "";
+  state = "";
+  socials = {};
 
-    tag = "";
-    pronouns = "";
-    state = "";
-    socials = {};
+  #nameEl;
 
-    #nameEl;
+  constructor(id) {
+    this.#id = id;
 
-    constructor(id) {
+    this.#el = this.#createElements();
 
-        this.#id = id;
+    this.#nameEl = this.#el.getElementsByClassName(`cName`)[0];
 
-        this.#el = this.#createElements();
+    // every time we type on name
+    this.#nameEl.addEventListener("input", () => {
+      // check if theres an existing caster preset
+      commFinder.fillFinderPresets(this);
 
-        this.#nameEl = this.#el.getElementsByClassName(`cName`)[0];
+      // position the finder dropdown depending on contents
+      commFinder.positionFinder();
+    });
 
-        // every time we type on name
-        this.#nameEl.addEventListener("input", () => {
+    // if we click on the name text input
+    this.#nameEl.addEventListener("focusin", () => {
+      commFinder.fillFinderPresets(this);
+      commFinder.open(this.#nameEl.parentElement);
+    });
+    // hide the presets dropdown if text input loses focus
+    this.#nameEl.addEventListener("focusout", () => {
+      if (!inside.finder) {
+        commFinder.hide();
+      }
+    });
 
-            // check if theres an existing caster preset
-            commFinder.fillFinderPresets(this);
+    // open player info menu if clicking on the icon
+    this.#el.getElementsByClassName("pInfoButt")[0].addEventListener("click", () => {
+      profileInfo.show(this);
+    });
 
-            // position the finder dropdown depending on contents
-            commFinder.positionFinder();
+    // remove this commentator when clicking on the button
+    this.#el.getElementsByClassName(`cDeleteButt`)[0].addEventListener("click", () => {
+      this.delet();
+    });
+  }
 
-        });
+  getId() {
+    return this.#id;
+  }
+  getName() {
+    return this.#nameEl.value;
+  }
+  setName(text) {
+    this.#nameEl.value = text;
+  }
+  getPronouns() {
+    return this.pronouns;
+  }
+  setPronouns(text) {
+    this.pronouns = text;
+  }
+  getState() {
+    return this.state;
+  }
+  setState(state) {
+    return (this.state = state);
+  }
+  getTag() {
+    return this.tag;
+  }
+  setTag(text) {
+    this.tag = text;
+  }
+  getSocials() {
+    return this.socials;
+  }
+  setSocials(socials) {
+    this.socials = socials;
+  }
 
-        // if we click on the name text input
-        this.#nameEl.addEventListener("focusin", () => {
-            commFinder.fillFinderPresets(this);
-            commFinder.open(this.#nameEl.parentElement);
-        });
-        // hide the presets dropdown if text input loses focus
-        this.#nameEl.addEventListener("focusout", () => {
-            if (!inside.finder) {
-                commFinder.hide();
-            }
-        });
+  delet() {
+    this.#el.remove();
+    deletCaster(this.#id);
+  }
 
-        // open player info menu if clicking on the icon
-        this.#el.getElementsByClassName("pInfoButt")[0].addEventListener("click", () => {
-            profileInfo.show(this);
-        });
-
-        // remove this commentator when clicking on the button
-        this.#el.getElementsByClassName(`cDeleteButt`)[0].addEventListener("click", () => {
-            this.delet();
-        });
-
-    }
-
-    
-    getId() {
-        return this.#id;
-    }
-    getName() {
-        return this.#nameEl.value;
-    }
-    setName(text) {
-        this.#nameEl.value = text;
-    }
-    getPronouns() {
-        return this.pronouns;
-    }
-    setPronouns(text) {
-        this.pronouns = text;
-    }
-    getState() {
-        return this.state;
-    }
-    setState(state) {
-        return this.state = state;
-    }
-    getTag() {
-        return this.tag;
-    }
-    setTag(text) {
-        this.tag = text;
-    }
-    getSocials() {
-        return this.socials;
-    }
-    setSocials(socials) {
-        this.socials = socials;
-    }
-
-    delet() {
-        this.#el.remove();
-        deletCaster(this.#id);
-    }
-
-
-    /** Creates the HTML elements on the GUI */
-    #createElements() {
-
-        const newDiv = document.createElement("div");
-        newDiv.innerHTML = `
+  /** Creates the HTML elements on the GUI */
+  #createElements() {
+    const newDiv = document.createElement("div");
+    newDiv.innerHTML = `
             <div class="caster">
 
                 <button class="pInfoButt" title="Edit commentator info" tabindex="-1">
@@ -119,11 +111,9 @@ export class Caster {
                 <button class="cDeleteButt" title="Remove commentator">-</button>
 
             </div>
-        `
+        `;
 
-        document.getElementById("casterDiv").appendChild(newDiv);
-        return newDiv;
-
-    }
-
+    document.getElementById("casterDiv").appendChild(newDiv);
+    return newDiv;
+  }
 }

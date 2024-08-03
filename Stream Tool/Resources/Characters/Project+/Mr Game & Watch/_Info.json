@@ -1,85 +1,85 @@
 {
-    "skinList": [
-        {
-            "name": "Mr Game & Watch (1)"
-        },
-        {
-            "name": "Mr Game & Watch (2)"
-        },
-        {
-            "name": "Mr Game & Watch (3)"
-        },
-        {
-            "name": "Mr Game & Watch (4)"
-        },
-        {
-            "name": "Mr Game & Watch (5)"
-        },
-        {
-            "name": "Mr Game & Watch (6)"
-        },
-        {
-            "name": "Mr Game & Watch (7)"
-        },
-        {
-            "name": "Mr Game & Watch (8)"
-        },
-        {
-            "name": "Mr Game & Watch (9)"
-        },
-        {
-            "name": "Mr Game & Watch (10)"
-        },
-        {
-            "name": "Mr Game & Watch (11)"
-        },
-        {
-            "name": "Mr Game & Watch (12)"
-        },
-        {
-            "name": "Mr Game & Watch (13)"
-        },
-        {
-            "name": "Mr Game & Watch (14)"
-        },
-        {
-            "name": "Mr Game & Watch (15)"
-        },
-        {
-            "name": "Mr Game & Watch (16)"
-        },
-        {
-            "name": "Mr Game & Watch (17)"
-        },
-        {
-            "name": "Mr Game & Watch (18)"
-        },
-        {
-            "name": "Mr Game & Watch (19)"
-        },
-        {
-            "name": "Mr Game & Watch (20)"
-        }
-    ],
-    "scoreboard": {
-        "neutral": {
-            "x": 20,
-            "y": 15,
-            "scale": 1.5
-        }
+  "skinList": [
+    {
+      "name": "Mr Game & Watch (1)"
     },
-    "vsScreen": {
-        "neutral": {
-            "x": -485,
-            "y": 190,
-            "scale": 2.5
-        }
+    {
+      "name": "Mr Game & Watch (2)"
     },
-    "gui": {
-        "neutral": {
-            "x": 5,
-            "y": -5,
-            "scale": 0.85
-        }
+    {
+      "name": "Mr Game & Watch (3)"
+    },
+    {
+      "name": "Mr Game & Watch (4)"
+    },
+    {
+      "name": "Mr Game & Watch (5)"
+    },
+    {
+      "name": "Mr Game & Watch (6)"
+    },
+    {
+      "name": "Mr Game & Watch (7)"
+    },
+    {
+      "name": "Mr Game & Watch (8)"
+    },
+    {
+      "name": "Mr Game & Watch (9)"
+    },
+    {
+      "name": "Mr Game & Watch (10)"
+    },
+    {
+      "name": "Mr Game & Watch (11)"
+    },
+    {
+      "name": "Mr Game & Watch (12)"
+    },
+    {
+      "name": "Mr Game & Watch (13)"
+    },
+    {
+      "name": "Mr Game & Watch (14)"
+    },
+    {
+      "name": "Mr Game & Watch (15)"
+    },
+    {
+      "name": "Mr Game & Watch (16)"
+    },
+    {
+      "name": "Mr Game & Watch (17)"
+    },
+    {
+      "name": "Mr Game & Watch (18)"
+    },
+    {
+      "name": "Mr Game & Watch (19)"
+    },
+    {
+      "name": "Mr Game & Watch (20)"
     }
+  ],
+  "scoreboard": {
+    "neutral": {
+      "x": 20,
+      "y": 15,
+      "scale": 1.5
+    }
+  },
+  "vsScreen": {
+    "neutral": {
+      "x": -485,
+      "y": 190,
+      "scale": 2.5
+    }
+  },
+  "gui": {
+    "neutral": {
+      "x": 5,
+      "y": -5,
+      "scale": 0.85
+    }
+  }
 }
