@@ -14,6 +14,7 @@ import { inside, stPath } from "./GUI/Globals.mjs";
 import { Score } from "./GUI/Score/Score.mjs";
 import { getPluginList } from "./GUI/File System.mjs";
 import { initColors } from "./GUI/Colors.mjs";
+import { eventLinkCallback } from "./StartGG/EventQuerier.js"
 
 // this is a weird way to have file svg's that can be recolored by css
 customElements.define(
@@ -42,9 +43,10 @@ export async function init() {
   if (settings.startGGManagement.checked) {
     let t = document.getElementById("tournamentName");
     t.placeholder = "Event Link";
-    t.addEventListener("change", (x) => {
-      settings.startgg.eventLink = x;
-    });
+    t.addEventListener("change", eventLinkCallback);
+    // t.addEventListener("change", (x) => {
+    //   settings.startgg.eventLink = x;
+    // });
   }
 
   stPath.char = stPath.charBase + "/" + settings.selectedGame();

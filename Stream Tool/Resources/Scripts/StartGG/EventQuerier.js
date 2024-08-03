@@ -1,20 +1,40 @@
 import { startGGApiQuery } from "./Querier.js";
-import { getJson } from "./File System.mjs";
-import { stPath } from "./Globals.mjs";
+import { settings } from "../Gui/Settings.mjs";
+import { debounce } from "../Debounce.js";
 
 async function getEventId(eventUrl) {
-  var query = `"query": "query getEventId($slug: String) {
-	  event(slug: $slug) {
-		id
-		name
-	  }
-	}",
-	"variables": {
-		"slug": "${eventUrl}"
-	}`;
+  let query = `query getEventId($slug: String) {
+        event(slug: $slug) {
+          id
+          name,
+          tournament{
+            id
+            name
+          }
+          phases {
+            id
+            name
+          }
+        }
+      }`;
+  let variables = {
+    slug: eventUrl
+  }
 
-  var apiKey = getJson(`${stPath.text}/API Keys`).startgg;
-  return await startGGApiQuery(query, apiKey);
+  let apiKey = settings.getStartGGAPIKey();
+  return await startGGApiQuery(query, variables, apiKey);
 }
 
-export function eventLinkCallback() {}
+export const eventLinkCallback = debounce((x) => {
+  getEventId(x.target.value).then((res) => {
+    res.json().then((data) => {
+      var d = data.data;
+      settings.startgg.eventId = d.event.id;
+      settings.startgg.eventName = d.event.name;
+      settings.startgg.tournamentId = d.event.tournament.id;
+      settings.startgg.tournamentName = d.event.tournament.name;
+      settings.startgg.phases = d.event.phases;
+      settings.saveStartGGSettings();
+    })
+  });
+});

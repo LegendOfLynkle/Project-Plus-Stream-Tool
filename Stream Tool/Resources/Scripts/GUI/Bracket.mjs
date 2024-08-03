@@ -6,9 +6,11 @@ import { PlayerBracket } from "./Player/Player Bracket.mjs";
 import { displayNotif } from "./Notifications.mjs";
 import { scores } from "./Score/Scores.mjs";
 import { inside } from "./Globals.mjs";
+import { startGGSyncButtonCallback } from "../StartGG/PhaseQuerier.js";
 
 const bRoundSelect = document.getElementById("bracketRoundSelect");
 const bEncountersDiv = document.getElementById("bracketEncounters");
+const startGGSyncButton = document.getElementById("startGGBracketSync");
 const flagList = await getJson(stPath.text + "/Flag Names");
 
 // just the initial state of the bracket
@@ -47,6 +49,8 @@ document.getElementById("bracketGoBack").addEventListener("click", () => {
 document.getElementById("bracketUpdate").addEventListener("click", () => {
   updateBracket();
 });
+document.getElementById("startGGBracketSync").addEventListener("click", startGGSyncButtonCallback);
+
 // force change event for initial creation of encounters
 bRoundSelect.dispatchEvent(new Event("change"));
 
@@ -220,6 +224,35 @@ export async function updateBracket(startup) {
   }
 }
 
+export async function updateFullBracket(data) {
+  console.log(data);
+  await replaceBracketLocal(data);
+  // save the current info
+  console.log(bracketData);
+  updateLocalBracket();
+
+  // time to send it away
+  if (inside.electron) {
+    // clear possibly remote data
+    bracketData.id = "bracket";
+    bracketData.message = "";
+
+    // update data and send it
+    const ipc = await import("./IPC.mjs");
+    ipc.updateBracketData(JSON.stringify(bracketData, null, 2));
+    ipc.sendBracketData();
+    ipc.sendRemoteBracketData();
+  } else {
+    // add remote data
+    bracketData.id = "";
+    bracketData.message = "remoteBracket";
+
+    // annnnd send it
+    const remote = await import("./Remote Requests.mjs");
+    remote.sendRemoteData(bracketData);
+  }
+}
+
 /**
  * Updates the local bracket object without sending it to clients
  * @param {Boolean} previous - To update as previous round data
@@ -240,6 +273,12 @@ function updateLocalBracket(previous) {
       score: bracketPlayers[i].getScore() || "-",
     };
   }
+}
+
+export async function replaceBracketLocal(newBracket) {
+  bracketData = newBracket;
+
+  await createEncounters(true);
 }
 
 /**

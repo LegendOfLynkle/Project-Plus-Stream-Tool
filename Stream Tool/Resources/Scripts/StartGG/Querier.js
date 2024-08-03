@@ -1,11 +1,15 @@
-export async function startGGApiQuery(body, apikey) {
-  const url = "https://api.start.gg/alpha/";
+export async function startGGApiQuery(query, variables, apikey) {
+  const url = "https://api.start.gg/gql/alpha";
   const response = await fetch(url, {
     method: "POST",
-    body: JSON.stringify(body),
+    body: JSON.stringify({
+      query: query,
+      variables: variables
+    }),
     headers: {
       Authorization: `Bearer ${apikey}`,
       "Content-Type": "application/json",
+      "Accept": "application/json",
     },
   });
   return response;

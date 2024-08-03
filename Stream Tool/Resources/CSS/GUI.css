@@ -654,7 +654,7 @@ button:hover {
   background-color: var(--bg2);
 }
 
-#startGGLogo {
+.startGGLogo {
   height: 20px;
 }
 

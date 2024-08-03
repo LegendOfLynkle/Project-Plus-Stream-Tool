@@ -1,3 +1,5 @@
+import { settings } from "../GUI/Settings.mjs"
+
 class Tournament {
   #tournamentInp = document.getElementById("tournamentName");
 

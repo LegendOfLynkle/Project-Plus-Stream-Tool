@@ -8,10 +8,22 @@
   "scoreAutoUpdate": true,
   "simpleTexts": false,
   "alwaysOnTop": false,
-  "resizable": false,
+  "resizable": true,
   "zoom": 100,
   "remoteUpdatePort": 1111,
   "webSocketPort": 8080,
   "selectedGame": "Project+",
-  "startGGManagement": true
+  "startGGManagement": true,
+  "startgg": {
+    "eventId": 1175228,
+    "eventName": "P+ Singles",
+    "tournamentId": 688616,
+    "tournamentName": "CouchWarriors WA July 2024 Ranbat",
+    "phases": [
+      {
+        "id": 1709687,
+        "name": "Bracket"
+      }
+    ]
+  }
 }

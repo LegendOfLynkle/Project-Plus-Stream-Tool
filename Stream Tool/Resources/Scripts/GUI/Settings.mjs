@@ -36,7 +36,11 @@ class GuiSettings {
   #aussmash = document.getElementById("aussmash");
   startGGManagement = document.getElementById("startGGManagement");
   startgg = {
-    eventLink: "",
+    eventId: null,
+    eventName: null,
+    tournamentId: null,
+    tournamentName: null,
+    phases: []
   };
 
   constructor() {
@@ -178,6 +182,20 @@ class GuiSettings {
       saveJson(`/GUI Settings`, guiSettings);
     }
   }
+
+  async saveStartGGSettings() {
+    if (inside.electron) {
+      // read the file
+      const guiSettings = await getJson(`${stPath.text}/GUI Settings`);
+
+      // update the setting's value
+      guiSettings["startgg"] = this.startgg;
+
+      // save the file
+      saveJson(`/GUI Settings`, guiSettings);
+    }
+  }
+
 
   async saveSecrets() {
     if (inside.electron) {
@@ -434,6 +452,18 @@ class GuiSettings {
 
   selectedGame() {
     return this.#selectedGame.value;
+  }
+
+  getStartGGAPIKey() {
+    return this.#startGG.value;
+  }
+
+  getAusSmashAPIKey() {
+    return this.#aussmash.value;
+  }
+
+  getStartGGPhase() { 
+    return this.startgg.phases.length != 0 ? this.startgg.phases[0] : null;
   }
 }
 
