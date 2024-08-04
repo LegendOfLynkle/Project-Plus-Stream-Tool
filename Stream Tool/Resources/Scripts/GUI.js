@@ -15,6 +15,8 @@ import { Score } from "./GUI/Score/Score.mjs";
 import { getPluginList } from "./GUI/File System.mjs";
 import { initColors } from "./GUI/Colors.mjs";
 import { eventLinkCallback } from "./StartGG/EventQuerier.js"
+import { aussmashInit } from "./AusSmash/Players.js"
+
 
 // this is a weird way to have file svg's that can be recolored by css
 customElements.define(
@@ -32,6 +34,7 @@ window.onscroll = () => {
 };
 
 init();
+aussmashInit();
 /** It all starts here */
 export async function init() {
   console.log("Calling init");

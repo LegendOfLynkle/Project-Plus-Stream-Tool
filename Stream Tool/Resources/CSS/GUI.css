@@ -658,6 +658,20 @@ button:hover {
   height: 20px;
 }
 
+.pInfoBotButt > .startGGLogo {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.aussmashLogo {
+  height: 24px;
+}
+
+.pInfoBotButt > .aussmashLogo {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 #startGGSettingsTitle {
   display: flex;
   flex-direction: row;
@@ -1147,6 +1161,13 @@ button:hover {
   justify-content: center;
 }
 
+.pInfoRowSecond {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 .pInfoEl {
   display: flex;
   align-items: center;
@@ -1176,6 +1197,14 @@ button:hover {
 
 #pInfoInputState {
   width: 120px;
+}
+
+#pInfoInputStartGG {
+  width: 130px;
+}
+
+#pInfoInputAusSmashSearch {
+  width: 170px;
 }
 
 .pInfoBotButt {

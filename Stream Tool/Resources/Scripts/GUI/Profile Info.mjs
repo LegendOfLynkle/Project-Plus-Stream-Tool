@@ -25,6 +25,8 @@ class ProfileInfo {
   /*  #bskyInp = document.getElementById("pInfoInputBsky");
         #mastoInp = document.getElementById("pInfoInputMasto");
         #cohostInp = document.getElementById("pInfoInputCohost");*/
+  #startGG = document.getElementById("pInfoInputStartGG");
+  #aussmash = document.getElementById("pInfoInputAusSmashSearch");
 
   #curProfile;
 
@@ -190,6 +192,21 @@ class ProfileInfo {
       commFinder.setCasterPresets();
     }
   }
+
+  getPronouns(){return this.#pronounsInp}
+  getTag(){return this.#tagInp}
+  getName(){return this.#nameInp}
+  getState(){return this.#flagSelect}
+  getTwitch(){return this.#twitchInp}
+  getYt(){return this.#ytInp}
+  getTwitter(){return this.#twitterInp}
+  setPronouns(x){this.#pronounsInp.value = x;}
+  setTag(x){this.#tagInp.value = x;}
+  setName(x){this.#nameInp.value = x;}
+  setState(x){this.#flagSelect.value = x;}
+  setTwitch(x){this.#twitchInp.value = x;}
+  setYt(x){this.#ytInp.value = x;}
+  setTwitter(x){this.#twitterInp.value = x;}
 }
 
 export const profileInfo = new ProfileInfo();

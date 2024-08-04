@@ -135,6 +135,6 @@ function procsesSetNode(slot) {
   }else{
     entry.name = slot.entrant.name;
   }
-  entry.score = slot.standing.stats.score.value;
+  entry.score = slot.standing.stats.score.value ?? 0;
   return entry;
 }
