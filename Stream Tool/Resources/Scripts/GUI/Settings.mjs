@@ -34,6 +34,7 @@ class GuiSettings {
   #selectedGame = document.getElementById("gameSelector");
   #startGG = document.getElementById("startGG");
   #aussmash = document.getElementById("aussmash");
+  #ytdataapi = document.getElementById("ytdataapi");
   startGGManagement = document.getElementById("startGGManagement");
   startgg = {
     eventId: null,
@@ -152,6 +153,7 @@ class GuiSettings {
     this.#selectedGame.value = guiSettings.selectedGame;
     this.#startGG.value = secrets.startGG;
     this.#aussmash.value = secrets.aussmash;
+    this.#ytdataapi.value = secrets.ytdataapi;
     this.startGGManagement.checked = guiSettings.startGGManagement;
     this.startgg = guiSettings.startgg;
 
@@ -205,6 +207,7 @@ class GuiSettings {
       // update the setting's value
       secrets["startGG"] = this.#startGG.value;
       secrets["aussmash"] = this.#aussmash.value;
+      secrets["ytdataapi"] = this.#ytdataapi.value;
 
       // save the file
       saveJson(`/API Keys`, secrets);
@@ -460,6 +463,10 @@ class GuiSettings {
 
   getAusSmashAPIKey() {
     return this.#aussmash.value;
+  }
+
+  getYTDataAPIKey() {
+    return this.#ytdataapi.value;
   }
 
   getStartGGPhase() { 

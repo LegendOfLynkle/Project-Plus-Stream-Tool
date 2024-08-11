@@ -95,6 +95,7 @@ class PlayerFinder extends Finder {
               pronouns: preset.pronouns,
               state: preset.state,
               socials: preset.socials,
+              integrations: preset.integrations,
               char: preset.characters[game][i].character,
               skin: preset.characters[game][i].skin,
               // hex : preset.characters[i].hex,
@@ -167,6 +168,7 @@ class PlayerFinder extends Finder {
             pronouns: preset.pronouns,
             state: preset.state,
             socials: preset.socials,
+            integrations: preset.integrations,
             char: "Random",
             skin: { name: "Default" },
           };
@@ -262,6 +264,7 @@ class PlayerFinder extends Finder {
       player.setPronouns(pData.pronouns);
       player.setState(pData.state);
       player.setSocials(pData.socials);
+      player.setIntegrations(pData.integrations);
     }
 
     // character change

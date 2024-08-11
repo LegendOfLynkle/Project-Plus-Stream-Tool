@@ -3,6 +3,7 @@ import { debounce } from "../Debounce.js";
 import { ausSmashRequest } from "./Requester.js";
 import { profileInfo } from "../GUI/Profile Info.mjs";
 import { handle } from "../Unpack.js";
+import { tryGetChannelName } from "../Youtube/Channel.js"
 
 async function searchAusSmashPlayers(searchTerm) {
   let path = `players/search?q=${encodeURIComponent(searchTerm)}`;
@@ -36,6 +37,8 @@ export const ausSmashPlayerSearchCallback = debounce((x) => {
       profileInfo.setState(d.Region.Name);
       setTwitter(d.TwitterUrl);
       setTwitch(d.TwitchUrl);
+      setYoutube(d.YouTubeUrl);
+      setStartGG(d.SmashGGPlayerID);
     }));
   }else{
     searchAusSmashPlayers(x.target.value).then((res) => {
@@ -68,5 +71,22 @@ function setTwitch(value){
 function setTwitter(value){
   if(value !== null){
     profileInfo.setTwitter(value.split("/").slice(-1));
+  }
+}
+
+function setYoutube(value){
+  if(value !== null){
+    let channelId = value.split("/").slice(-1);
+    tryGetChannelName(channelId).then((res) => handle(res, (d) => {
+      if(d.items.length !== 0 && d.items[0]?.snippet?.customUrl !== "" && d.items[0]?.snippet?.customUrl !== null){
+        profileInfo.setYt(d.items[0]?.snippet?.customUrl);
+      }
+    }));
+  }
+}
+
+function setStartGG(value){
+  if(value !== null){
+    profileInfo.setStartGG(value);
   }
 }

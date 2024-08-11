@@ -361,6 +361,10 @@
                 <label for="aussmash">AusSmash:</label>
                 <input id="aussmash" class="textInput" type="password" />
               </div>
+              <div class="settingBoxInnerAligned">
+                <label for="ytdataapi">Youtube Data API:</label>
+                <input id="ytdataapi" class="textInput" type="password" />
+              </div>
             </div>
             <div id="settingsButtonSection">
               <button class="settingsButton" id="saveApiKeys" tabindex="-1" title="Saves the API key values">
@@ -574,9 +578,12 @@
                 id="pInfoInputStartGG"
                 class="textInput mousetrap pInfoInput"
                 tabindex="-1"
-                placeholder="StartGG Player Slug"
+                placeholder="StartGG Player Id"
                 spellcheck="false"
+                disabled="true"
               />
+              <input id="pInfoInputStartGGUserId" type="text" style="display: none;"/>
+              <input id="pInfoInputStartGGDiscriminator" type="text" style="display: none;"/>
             </div>
           </div>
 

@@ -5,6 +5,8 @@ import { stPath } from "./Globals.mjs";
 import { playerFinder } from "./Finder/Player Finder.mjs";
 import { commFinder } from "./Finder/Comm Finder.mjs";
 import { settings } from "./Settings.mjs";
+import { getPlayerInformation } from "../StartGG/PlayerQuerier.js";
+import { handle } from "../Unpack.js";
 
 const flagList = await getJson(stPath.text + "/Flag Names");
 
@@ -26,6 +28,8 @@ class ProfileInfo {
         #mastoInp = document.getElementById("pInfoInputMasto");
         #cohostInp = document.getElementById("pInfoInputCohost");*/
   #startGG = document.getElementById("pInfoInputStartGG");
+  #startGGUser = document.getElementById("pInfoInputStartGGUserId");
+  #startGGDiscriminator = document.getElementById("pInfoInputStartGGDiscriminator");
   #aussmash = document.getElementById("pInfoInputAusSmashSearch");
 
   #curProfile;
@@ -89,6 +93,8 @@ class ProfileInfo {
     this.#twitterInp.value = socials.twitter || "";
     this.#twitchInp.value = socials.twitch || "";
     this.#ytInp.value = socials.yt || "";
+    this.#startGG.value = profile.integrations?.startgg?.player_id || "";
+    this.#aussmash.value = profile.integrations?.aussmash || "";
     /*      this.#bskyInp.value = socials.bsky || "";
                 this.#mastoInp.value = socials.masto || "";
                 this.#cohostInp.value = socials.cohost || "";*/
@@ -152,9 +158,21 @@ class ProfileInfo {
       pronouns: this.#curProfile.getPronouns(),
       state: this.#curProfile.getState(),
       socials: this.#curProfile.getSocials(),
+      integrations: {
+        aussmash: null,
+        startgg: {
+          user_id: null,
+          player_id: null,
+          discriminator: null
+        }
+      },
       characters: { Melee: [], "Project+": [] },
     };
     if (this.#curProfile.profileType == "player") {
+      preset.integrations.startgg.player_id = this.#startGG.value !== '' ? this.#startGG.value : null
+      preset.integrations.startgg.user_id = this.#startGGUser.value !== '' ? this.#startGGUser.value : null
+      preset.integrations.startgg.discriminator = this.#startGGDiscriminator.value !== '' ? this.#startGGDiscriminator.value : null
+      preset.integrations.aussmash = this.#aussmash.value !== '' ? this.#aussmash.value : null
       preset.characters[game] = [
         {
           character: this.#curProfile.char,
@@ -193,6 +211,19 @@ class ProfileInfo {
     }
   }
 
+  fetchStartGGInformation(playerId){
+    getPlayerInformation(playerId).then((res) => handle(res, (d)=> {
+      this.setTag(d.data.player.prefix);
+      let pronouns = d.data.player.user.genderPronoun;
+      if(pronouns !== null){
+        this.setPronouns(pronouns);
+      }
+      this.#startGGUser.value = d.data.player.user.id;
+      this.#startGGDiscriminator.value = d.data.player.user.discriminator;
+    }));
+  }
+
+
   getPronouns(){return this.#pronounsInp}
   getTag(){return this.#tagInp}
   getName(){return this.#nameInp}
@@ -200,6 +231,7 @@ class ProfileInfo {
   getTwitch(){return this.#twitchInp}
   getYt(){return this.#ytInp}
   getTwitter(){return this.#twitterInp}
+  getStartGG(){return this.#startGG}
   setPronouns(x){this.#pronounsInp.value = x;}
   setTag(x){this.#tagInp.value = x;}
   setName(x){this.#nameInp.value = x;}
@@ -207,6 +239,7 @@ class ProfileInfo {
   setTwitch(x){this.#twitchInp.value = x;}
   setYt(x){this.#ytInp.value = x;}
   setTwitter(x){this.#twitterInp.value = x;}
+  setStartGG(x){this.#startGG.value = x; this.fetchStartGGInformation(x) }
 }
 
 export const profileInfo = new ProfileInfo();

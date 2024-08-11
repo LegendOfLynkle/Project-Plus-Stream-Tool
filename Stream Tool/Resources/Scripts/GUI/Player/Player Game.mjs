@@ -15,6 +15,7 @@ export class PlayerGame extends Player {
   pronouns = "";
   state = "";
   socials = {};
+  integrations = {};
 
   vsSkin;
   scSrc;
@@ -80,6 +81,12 @@ export class PlayerGame extends Player {
   }
   setSocials(socials) {
     this.socials = socials;
+  }
+  getIntegrations() {
+    return this.integrations;
+  }
+  setIntegrations(integrations) {
+    this.integrations = integrations;
   }
 
   /**
